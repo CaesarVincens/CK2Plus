@@ -3695,7 +3695,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 		modifier = {
 			factor = 5.0
 			trait = slothful
@@ -3993,6 +3993,7 @@ character_event = {
 		has_guardian = yes
 		NOT = {
 			AND = {
+        OR = {
 				guardian = {
 					culture = saxon
 					location = {
@@ -4001,6 +4002,23 @@ character_event = {
 						}
 					}
 				}
+				guardian = {
+					culture = saxon
+					location = {
+						kingdom = {
+							title = k_englandnorman
+						}
+					}
+				}
+				guardian = {
+					culture = saxon
+					location = {
+						kingdom = {
+							title = k_englandnorwegian
+						}
+					}
+				}
+        }
 				OR = {
 					culture_group = north_germanic
 					culture = norman

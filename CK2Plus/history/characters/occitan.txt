@@ -12202,6 +12202,9 @@
 	1309.1.1 = {
 		birth="1309.1.1"
 	}
+	1328.1.1 = { # 1323.5.23 IRL
+		add_spouse=455411 # Isabella of France
+	}
 	1333.7.28 = {
 		death="1333.7.28"
 	}
@@ -12516,7 +12519,6 @@
 	culture="occitan"
 	trait="honest"
 	trait="amateurish_plotter"
-	trait="bastard" #not really a bastard, this is here to stop HRE inheritance of Aquitaine
 	father=234
 	mother=275
 	1020.1.2 = {

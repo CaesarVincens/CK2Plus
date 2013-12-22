@@ -1,13 +1,14 @@
+# Legitimize Bastard
 character_event = {
-	id = 220000
+	id = 1000182437
 	picture = GFX_evt_emissary
 
 	is_triggered_only = yes
 
-	desc = "EVTDESC220000"
+	desc = "EVTDESC1000182437"
 
 	option = {
-		name = "EVTOPTA220000"
+		name = "EVTOPTA1000182437"
 		piety = -10
 		FROM = {
 			if = {
@@ -100,7 +101,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTB220000"
+		name = "EVTOPTB1000182437"
 		hidden_tooltip = {
 			FROM = {
 				remove_title = legitimize_bastard
@@ -109,16 +110,17 @@ character_event = {
 	}
 }
 
+# Grant Estate
 character_event = {
-	id = 220001
+	id = 1000182438
 	picture = GFX_evt_emissary
 
 	is_triggered_only = yes
 
-	desc = "EVTDESC220001"
+	desc = "EVTDESC1000182438"
 
 	option = {
-		name = "EVTOPTA220001"
+		name = "EVTOPTA1000182438"
 		trigger = {
 			wealth = 50
 			FROM = {
@@ -198,7 +200,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTB220001"
+		name = "EVTOPTB1000182438"
 		trigger = {
 			wealth = 150
 			FROM = {
@@ -263,7 +265,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTC220001"
+		name = "EVTOPTC1000182438"
 		trigger = {
 			wealth = 250
 			FROM = {
@@ -299,7 +301,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTD220001"
+		name = "EVTOPTD1000182438"
 		hidden_tooltip = {
 			FROM = {
 				remove_title = grant_estate
@@ -308,16 +310,17 @@ character_event = {
 	}
 }
 
+# Revoke minor title
 character_event = {
-	id = 220003
+	id = 1000182439
 	picture = GFX_evt_emissary
 
 	is_triggered_only = yes
 
-	desc = "EVTDESC220003"
+	desc = "EVTDESC1000182439"
 
 	option = {
-		name = "EVTOPTA220003"
+		name = "EVTOPTA1000182439"
 		FROM = {
 			if = {
 				limit = {
@@ -634,7 +637,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTB220003"
+		name = "EVTOPTB1000182439"
 		hidden_tooltip = {
 			FROM = {
 				remove_title = revoke_minor_title
@@ -643,16 +646,17 @@ character_event = {
 	}
 }
 
+# Pardon
 character_event = {
-	id = 220004
+	id = 1000182440
 	picture = GFX_evt_emissary
 
 	is_triggered_only = yes
 
-	desc = "EVTDESC220004"
+	desc = "EVTDESC1000182440"
 
 	option = {
-		name = "EVTOPTA220004"
+		name = "EVTOPTA1000182440"
 		if = {
 			limit = {
 				FROM = {
@@ -832,7 +836,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTB220004"
+		name = "EVTOPTB1000182440"
 		hidden_tooltip = {
 			FROM = {
 				remove_title = pardon

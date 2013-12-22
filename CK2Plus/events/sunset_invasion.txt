@@ -105,11 +105,11 @@ province_event = {
 	immediate = {
 		set_global_flag = aztec_arrival
 		culture = nahuatl
-		religion = aztec
+		religion = aztec_pagan
 		create_character = {
 			random_traits = yes
 			dynasty = 1035000
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = no
 			age = 30
@@ -166,7 +166,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = no
 			age = 30
@@ -176,14 +176,28 @@ narrative_event = {
 			trait = brilliant_strategist
 		}
 		new_character = {
-			spawn_unit = {
-				province = FROM
-				home = FROM
-				troops =
-				{
-					heavy_infantry = { 10000 10000 }
-					light_infantry = { 5000 5000 }
-					archers = { 5000 5000 }
+			if = {
+				limit = { has_global_flag = better_armies_mode }
+				spawn_unit = {
+					province = FROM
+					home = FROM
+					troops = {
+						heavy_infantry = { 6000 6000 }
+						light_infantry = { 3000 3000 }
+						archers = { 3000 3000 }
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { has_global_flag = better_armies_mode } }
+				spawn_unit = {
+					province = FROM
+					home = FROM
+					troops = {
+						heavy_infantry = { 10000 10000 }
+						light_infantry = { 5000 5000 }
+						archers = { 5000 5000 }
+					}
 				}
 			}
 		}
@@ -191,7 +205,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = no
 			age = 25
@@ -201,14 +215,28 @@ narrative_event = {
 			trait = brilliant_strategist
 		}
 		new_character = {
-			spawn_unit = {
-				province = FROM
-				home = FROM
-				troops =
-				{
-					heavy_infantry = { 10000 10000 }
-					light_infantry = { 5000 5000 }
-					archers = { 5000 5000 }
+			if = {
+				limit = { has_global_flag = better_armies_mode }
+				spawn_unit = {
+					province = FROM
+					home = FROM
+					troops = {
+						heavy_infantry = { 6000 6000 }
+						light_infantry = { 3000 3000 }
+						archers = { 3000 3000 }
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { has_global_flag = better_armies_mode } }
+				spawn_unit = {
+					province = FROM
+					home = FROM
+					troops = {
+						heavy_infantry = { 10000 10000 }
+						light_infantry = { 5000 5000 }
+						archers = { 5000 5000 }
+					}
 				}
 			}
 		}
@@ -216,7 +244,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = no
 			age = 25
@@ -226,14 +254,28 @@ narrative_event = {
 			trait = brilliant_strategist
 		}
 		new_character = {
-			spawn_unit = {
-				province = FROM
-				home = FROM
-				troops =
-				{
-					heavy_infantry = { 10000 10000 }
-					light_infantry = { 5000 5000 }
-					archers = { 5000 5000 }
+			if = {
+				limit = { has_global_flag = better_armies_mode }
+				spawn_unit = {
+					province = FROM
+					home = FROM
+					troops = {
+						heavy_infantry = { 6000 6000 }
+						light_infantry = { 3000 3000 }
+						archers = { 3000 3000 }
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { has_global_flag = better_armies_mode } }
+				spawn_unit = {
+					province = FROM
+					home = FROM
+					troops = {
+						heavy_infantry = { 10000 10000 }
+						light_infantry = { 5000 5000 }
+						archers = { 5000 5000 }
+					}
 				}
 			}
 		}
@@ -243,7 +285,7 @@ narrative_event = {
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = aztec
+				religion = aztec_pagan
 				culture = nahuatl
 				female = no
 				age = 24
@@ -253,14 +295,28 @@ narrative_event = {
 				trait = brilliant_strategist
 			}
 			new_character = {
-				spawn_unit = {
-					province = FROM
-					home = FROM
-					troops =
-					{
-						heavy_infantry = { 10000 10000 }
-						light_infantry = { 5000 5000 }
-						archers = { 5000 5000 }
+				if = {
+					limit = { has_global_flag = better_armies_mode }
+					spawn_unit = {
+						province = FROM
+						home = FROM
+						troops = {
+							heavy_infantry = { 6000 6000 }
+							light_infantry = { 3000 3000 }
+							archers = { 3000 3000 }
+						}
+					}
+				}
+				if = {
+					limit = { NOT = { has_global_flag = better_armies_mode } }
+					spawn_unit = {
+						province = FROM
+						home = FROM
+						troops = {
+							heavy_infantry = { 10000 10000 }
+							light_infantry = { 5000 5000 }
+							archers = { 5000 5000 }
+						}
 					}
 				}
 			}
@@ -271,7 +327,7 @@ narrative_event = {
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = aztec
+				religion = aztec_pagan
 				culture = nahuatl
 				female = no
 				age = 25
@@ -281,14 +337,28 @@ narrative_event = {
 				trait = brilliant_strategist
 			}
 			new_character = {
-				spawn_unit = {
-					province = FROM
-					home = FROM
-					troops =
-					{
-						heavy_infantry = { 10000 10000 }
-						light_infantry = { 5000 5000 }
-						archers = { 5000 5000 }
+				if = {
+					limit = { has_global_flag = better_armies_mode }
+					spawn_unit = {
+						province = FROM
+						home = FROM
+						troops = {
+							heavy_infantry = { 6000 6000 }
+							light_infantry = { 3000 3000 }
+							archers = { 3000 3000 }
+						}
+					}
+				}
+				if = {
+					limit = { NOT = { has_global_flag = better_armies_mode } }
+					spawn_unit = {
+						province = FROM
+						home = FROM
+						troops = {
+							heavy_infantry = { 10000 10000 }
+							light_infantry = { 5000 5000 }
+							archers = { 5000 5000 }
+						}
 					}
 				}
 			}
@@ -299,7 +369,7 @@ narrative_event = {
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = aztec
+				religion = aztec_pagan
 				culture = nahuatl
 				female = no
 				age = 28
@@ -309,14 +379,28 @@ narrative_event = {
 				trait = brilliant_strategist
 			}
 			new_character = {
-				spawn_unit = {
-					province = FROM
-					home = FROM
-					troops =
-					{
-						heavy_infantry = { 10000 10000 }
-						light_infantry = { 5000 5000 }
-						archers = { 5000 5000 }
+				if = {
+					limit = { has_global_flag = better_armies_mode }
+					spawn_unit = {
+						province = FROM
+						home = FROM
+						troops = {
+							heavy_infantry = { 6000 6000 }
+							light_infantry = { 3000 3000 }
+							archers = { 3000 3000 }
+						}
+					}
+				}
+				if = {
+					limit = { NOT = { has_global_flag = better_armies_mode } }
+					spawn_unit = {
+						province = FROM
+						home = FROM
+						troops = {
+							heavy_infantry = { 10000 10000 }
+							light_infantry = { 5000 5000 }
+							archers = { 5000 5000 }
+						}
 					}
 				}
 			}
@@ -356,7 +440,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = no
 			age = 16
@@ -364,7 +448,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = no
 			age = 18
@@ -372,7 +456,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = no
 			age = 18
@@ -380,7 +464,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = no
 			age = 20
@@ -388,7 +472,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = no
 			age = 25
@@ -396,7 +480,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = no
 			age = 26
@@ -404,7 +488,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = no
 			age = 28
@@ -412,7 +496,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = no
 			age = 16
@@ -420,7 +504,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = no
 			age = 17
@@ -428,7 +512,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = no
 			age = 18
@@ -436,7 +520,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = no
 			age = 16
@@ -444,7 +528,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = yes
 			age = 16
@@ -452,7 +536,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = yes
 			age = 17
@@ -460,7 +544,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = yes
 			age = 18
@@ -468,7 +552,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = yes
 			age = 18
@@ -476,7 +560,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = yes
 			age = 20
@@ -484,7 +568,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = yes
 			age = 16
@@ -492,7 +576,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = yes
 			age = 16
@@ -533,7 +617,7 @@ province_event = {
 	immediate = {
 		set_global_flag = aztec_arrival_2
 		culture = nahuatl
-		religion = aztec
+		religion = aztec_pagan
 		e_mexikha = {
 			holder_scope = {
 				ROOT = {
@@ -579,7 +663,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = no
 			age = 30
@@ -589,14 +673,28 @@ narrative_event = {
 			trait = brilliant_strategist
 		}
 		new_character = {
-			spawn_unit = {
-				province = FROM
-				home = FROM
-				troops =
-				{
-					heavy_infantry = { 10000 10000 }
-					light_infantry = { 5000 5000 }
-					archers = { 5000 5000 }
+			if = {
+				limit = { has_global_flag = better_armies_mode }
+				spawn_unit = {
+					province = FROM
+					home = FROM
+					troops = {
+						heavy_infantry = { 6000 6000 }
+						light_infantry = { 3000 3000 }
+						archers = { 3000 3000 }
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { has_global_flag = better_armies_mode } }
+				spawn_unit = {
+					province = FROM
+					home = FROM
+					troops = {
+						heavy_infantry = { 10000 10000 }
+						light_infantry = { 5000 5000 }
+						archers = { 5000 5000 }
+					}
 				}
 			}
 		}
@@ -604,7 +702,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = no
 			age = 25
@@ -614,14 +712,28 @@ narrative_event = {
 			trait = brilliant_strategist
 		}
 		new_character = {
-			spawn_unit = {
-				province = FROM
-				home = FROM
-				troops =
-				{
-					heavy_infantry = { 10000 10000 }
-					light_infantry = { 5000 5000 }
-					archers = { 5000 5000 }
+			if = {
+				limit = { has_global_flag = better_armies_mode }
+				spawn_unit = {
+					province = FROM
+					home = FROM
+					troops = {
+						heavy_infantry = { 6000 6000 }
+						light_infantry = { 3000 3000 }
+						archers = { 3000 3000 }
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { has_global_flag = better_armies_mode } }
+				spawn_unit = {
+					province = FROM
+					home = FROM
+					troops = {
+						heavy_infantry = { 10000 10000 }
+						light_infantry = { 5000 5000 }
+						archers = { 5000 5000 }
+					}
 				}
 			}
 		}
@@ -629,7 +741,7 @@ narrative_event = {
 		create_character = {
 			random_traits = yes
 			dynasty = random
-			religion = aztec
+			religion = aztec_pagan
 			culture = nahuatl
 			female = no
 			age = 25
@@ -639,14 +751,28 @@ narrative_event = {
 			trait = brilliant_strategist
 		}
 		new_character = {
-			spawn_unit = {
-				province = FROM
-				home = FROM
-				troops =
-				{
-					heavy_infantry = { 10000 10000 }
-					light_infantry = { 5000 5000 }
-					archers = { 5000 5000 }
+			if = {
+				limit = { has_global_flag = better_armies_mode }
+				spawn_unit = {
+					province = FROM
+					home = FROM
+					troops = {
+						heavy_infantry = { 6000 6000 }
+						light_infantry = { 3000 3000 }
+						archers = { 3000 3000 }
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { has_global_flag = better_armies_mode } }
+				spawn_unit = {
+					province = FROM
+					home = FROM
+					troops = {
+						heavy_infantry = { 10000 10000 }
+						light_infantry = { 5000 5000 }
+						archers = { 5000 5000 }
+					}
 				}
 			}
 		}
@@ -656,7 +782,7 @@ narrative_event = {
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = aztec
+				religion = aztec_pagan
 				culture = nahuatl
 				female = no
 				age = 24
@@ -666,14 +792,28 @@ narrative_event = {
 				trait = brilliant_strategist
 			}
 			new_character = {
-				spawn_unit = {
-					province = FROM
-					home = FROM
-					troops =
-					{
-						heavy_infantry = { 10000 10000 }
-						light_infantry = { 5000 5000 }
-						archers = { 5000 5000 }
+				if = {
+					limit = { has_global_flag = better_armies_mode }
+					spawn_unit = {
+						province = FROM
+						home = FROM
+						troops = {
+							heavy_infantry = { 6000 6000 }
+							light_infantry = { 3000 3000 }
+							archers = { 3000 3000 }
+						}
+					}
+				}
+				if = {
+					limit = { NOT = { has_global_flag = better_armies_mode } }
+					spawn_unit = {
+						province = FROM
+						home = FROM
+						troops = {
+							heavy_infantry = { 10000 10000 }
+							light_infantry = { 5000 5000 }
+							archers = { 5000 5000 }
+						}
 					}
 				}
 			}
@@ -684,7 +824,7 @@ narrative_event = {
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = aztec
+				religion = aztec_pagan
 				culture = nahuatl
 				female = no
 				age = 25
@@ -694,14 +834,28 @@ narrative_event = {
 				trait = brilliant_strategist
 			}
 			new_character = {
-				spawn_unit = {
-					province = FROM
-					home = FROM
-					troops =
-					{
-						heavy_infantry = { 10000 10000 }
-						light_infantry = { 5000 5000 }
-						archers = { 5000 5000 }
+				if = {
+					limit = { has_global_flag = better_armies_mode }
+					spawn_unit = {
+						province = FROM
+						home = FROM
+						troops = {
+							heavy_infantry = { 6000 6000 }
+							light_infantry = { 3000 3000 }
+							archers = { 3000 3000 }
+						}
+					}
+				}
+				if = {
+					limit = { NOT = { has_global_flag = better_armies_mode } }
+					spawn_unit = {
+						province = FROM
+						home = FROM
+						troops = {
+							heavy_infantry = { 10000 10000 }
+							light_infantry = { 5000 5000 }
+							archers = { 5000 5000 }
+						}
 					}
 				}
 			}
@@ -712,7 +866,7 @@ narrative_event = {
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = aztec
+				religion = aztec_pagan
 				culture = nahuatl
 				female = no
 				age = 28
@@ -722,14 +876,28 @@ narrative_event = {
 				trait = brilliant_strategist
 			}
 			new_character = {
-				spawn_unit = {
-					province = FROM
-					home = FROM
-					troops =
-					{
-						heavy_infantry = { 10000 10000 }
-						light_infantry = { 5000 5000 }
-						archers = { 5000 5000 }
+				if = {
+					limit = { has_global_flag = better_armies_mode }
+					spawn_unit = {
+						province = FROM
+						home = FROM
+						troops = {
+							heavy_infantry = { 6000 6000 }
+							light_infantry = { 3000 3000 }
+							archers = { 3000 3000 }
+						}
+					}
+				}
+				if = {
+					limit = { NOT = { has_global_flag = better_armies_mode } }
+					spawn_unit = {
+						province = FROM
+						home = FROM
+						troops = {
+							heavy_infantry = { 10000 10000 }
+							light_infantry = { 5000 5000 }
+							archers = { 5000 5000 }
+						}
 					}
 				}
 			}
@@ -1254,7 +1422,7 @@ character_event = {
 		in_command = no
 		prisoner = no
 		age = 16
-		NOT = { religion = aztec }
+		NOT = { religion = aztec_pagan }
 		NOT = {
 			any_liege = {
 				has_landed_title = e_mexikha

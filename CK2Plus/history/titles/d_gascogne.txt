@@ -55,7 +55,6 @@
 }
 996.12.23 = {
 	holder = 127050 #Bernard-Guillaume de Gascogne
-	liege = 0
 }
 1009.12.25 = {
 	holder = 127051 #Sanche-Guillaume de Gascogne
@@ -89,7 +88,7 @@
 	holder = 205730 #Alienor d'Aquitaine
 }
 1152.5.18 = {
-	liege = "k_england"
+	liege = "k_englandnorman"
 	holder = 204500 #Henry II of England
 }
 1189.7.6 = {

@@ -100,7 +100,7 @@ pardon = {
 	}
 
 	gain_effect = {
-		FROM = { character_event = { id = 220004 } }
+		FROM = { character_event = { id = 1000182440 } }
 	}
 	lose_effect = { }
 
@@ -120,7 +120,7 @@ legitimize_bastard = {
 	}
 
 	gain_effect = {
-		FROM = { character_event = { id = 220000 } }
+		FROM = { character_event = { id = 1000182437 } }
 	}
 	lose_effect = { }
 
@@ -139,7 +139,7 @@ grant_estate = {
 	}
 
 	gain_effect = {
-		FROM = { character_event = { id = 220001 } }
+		FROM = { character_event = { id = 1000182438 } }
 	}
 	lose_effect = { }
 
@@ -200,11 +200,17 @@ revoke_minor_title = {
 			has_minor_title = title_kundur
 			has_minor_title = title_favored_son
 			has_minor_title = title_chief_qadi
+			has_minor_title = title_censor
+			has_minor_title = title_aedile
+			has_minor_title = title_magister_equitum
+			has_minor_title = title_flamen_dialis
+			has_minor_title = title_flamen_martialis
+			has_minor_title = title_flamen_quirinalis
 		}
 	}
 
 	gain_effect = {
-		FROM = { character_event = { id = 220003 } }
+		FROM = { character_event = { id = 1000182439 } }
 	}
 	lose_effect = { }
 
@@ -305,10 +311,7 @@ title_prince = {
 
 	monthly_salary = 0.025
 	monthly_prestige = 0.01
-
-	allow = {
-	}
-
+	
 	gain_effect = {
 	}
 	lose_effect = {
@@ -317,13 +320,14 @@ title_prince = {
 	message = no
 }
 
-# Not currently in use
+# Pagan consort
 title_courtesan = {
 	dignity = 0.05
 	realm_in_name = yes
-
-	monthly_salary = 0.01
-
+	
+	monthly_salary = 0.02
+	monthly_prestige = 0.01
+	
 	gain_effect = {
 	}
 	lose_effect = {
@@ -335,6 +339,43 @@ title_courtesan = {
 #######################################
 # SOFT: GRANTABLE - FULLY MODDABLE
 #######################################
+
+title_court_eunuch = {
+	dignity = 0.01
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 10
+	
+	monthly_salary = 0.02
+	monthly_prestige = 0.01
+	
+	allow = {
+		is_adult = yes
+		trait = eunuch
+		FROM = {
+			is_feudal = yes
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+			NOT = { has_landed_title = e_byzantium }
+			NOT = { has_landed_title = e_roman_empire }
+		}
+	}
+	
+	gain_effect = {
+		FROM = {
+			prestige = 10
+		}
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
 title_court_dwarf = {
 	dignity = 0.01
 	realm_in_name = yes
@@ -362,6 +403,9 @@ title_court_dwarf = {
 			OR = {
 				religion_group = christian
 				religion_group = muslim
+				religion_group = jewish_group
+				religion = egyptian_pagan
+				religion = aten_pagan
 			}
 		}
 		NOT = {
@@ -386,6 +430,9 @@ title_court_dwarf = {
 	}
 
 	gain_effect = {
+		FROM = {
+			prestige = 10
+		}
 	}
 	lose_effect = {
 	}
@@ -416,7 +463,11 @@ title_court_jester = {
 					tier = emperor
 				}
 			}
-			religion_group = christian
+			OR = {
+				religion_group = christian
+				religion_group = jewish_group
+				religion = hellenic_pagan
+			}
 		}
 		NOT = {
 			has_minor_title = title_keeper_of_swans
@@ -436,6 +487,11 @@ title_court_jester = {
 			has_minor_title = title_court_poet
 			has_minor_title = title_chief_architect
 			has_minor_title = title_imperial_eunuch
+			has_minor_title = title_censor
+			has_minor_title = title_magister_equitum
+			has_minor_title = title_flamen_dialis
+			has_minor_title = title_flamen_martialis
+			has_minor_title = title_flamen_quirinalis
 		}
 	}
 
@@ -473,7 +529,10 @@ title_keeper_of_swans = {
 			}
 			NOT = { has_landed_title = e_byzantium }
 			NOT = { has_landed_title = e_roman_empire }
-			religion_group = christian
+			OR = {
+				religion_group = christian
+				religion_group = jewish_group
+			}
 		}
 		NOT = {
 			has_minor_title = title_master_of_the_horse
@@ -524,9 +583,19 @@ title_master_of_the_horse = {
 			is_feudal = yes
 			NOT = { has_landed_title = e_byzantium }
 			NOT = { has_landed_title = e_roman_empire }
-			religion_group = christian
+			OR = {
+				religion_group = christian
+				religion_group = pagan_group
+				religion_group = jewish_group
+			}
 		}
 		NOT = {
+			has_minor_title = title_lawspeaker
+			has_minor_title = title_hirdman
+			has_minor_title = title_marksman
+			has_minor_title = title_court_skald
+			has_minor_title = title_drottseti
+			has_minor_title = title_volva
 			has_minor_title = title_keeper_of_swans
 			has_minor_title = title_master_of_the_hunt
 			has_minor_title = title_high_almoner
@@ -544,6 +613,17 @@ title_master_of_the_horse = {
 			has_minor_title = title_court_poet
 			has_minor_title = title_chief_architect
 			has_minor_title = title_imperial_eunuch
+			has_minor_title = title_baghatur
+			has_minor_title = title_champion
+			has_minor_title = title_cherbi
+			has_minor_title = title_darkhan
+			has_minor_title = title_noyan	
+			has_minor_title = title_master_of_the_bow
+			has_minor_title = title_master_of_the_blade
+			has_minor_title = title_ishad
+			has_minor_title = title_kundur
+			has_minor_title = title_venerable_elder
+			has_minor_title = title_yabgu			
 		}
 	}
 
@@ -575,7 +655,11 @@ title_master_of_the_hunt = {
 			is_feudal = yes
 			NOT = { has_landed_title = e_byzantium }
 			NOT = { has_landed_title = e_roman_empire }
-			religion_group = christian
+			OR = {
+				religion_group = christian
+				religion_group = pagan_group
+				religion_group = jewish_group
+			}
 		}
 		NOT = {
 			has_minor_title = title_keeper_of_swans
@@ -595,6 +679,22 @@ title_master_of_the_hunt = {
 			has_minor_title = title_court_poet
 			has_minor_title = title_chief_architect
 			has_minor_title = title_imperial_eunuch
+			has_minor_title = title_lawspeaker
+			has_minor_title = title_hirdman
+			has_minor_title = title_court_skald
+			has_minor_title = title_drottseti
+			has_minor_title = title_volva
+			has_minor_title = title_baghatur
+			has_minor_title = title_champion
+			has_minor_title = title_cherbi
+			has_minor_title = title_darkhan
+			has_minor_title = title_noyan	
+			has_minor_title = title_master_of_the_bow
+			has_minor_title = title_master_of_the_blade
+			has_minor_title = title_ishad
+			has_minor_title = title_kundur
+			has_minor_title = title_venerable_elder
+			has_minor_title = title_yabgu			
 		}
 	}
 
@@ -625,7 +725,10 @@ title_high_almoner = {
 			is_feudal = yes
 			NOT = { has_landed_title = e_byzantium }
 			NOT = { has_landed_title = e_roman_empire }
-			religion_group = christian
+			OR = {
+				religion_group = christian
+				religion_group = jewish_group
+			}
 		}
 		NOT = {
 			has_minor_title = title_keeper_of_swans
@@ -676,7 +779,9 @@ title_cupbearer = {
 			is_feudal = yes
 			OR = {
 				religion_group = christian
+				religion_group = pagan_group
 				religion_group = muslim
+				religion_group = jewish_group
 			}
 		}
 		NOT = {
@@ -697,6 +802,27 @@ title_cupbearer = {
 			has_minor_title = title_court_poet
 			has_minor_title = title_chief_architect
 			has_minor_title = title_imperial_eunuch
+			has_minor_title = title_censor
+			has_minor_title = title_magister_equitum
+			has_minor_title = title_flamen_dialis
+			has_minor_title = title_flamen_martialis
+			has_minor_title = title_flamen_quirinalis
+			has_minor_title = title_lawspeaker
+			has_minor_title = title_hirdman
+			has_minor_title = title_court_skald
+			has_minor_title = title_drottseti
+			has_minor_title = title_volva
+			has_minor_title = title_baghatur
+			has_minor_title = title_champion
+			has_minor_title = title_cherbi
+			has_minor_title = title_darkhan
+			has_minor_title = title_noyan	
+			has_minor_title = title_master_of_the_bow
+			has_minor_title = title_master_of_the_blade
+			has_minor_title = title_ishad
+			has_minor_title = title_kundur
+			has_minor_title = title_venerable_elder
+			has_minor_title = title_yabgu			
 		}
 	}
 
@@ -734,7 +860,11 @@ title_seneschal = {
 			}
 			NOT = { has_landed_title = e_byzantium }
 			NOT = { has_landed_title = e_roman_empire }
-			religion_group = christian
+			OR = {
+				religion_group = christian
+				religion_group = pagan_group
+				religion_group = jewish_group
+			}
 		}
 		NOT = {
 			has_minor_title = title_keeper_of_swans
@@ -754,8 +884,39 @@ title_seneschal = {
 			has_minor_title = title_court_poet
 			has_minor_title = title_chief_architect
 			has_minor_title = title_imperial_eunuch
+			has_minor_title = title_baghatur
+			has_minor_title = title_champion
+			has_minor_title = title_cherbi
+			has_minor_title = title_darkhan
+			has_minor_title = title_noyan	
+			has_minor_title = title_master_of_the_bow
+			has_minor_title = title_master_of_the_blade
+			has_minor_title = title_lawspeaker
+			has_minor_title = title_hirdman
+			has_minor_title = title_marksman
+			has_minor_title = title_court_skald
+			has_minor_title = title_volva
+			has_minor_title = title_ishad
+			has_minor_title = title_kundur
+			has_minor_title = title_venerable_elder
+			has_minor_title = title_yabgu			
 		}
 	}
+
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_paramount_knight = {
+	dignity = 0.8
+	grant_limit = 0 
+	opinion_effect = 0
+
+	monthly_prestige = 0.5
 
 	gain_effect = {
 	}
@@ -771,12 +932,12 @@ title_despot = {
 	realm_in_name = yes
 	grant_limit = 1
 	opinion_effect = 25
-
-	counts_as_purple_born = yes
-
+	
 	monthly_salary = 0.1
-	monthly_prestige = 0.05
-
+	monthly_prestige = 0.01
+	
+	counts_as_purple_born = yes
+	
 	allow = {
 		is_female = no
 		is_close_relative = FROM
@@ -786,7 +947,10 @@ title_despot = {
 				has_landed_title = e_byzantium
 				has_landed_title = e_roman_empire
 			}
-			religion_group = christian
+			OR = {
+				religion_group = christian
+				religion = hellenic_pagan
+			}
 		}
 	}
 
@@ -816,7 +980,10 @@ title_sebastokrator = {
 				has_landed_title = e_byzantium
 				has_landed_title = e_roman_empire
 			}
-			religion_group = christian
+			OR = {
+				religion_group = christian
+				religion = hellenic_pagan
+			}
 		}
 		NOT = {
 			has_minor_title = title_keeper_of_swans
@@ -836,6 +1003,12 @@ title_sebastokrator = {
 			has_minor_title = title_court_poet
 			has_minor_title = title_chief_architect
 			has_minor_title = title_imperial_eunuch
+			has_minor_title = title_censor
+			has_minor_title = title_aedile
+			has_minor_title = title_magister_equitum
+			has_minor_title = title_flamen_dialis
+			has_minor_title = title_flamen_martialis
+			has_minor_title = title_flamen_quirinalis
 		}
 	}
 
@@ -864,7 +1037,10 @@ title_caesar = {
 				has_landed_title = e_byzantium
 				has_landed_title = e_roman_empire
 			}
-			religion_group = christian
+			OR = {
+				religion_group = christian
+				religion = hellenic_pagan
+			}
 		}
 		NOT = {
 			has_minor_title = title_keeper_of_swans
@@ -884,6 +1060,12 @@ title_caesar = {
 			has_minor_title = title_court_poet
 			has_minor_title = title_chief_architect
 			has_minor_title = title_imperial_eunuch
+			has_minor_title = title_censor
+			has_minor_title = title_aedile
+			has_minor_title = title_magister_equitum
+			has_minor_title = title_flamen_dialis
+			has_minor_title = title_flamen_martialis
+			has_minor_title = title_flamen_quirinalis
 		}
 	}
 
@@ -917,7 +1099,10 @@ title_kouropalates = {
 				has_landed_title = e_byzantium
 				has_landed_title = e_roman_empire
 			}
-			religion_group = christian
+			OR = {
+				religion_group = christian
+				religion = hellenic_pagan
+			}
 		}
 		NOT = {
 			has_minor_title = title_keeper_of_swans
@@ -937,6 +1122,12 @@ title_kouropalates = {
 			has_minor_title = title_court_poet
 			has_minor_title = title_chief_architect
 			has_minor_title = title_imperial_eunuch
+			has_minor_title = title_censor
+			has_minor_title = title_aedile
+			has_minor_title = title_magister_equitum
+			has_minor_title = title_flamen_dialis
+			has_minor_title = title_flamen_martialis
+			has_minor_title = title_flamen_quirinalis
 		}
 	}
 
@@ -951,7 +1142,7 @@ title_kouropalates = {
 
 title_anthypatos = {
 	dignity = 0.075
-	grant_limit = 1
+	grant_limit = 4
 	opinion_effect = 10
 
 	monthly_salary = 0.025
@@ -970,7 +1161,10 @@ title_anthypatos = {
 				has_landed_title = e_byzantium
 				has_landed_title = e_roman_empire
 			}
-			religion_group = christian
+			OR = {
+				religion_group = christian
+				religion = hellenic_pagan
+			}
 		}
 		NOT = {
 			has_minor_title = title_keeper_of_swans
@@ -990,6 +1184,12 @@ title_anthypatos = {
 			has_minor_title = title_court_poet
 			has_minor_title = title_chief_architect
 			has_minor_title = title_imperial_eunuch
+			has_minor_title = title_censor
+			has_minor_title = title_aedile
+			has_minor_title = title_magister_equitum
+			has_minor_title = title_flamen_dialis
+			has_minor_title = title_flamen_martialis
+			has_minor_title = title_flamen_quirinalis
 		}
 	}
 
@@ -1019,7 +1219,10 @@ title_imperial_eunuch = {
 				has_landed_title = e_byzantium
 				has_landed_title = e_roman_empire
 			}
-			religion_group = christian
+			OR = {
+				religion_group = christian
+				religion = hellenic_pagan
+			}
 		}
 		NOT = {
 			has_minor_title = title_keeper_of_swans
@@ -1039,6 +1242,12 @@ title_imperial_eunuch = {
 			has_minor_title = title_court_poet
 			has_minor_title = title_chief_architect
 			has_minor_title = title_anthypatos
+			has_minor_title = title_censor
+			has_minor_title = title_aedile
+			has_minor_title = title_magister_equitum
+			has_minor_title = title_flamen_dialis
+			has_minor_title = title_flamen_martialis
+			has_minor_title = title_flamen_quirinalis
 		}
 	}
 
@@ -1480,7 +1689,6 @@ title_volva = {
 	monthly_prestige = 0.01
 
 	allow = {
-		is_merchant_republic = no
 		is_adult = yes
 		is_female = yes
 		trait = mystic
@@ -1494,6 +1702,15 @@ title_volva = {
 				religion = norse_pagan_reformed
 			}
 		}
+		NOT = {
+			has_minor_title = title_lawspeaker
+			has_minor_title = title_hirdman
+			has_minor_title = title_marksman
+			has_minor_title = title_court_skald
+			has_minor_title = title_drottseti
+			has_minor_title = title_master_of_the_horse
+			has_minor_title = title_master_of_the_hunt
+		}		
 	}
 
 	gain_effect = {
@@ -1514,7 +1731,6 @@ title_lawspeaker = {
 	monthly_prestige = 0.02
 
 	allow = {
-		is_merchant_republic = no
 		is_adult = yes
 		FROM = {
 			is_feudal = yes
@@ -1527,11 +1743,15 @@ title_lawspeaker = {
 			religion = norse_pagan
 			religion = norse_pagan_reformed
 		}
-		NOT = { has_minor_title = title_volva }
-		NOT = { has_minor_title = title_drottseti }
-		NOT = { has_minor_title = title_court_skald }
-		NOT = { has_minor_title = title_marksman }
-		NOT = { has_minor_title = title_hirdman }
+		NOT = {
+			has_minor_title = title_hirdman
+			has_minor_title = title_marksman
+			has_minor_title = title_court_skald
+			has_minor_title = title_drottseti
+			has_minor_title = title_volva
+			has_minor_title = title_master_of_the_horse
+			has_minor_title = title_master_of_the_hunt
+		}
 	}
 
 	gain_effect = {
@@ -1552,7 +1772,6 @@ title_drottseti = {
 	monthly_prestige = 0.03
 
 	allow = {
-		is_merchant_republic = no
 		is_adult = yes
 		FROM = {
 			is_feudal = yes
@@ -1562,11 +1781,15 @@ title_drottseti = {
 			}
 			higher_tier_than = DUKE
 		}
-		NOT = { has_minor_title = title_volva }
-		NOT = { has_minor_title = title_lawspeaker }
-		NOT = { has_minor_title = title_court_skald }
-		NOT = { has_minor_title = title_marksman }
-		NOT = { has_minor_title = title_hirdman }
+		NOT = {
+			has_minor_title = title_lawspeaker
+			has_minor_title = title_hirdman
+			has_minor_title = title_marksman
+			has_minor_title = title_court_skald
+			has_minor_title = title_volva
+			has_minor_title = title_master_of_the_horse
+			has_minor_title = title_master_of_the_hunt
+		}
 	}
 
 	gain_effect = {
@@ -1587,7 +1810,6 @@ title_court_skald = {
 	monthly_prestige = 0.01
 
 	allow = {
-		is_merchant_republic = no
 		is_adult = yes
 		FROM = {
 			is_feudal = yes
@@ -1597,11 +1819,15 @@ title_court_skald = {
 			}
 		}
 		trait = poet
-		NOT = { has_minor_title = title_volva }
-		NOT = { has_minor_title = title_lawspeaker }
-		NOT = { has_minor_title = title_drottseti }
-		NOT = { has_minor_title = title_marksman }
-		NOT = { has_minor_title = title_hirdman }
+		NOT = {
+			has_minor_title = title_lawspeaker
+			has_minor_title = title_hirdman
+			has_minor_title = title_marksman
+			has_minor_title = title_drottseti
+			has_minor_title = title_volva
+			has_minor_title = title_master_of_the_horse
+			has_minor_title = title_master_of_the_hunt
+		}
 	}
 
 	gain_effect = {
@@ -1622,7 +1848,6 @@ title_marksman = {
 	monthly_prestige = 0.01
 
 	allow = {
-		is_merchant_republic = no
 		is_adult = yes
 		is_female = no
 		FROM = {
@@ -1632,11 +1857,15 @@ title_marksman = {
 				religion = norse_pagan_reformed
 			}
 		}
-		NOT = { has_minor_title = title_volva }
-		NOT = { has_minor_title = title_lawspeaker }
-		NOT = { has_minor_title = title_drottseti }
-		NOT = { has_minor_title = title_court_skald }
-		NOT = { has_minor_title = title_hirdman }
+		NOT = {
+			has_minor_title = title_lawspeaker
+			has_minor_title = title_hirdman
+			has_minor_title = title_master_of_the_hunt
+			has_minor_title = title_court_skald
+			has_minor_title = title_drottseti
+			has_minor_title = title_volva
+			has_minor_title = title_master_of_the_horse
+		}
 	}
 
 	gain_effect = {
@@ -1656,7 +1885,6 @@ title_hirdman = {
 	monthly_prestige = 0.005
 
 	allow = {
-		is_merchant_republic = no
 		is_adult = yes
 		is_female = no
 		FROM = {
@@ -1666,11 +1894,15 @@ title_hirdman = {
 				religion = norse_pagan_reformed
 			}
 		}
-		NOT = { has_minor_title = title_volva }
-		NOT = { has_minor_title = title_lawspeaker }
-		NOT = { has_minor_title = title_drottseti }
-		NOT = { has_minor_title = title_court_skald }
-		NOT = { has_minor_title = title_marksman }
+		NOT = {
+			has_minor_title = title_lawspeaker
+			has_minor_title = title_marksman
+			has_minor_title = title_court_skald
+			has_minor_title = title_drottseti
+			has_minor_title = title_volva
+			has_minor_title = title_master_of_the_horse
+			has_minor_title = title_master_of_the_hunt
+		}
 	}
 
 	gain_effect = {
@@ -1693,7 +1925,6 @@ title_baghatur = {
 	monthly_prestige = 0.02
 
 	allow = {
-		is_merchant_republic = no
 		is_adult = yes
 		FROM = {
 			is_feudal = yes
@@ -1704,10 +1935,15 @@ title_baghatur = {
 				has_landed_title = e_il-khanate
 			}
 		}
-		NOT = { has_minor_title = title_champion }
-		NOT = { has_minor_title = title_cherbi }
-		NOT = { has_minor_title = title_darkhan }
-		NOT = { has_minor_title = title_noyan }
+		NOT = {
+			has_minor_title = title_baghatur
+			has_minor_title = title_champion
+			has_minor_title = title_cherbi
+			has_minor_title = title_darkhan
+			has_minor_title = title_noyan	
+			has_minor_title = title_master_of_the_bow
+			has_minor_title = title_master_of_the_blade
+		}
 	}
 
 	gain_effect = {
@@ -1728,7 +1964,6 @@ title_cherbi = {
 	monthly_prestige = 0.01
 
 	allow = {
-		is_merchant_republic = no
 		is_adult = yes
 		FROM = {
 			is_feudal = yes
@@ -1739,10 +1974,14 @@ title_cherbi = {
 				has_landed_title = e_il-khanate
 			}
 		}
-		NOT = { has_minor_title = title_champion }
-		NOT = { has_minor_title = title_baghatur }
-		NOT = { has_minor_title = title_darkhan }
-		NOT = { has_minor_title = title_noyan }
+		NOT = {
+			has_minor_title = title_baghatur
+			has_minor_title = title_champion
+			has_minor_title = title_darkhan
+			has_minor_title = title_noyan	
+			has_minor_title = title_master_of_the_bow
+			has_minor_title = title_master_of_the_blade
+		}			
 	}
 
 	gain_effect = {
@@ -1763,7 +2002,6 @@ title_darkhan = {
 	monthly_prestige = 0.01
 
 	allow = {
-		is_merchant_republic = no
 		is_adult = yes
 		FROM = {
 			is_feudal = yes
@@ -1774,10 +2012,14 @@ title_darkhan = {
 				has_landed_title = e_il-khanate
 			}
 		}
-		NOT = { has_minor_title = title_champion }
-		NOT = { has_minor_title = title_baghatur }
-		NOT = { has_minor_title = title_cherbi }
-		NOT = { has_minor_title = title_noyan }
+		NOT = {
+			has_minor_title = title_baghatur
+			has_minor_title = title_champion
+			has_minor_title = title_cherbi
+			has_minor_title = title_noyan	
+			has_minor_title = title_master_of_the_bow
+			has_minor_title = title_master_of_the_blade
+		}
 	}
 
 	gain_effect = {
@@ -1797,7 +2039,6 @@ title_noyan = {
 	monthly_prestige = 0.005
 
 	allow = {
-		is_merchant_republic = no
 		is_adult = yes
 		is_ruler = no
 		FROM = {
@@ -1809,10 +2050,14 @@ title_noyan = {
 				has_landed_title = e_il-khanate
 			}
 		}
-		NOT = { has_minor_title = title_champion }
-		NOT = { has_minor_title = title_baghatur }
-		NOT = { has_minor_title = title_cherbi }
-		NOT = { has_minor_title = title_darkhan }
+		NOT = {
+			has_minor_title = title_baghatur
+			has_minor_title = title_champion
+			has_minor_title = title_cherbi
+			has_minor_title = title_darkhan
+			has_minor_title = title_master_of_the_bow
+			has_minor_title = title_master_of_the_blade
+		}
 	}
 
 	gain_effect = {
@@ -1880,6 +2125,35 @@ title_kardarigan = {
 		NOT = { has_minor_title = title_ashavan }
 		NOT = { has_minor_title = title_sraoshavarez }
 		NOT = { has_minor_title = title_shapsheraz}
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_shahin = {
+	dignity = 0.15
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 15
+	
+	monthly_salary = 0.075
+	monthly_prestige = 0.075
+	
+	allow = {
+		is_adult = yes
+		is_female = no
+		martial = 15
+		FROM = {
+			is_feudal = yes
+			religion_group = zoroastrian_group
+		}
+		NOT = { has_minor_title = title_shahrwaraz }
+		NOT = { has_minor_title = title_kardarigan }
 	}
 	
 	gain_effect = {
@@ -2083,6 +2357,61 @@ title_shapsheraz = {
 	message = yes
 }
 
+title_spahbod = {
+	dignity = 0.15
+	realm_in_name = yes
+	grant_limit = 4
+	opinion_effect = 15
+	
+	monthly_salary = 0.075
+	monthly_prestige = 0.075
+	
+	allow = {
+		is_adult = yes
+		is_female = no
+		FROM = {
+			higher_tier_than = DUKE
+			is_feudal = yes
+			religion_group = zoroastrian_group
+		}
+		NOT = { has_minor_title = title_pushtigban_salar }
+		NOT = { has_minor_title = title_eran_ambaragbed }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_eran_ambaragbed = {
+	dignity = 0.075
+	grant_limit = 1
+	opinion_effect = 10
+	
+	monthly_salary = 0.005
+	monthly_prestige = 0.005
+	
+	allow = {
+		is_adult = yes
+		FROM = {
+			is_feudal = yes
+			religion_group = zoroastrian_group
+		}
+		NOT = { has_minor_title = title_pushtigban_salar }
+		NOT = { has_minor_title = title_spahbod }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
 # GENERIC PAGAN TITLES
 
 title_champion = {
@@ -2099,6 +2428,7 @@ title_champion = {
 		is_female = no
 		FROM = {
 			is_feudal = yes
+			NOT = { health_traits = 1 }
 			OR = {
 				religion = baltic_pagan_reformed
 				religion = baltic_pagan
@@ -2108,8 +2438,8 @@ title_champion = {
 				religion = slavic_pagan
 				religion = west_african_pagan_reformed
 				religion = west_african_pagan
-				religion = aztec_reformed
-				religion = aztec
+				religion = aztec_pagan_reformed
+				religion = aztec_pagan
 			}
 		}
 	}
@@ -2152,13 +2482,33 @@ title_master_of_the_blade = {
 				religion = slavic_pagan
 				religion = west_african_pagan_reformed
 				religion = west_african_pagan
-				religion = aztec_reformed
-				religion = aztec
+				religion = aztec_pagan_reformed
+				religion = aztec_pagan
 				religion = tengri_pagan
 				religion = tengri_pagan_reformed
 			}
 		}
-		NOT = { has_minor_title = title_master_of_the_bow }
+		NOT = { 
+			has_minor_title = title_seneschal
+			has_minor_title = title_cupbearer
+			has_minor_title = title_baghatur
+			has_minor_title = title_champion
+			has_minor_title = title_cherbi
+			has_minor_title = title_darkhan
+			has_minor_title = title_noyan	
+			has_minor_title = title_master_of_the_blade
+			has_minor_title = title_lawspeaker
+			has_minor_title = title_hirdman
+			has_minor_title = title_marksman
+			has_minor_title = title_court_skald
+			has_minor_title = title_volva
+			has_minor_title = title_master_of_the_horse
+			has_minor_title = title_master_of_the_hunt			
+			has_minor_title = title_ishad
+			has_minor_title = title_kundur
+			has_minor_title = title_venerable_elder
+			has_minor_title = title_yabgu			
+		}
 	}
 	
 	gain_effect = {
@@ -2199,13 +2549,33 @@ title_master_of_the_bow = {
 				religion = slavic_pagan
 				religion = west_african_pagan_reformed
 				religion = west_african_pagan
-				religion = aztec_reformed
-				religion = aztec
+				religion = aztec_pagan_reformed
+				religion = aztec_pagan
 				religion = tengri_pagan
 				religion = tengri_pagan_reformed
 			}
 		}
-		NOT = { has_minor_title = title_master_of_the_blade }
+		NOT = { 
+			has_minor_title = title_seneschal
+			has_minor_title = title_cupbearer
+			has_minor_title = title_baghatur
+			has_minor_title = title_champion
+			has_minor_title = title_cherbi
+			has_minor_title = title_darkhan
+			has_minor_title = title_noyan	
+			has_minor_title = title_master_of_the_blade
+			has_minor_title = title_lawspeaker
+			has_minor_title = title_hirdman
+			has_minor_title = title_marksman
+			has_minor_title = title_court_skald
+			has_minor_title = title_volva
+			has_minor_title = title_master_of_the_horse
+			has_minor_title = title_master_of_the_hunt			
+			has_minor_title = title_ishad
+			has_minor_title = title_kundur
+			has_minor_title = title_venerable_elder
+			has_minor_title = title_yabgu			
+		}
 	}
 	
 	gain_effect = {
@@ -2226,7 +2596,6 @@ title_venerable_elder = {
 	monthly_prestige = 0.075
 	
 	allow = {
-		is_female = no
 		age = 50
 		FROM = {
 			is_feudal = yes
@@ -2246,11 +2615,33 @@ title_venerable_elder = {
 				religion = slavic_pagan
 				religion = west_african_pagan_reformed
 				religion = west_african_pagan
-				religion = aztec_reformed
-				religion = aztec
+				religion = aztec_pagan_reformed
+				religion = aztec_pagan
 				religion = tengri_pagan
 				religion = tengri_pagan_reformed
 			}
+		}
+		NOT = {
+			has_minor_title = title_seneschal
+			has_minor_title = title_cupbearer
+			has_minor_title = title_baghatur
+			has_minor_title = title_champion
+			has_minor_title = title_cherbi
+			has_minor_title = title_darkhan
+			has_minor_title = title_noyan	
+			has_minor_title = title_master_of_the_bow
+			has_minor_title = title_master_of_the_blade
+			has_minor_title = title_lawspeaker
+			has_minor_title = title_hirdman
+			has_minor_title = title_marksman
+			has_minor_title = title_court_skald
+			has_minor_title = title_volva
+			has_minor_title = title_master_of_the_horse
+			has_minor_title = title_master_of_the_hunt			
+			has_minor_title = title_ishad
+			has_minor_title = title_kundur
+			has_minor_title = title_venerable_elder
+			has_minor_title = title_yabgu	
 		}
 	}
 	
@@ -2274,7 +2665,6 @@ title_yabgu = {
 	monthly_prestige = 0.05
 
 	allow = {
-		is_merchant_republic = no
 		is_adult = yes
 		is_female = no
 		is_close_relative = FROM
@@ -2290,14 +2680,38 @@ title_yabgu = {
 			OR = {
 				religion = tengri_pagan
 				religion = tengri_pagan_reformed
+				AND = {
+					culture_group = altaic
+					NOT = {
+						religion_group = christian
+						religion_group = muslim
+						religion_group = zoroastrian_group
+					}
+				}
 			}
 		}
-		NOT = { has_minor_title = title_ishad }
-		NOT = { has_minor_title = title_kundur }
-		NOT = { has_minor_title = title_champion }
-		NOT = { has_minor_title = title_master_of_the_bow }
-		NOT = { has_minor_title = title_master_of_the_blade }
-		NOT = { has_minor_title = title_venerable_elder }
+		NOT = { 
+			has_minor_title = title_seneschal
+			has_minor_title = title_cupbearer
+			has_minor_title = title_baghatur
+			has_minor_title = title_champion
+			has_minor_title = title_cherbi
+			has_minor_title = title_darkhan
+			has_minor_title = title_noyan	
+			has_minor_title = title_master_of_the_bow
+			has_minor_title = title_master_of_the_blade
+			has_minor_title = title_lawspeaker
+			has_minor_title = title_hirdman
+			has_minor_title = title_marksman
+			has_minor_title = title_court_skald
+			has_minor_title = title_volva
+			has_minor_title = title_master_of_the_horse
+			has_minor_title = title_master_of_the_hunt			
+			has_minor_title = title_ishad
+			has_minor_title = title_kundur
+			has_minor_title = title_venerable_elder
+			has_minor_title = title_yabgu	
+		}
 	}
 
 	gain_effect = {
@@ -2318,7 +2732,6 @@ title_ishad = {
 	monthly_prestige = 0.02
 
 	allow = {
-		is_merchant_republic = no
 		is_adult = yes
 		is_female = no
 		FROM = {
@@ -2333,14 +2746,38 @@ title_ishad = {
 			OR = {
 				religion = tengri_pagan
 				religion = tengri_pagan_reformed
+				AND = {
+					culture_group = altaic
+					NOT = {
+						religion_group = christian
+						religion_group = muslim
+						religion_group = zoroastrian_group
+					}
+				}
 			}
 		}
-		NOT = { has_minor_title = title_yabgu }
-		NOT = { has_minor_title = title_kundur }
-		NOT = { has_minor_title = title_champion }
-		NOT = { has_minor_title = title_master_of_the_bow }
-		NOT = { has_minor_title = title_master_of_the_blade }
-		NOT = { has_minor_title = title_venerable_elder }
+		NOT = { 	
+			has_minor_title = title_seneschal
+			has_minor_title = title_cupbearer
+			has_minor_title = title_baghatur
+			has_minor_title = title_champion
+			has_minor_title = title_cherbi
+			has_minor_title = title_darkhan
+			has_minor_title = title_noyan	
+			has_minor_title = title_master_of_the_bow
+			has_minor_title = title_master_of_the_blade
+			has_minor_title = title_lawspeaker
+			has_minor_title = title_hirdman
+			has_minor_title = title_marksman
+			has_minor_title = title_court_skald
+			has_minor_title = title_volva
+			has_minor_title = title_master_of_the_horse
+			has_minor_title = title_master_of_the_hunt			
+			has_minor_title = title_ishad
+			has_minor_title = title_kundur
+			has_minor_title = title_venerable_elder
+			has_minor_title = title_yabgu	
+		}			
 	}
 
 	gain_effect = {
@@ -2361,7 +2798,6 @@ title_kundur = {
 	monthly_prestige = 0.01
 
 	allow = {
-		is_merchant_republic = no
 		is_adult = yes
 		FROM = {
 			is_feudal = yes
@@ -2375,16 +2811,85 @@ title_kundur = {
 			OR = {
 				religion = tengri_pagan
 				religion = tengri_pagan_reformed
+				AND = {
+					culture_group = altaic
+					NOT = {
+						religion_group = christian
+						religion_group = muslim
+						religion_group = zoroastrian_group
+					}
+				}
 			}
 		}
-		NOT = { has_minor_title = title_yabgu }
-		NOT = { has_minor_title = title_ishad }
-		NOT = { has_minor_title = title_champion }
-		NOT = { has_minor_title = title_master_of_the_bow }
-		NOT = { has_minor_title = title_master_of_the_blade }
-		NOT = { has_minor_title = title_venerable_elder }
+		NOT = { 	
+			has_minor_title = title_seneschal
+			has_minor_title = title_cupbearer
+			has_minor_title = title_baghatur
+			has_minor_title = title_champion
+			has_minor_title = title_cherbi
+			has_minor_title = title_darkhan
+			has_minor_title = title_noyan	
+			has_minor_title = title_master_of_the_bow
+			has_minor_title = title_master_of_the_blade
+			has_minor_title = title_lawspeaker
+			has_minor_title = title_hirdman
+			has_minor_title = title_marksman
+			has_minor_title = title_court_skald
+			has_minor_title = title_volva
+			has_minor_title = title_master_of_the_horse
+			has_minor_title = title_master_of_the_hunt			
+			has_minor_title = title_ishad
+			has_minor_title = title_kundur
+			has_minor_title = title_venerable_elder
+			has_minor_title = title_yabgu	
+		}	
 	}
 
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+title_ladys_champion = {
+	dignity = 0.2
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 20
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.075
+	
+	allow = {
+		is_adult = yes
+		is_female = no
+		OR = {
+			trait = misguided_warrior
+			trait = tough_soldier
+			trait = skilled_tactician
+			trait = brilliant_strategist
+		}
+		FROM = {
+			is_feudal = yes
+			is_adult = yes
+			is_female = yes
+			NOT = { health_traits = 1 }
+			NOT = { # already have a Champion title
+				religion = baltic_pagan_reformed
+				religion = baltic_pagan
+				religion = finnish_pagan_reformed
+				religion = finnish_pagan
+				religion = slavic_pagan_reformed
+				religion = slavic_pagan
+				religion = west_african_pagan_reformed
+				religion = west_african_pagan
+				religion = aztec_pagan_reformed
+				religion = aztec_pagan
+			}
+		}
+	}
+	
 	gain_effect = {
 	}
 	lose_effect = {

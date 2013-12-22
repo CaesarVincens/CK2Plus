@@ -432,6 +432,7 @@ character_event = {
 					is_reformed_religion = yes
 				}
 			}
+		}
 		modifier = {
 			factor = 0.9
 			religion_authority = 0.9
@@ -1980,6 +1981,8 @@ character_event = {
 	picture = GFX_evt_bishop
 	border = GFX_event_normal_frame_religion
 
+	min_age = 16
+	capable_only = yes	
 	prisoner = no
 
 	trigger = {
@@ -1996,6 +1999,10 @@ character_event = {
 			}
 		}
 	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}	
 
 	option = {
 		name = EVTOPTA39650
@@ -2015,7 +2022,9 @@ character_event = {
 	desc = EVTDESC39651
 	picture = GFX_evt_bishop
 	border = GFX_event_normal_frame_religion
-
+	
+	min_age = 16
+	capable_only = yes
 	prisoner = no
 
 	trigger = {
@@ -2035,9 +2044,24 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 220	#Tweaked by Battle bunny
+		months = 700
 		modifier = {
-			factor = 0.9
+			factor = 1.3
+			location = {
+				NOT = {
+					OR = {
+						owner = {
+							culture = ROOT
+						}
+						owner = {
+							culture_group = ROOT
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
 			location = {
 				owner = {
 					culture_group = ROOT
@@ -2045,7 +2069,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.7
 			location = {
 				owner = {
 					culture = ROOT
@@ -2053,19 +2077,19 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 0
 			NOT = { opinion = { who = liege value = -100 } }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 2
 			NOT = { opinion = { who = liege value = -75 } }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.5
 			NOT = { opinion = { who = liege value = -50 } }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			NOT = { opinion = { who = liege value = -25 } }
 		}
 		modifier = {
@@ -2073,123 +2097,123 @@ character_event = {
 			opinion = { who = liege value = 25 }
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.90
 			opinion = { who = liege value = 50 }
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.85
 			opinion = { who = liege value = 75 }
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.80
 			opinion = { who = liege value = 100 }
 		}
 		modifier = {
-			factor = 1.05
-			NOT = { learning = 1 }
+			factor = 1.25
+			NOT = { realm_learning = 15 }
 		}
 		modifier = {
-			factor = 1.05
-			NOT = { learning = 2 }
+			factor = 1.25
+			NOT = { realm_learning = 16 }
 		}
 		modifier = {
-			factor = 1.05
-			NOT = { learning = 3 }
+			factor = 1.25
+			NOT = { realm_learning = 17 }
 		}
 		modifier = {
-			factor = 1.05
-			NOT = { learning = 4 }
+			factor = 1.25
+			NOT = { realm_learning = 18 }
 		}
 		modifier = {
-			factor = 1.05
-			NOT = { learning = 5 }
+			factor = 1.20
+			NOT = { realm_learning = 19 }
 		}
 		modifier = {
-			factor = 1.05
-			NOT = { learning = 6 }
+			factor = 1.20
+			NOT = { realm_learning = 20 }
 		}
 		modifier = {
-			factor = 1.05
-			NOT = { learning = 7 }
+			factor = 1.20
+			NOT = { realm_learning = 21 }
 		}
 		modifier = {
-			factor = 1.05
-			NOT = { learning = 8 }
+			factor = 1.15
+			NOT = { realm_learning = 22 }
 		}
 		modifier = {
-			factor = 1.05
-			NOT = { learning = 9 }
-		}
-		modifier = {
-			factor = 0.95
-			learning = 11
+			factor = 1.10
+			NOT = { realm_learning = 23 }
 		}
 		modifier = {
 			factor = 0.95
-			learning = 12
+			realm_learning = 24
 		}
 		modifier = {
 			factor = 0.95
-			learning = 13
+			realm_learning = 25
 		}
 		modifier = {
 			factor = 0.95
-			learning = 14
+			realm_learning = 26
 		}
 		modifier = {
-			factor = 0.95
-			learning = 15
+			factor = 0.90
+			realm_learning = 27
 		}
 		modifier = {
-			factor = 0.95
-			learning = 16
+			factor = 0.90
+			realm_learning = 28
 		}
 		modifier = {
-			factor = 0.95
-			learning = 17
+			factor = 0.85
+			realm_learning = 29
 		}
 		modifier = {
-			factor = 0.95
-			learning = 18
+			factor = 0.85
+			realm_learning = 30
 		}
 		modifier = {
-			factor = 0.95
-			learning = 19
+			factor = 0.80
+			realm_learning = 31
 		}
 		modifier = {
-			factor = 0.95
-			learning = 20
+			factor = 0.80
+			realm_learning = 32
 		}
 		modifier = {
-			factor = 0.95
-			learning = 21
+			factor = 0.75
+			realm_learning = 33
 		}
 		modifier = {
-			factor = 0.95
-			learning = 22
+			factor = 0.75
+			realm_learning = 34
 		}
 		modifier = {
-			factor = 0.95
-			learning = 23
+			factor = 0.75
+			realm_learning = 35
 		}
 		modifier = {
-			factor = 0.95
-			learning = 24
+			factor = 0.75
+			realm_learning = 36
 		}
 		modifier = {
-			factor = 0.95
-			learning = 25
+			factor = 0.75
+			realm_learning = 37
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.75
+			realm_learning = 38
+		}
+		modifier = {
+			factor = 1.2
 			religion_authority = 0.6
 		}
 		modifier = {
-			factor = 0.9
+			factor = 1.1
 			religion_authority = 0.7
 		}
 		modifier = {
-			factor = 0.9
+			factor = 1
 			religion_authority = 0.8
 		}
 		modifier = {
@@ -2197,28 +2221,12 @@ character_event = {
 			religion_authority = 0.9
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.8
 			religion_authority = 1.0
 		}
 		modifier = {
-			factor = 1.1
+			factor = 0
 			NOT = { religion_authority = 0.5 }
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { religion_authority = 0.4 }
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { religion_authority = 0.3 }
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { religion_authority = 0.2 }
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { religion_authority = 0.1 }
 		}
 	}
 
@@ -2661,6 +2669,30 @@ character_event = {
 	}
 }
 
+# Clear preacher_arrives flag
+character_event = {
+	id = 39654
+	hide_window = yes
+	
+	min_age = 16
+	
+	trigger = {
+		has_character_flag = preacher_arrives
+		NOT = { has_job_action = action_inquisition }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		clr_character_flag = preacher_arrives
+	}
+	
+	option = {
+		name = OK
+	}
+}
 
 ##############################
 # LORD SPIRITUAL
@@ -2900,7 +2932,7 @@ character_event = {
 	id = 907
 	title = "EVTNAME907"
 	desc = "EVTDESC907"
-	picture = GFX_evt_spymaster
+	picture = GFX_evt_pope_feast
 
 	capable_only = yes
 	prisoner = no
@@ -3312,6 +3344,9 @@ character_event = {
 		OR = {
 			religion_group = christian
 			religion_group = muslim
+			religion_group = zoroastrian_group
+			religion_group = jewish_group
+			is_reformed_religion = yes
 		}
 		has_job_action = action_advance_cul_tech
 		NOT = { trait = zealous }

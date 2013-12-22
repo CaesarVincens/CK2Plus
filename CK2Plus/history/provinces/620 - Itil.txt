@@ -17,7 +17,7 @@ b_tumak = castle
 
 # Misc
 culture = khazar
-religion = tengri_pagan
+religion = jewish
 
 # History
 651.1.1 = {

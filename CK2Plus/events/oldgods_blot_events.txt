@@ -65,6 +65,7 @@ character_event = {
 	option = {
 		name = EVTOPTA_TOG_601
 		set_character_flag = attending_blot
+		set_character_flag = do_not_disturb
 	}
 }
 
@@ -342,8 +343,8 @@ character_event = {
 			if = {
 				limit = { # Aztec
 					OR = {
-						religion = aztec
-						religion = aztec_reformed
+						religion = aztec_pagan
+						religion = aztec_pagan_reformed
 					}
 					culture = nahuatl
 					NOT = {
@@ -499,8 +500,8 @@ character_event = {
 			if = {
 				limit = { # Aztec
 					OR = {
-						religion = aztec
-						religion = aztec_reformed
+						religion = aztec_pagan
+						religion = aztec_pagan_reformed
 					}
 					culture = nahuatl
 					NOT = {
@@ -656,8 +657,8 @@ character_event = {
 			if = {
 				limit = { # Aztec
 					OR = {
-						religion = aztec
-						religion = aztec_reformed
+						religion = aztec_pagan
+						religion = aztec_pagan_reformed
 					}
 					culture = nahuatl
 					NOT = {
@@ -813,8 +814,8 @@ character_event = {
 			if = {
 				limit = { # Aztec
 					OR = {
-						religion = aztec
-						religion = aztec_reformed
+						religion = aztec_pagan
+						religion = aztec_pagan_reformed
 					}
 					culture = nahuatl
 					NOT = {
@@ -1783,6 +1784,7 @@ character_event = {
 		clr_character_flag = feast_lunatic
 		clr_character_flag = feast_lustful
 		clr_character_flag = feast_homosexual
+		clr_character_flag = do_not_disturb
 	}
 }
 
@@ -1805,6 +1807,7 @@ character_event = {
 		clr_character_flag = feast_lustful
 		clr_character_flag = feast_friendship
 		clr_character_flag = feast_homosexual
+		clr_character_flag = do_not_disturb
 	}
 }
 

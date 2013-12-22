@@ -126,15 +126,30 @@ narrative_event = {
 			}
 			clr_character_flag = centralize_without_penalties
 			wealth = 1000
-			spawn_unit = {
-				province = 904 # Balkh
-				troops =
-				{
-					horse_archers = { 10000 10000 }
-					light_cavalry = { 6666 6666 }
-					light_infantry = { 2222 2222 }
-					heavy_infantry = { 1112 1112 }
-					knights = { 200 200 }
+			if = {
+				limit = { has_global_flag = better_armies_mode }
+				spawn_unit = {
+					province = 904 # Balkh
+					troops = {
+						horse_archers = { 5000 5000 }
+						light_cavalry = { 3333 3333 }
+						light_infantry = { 1111 1111 }
+						heavy_infantry = { 550 550 }
+						knights = { 100 100 }
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { has_global_flag = better_armies_mode } }
+				spawn_unit = {
+					province = 904 # Balkh
+					troops = {
+						horse_archers = { 10000 10000 }
+						light_cavalry = { 6666 6666 }
+						light_infantry = { 2222 2222 }
+						heavy_infantry = { 1112 1112 }
+						knights = { 200 200 }
+					}
 				}
 			}
 			random = {
@@ -171,15 +186,30 @@ narrative_event = {
 					remove_trait = martial_cleric
 					remove_trait = scholarly_theologian
 					remove_trait = mastermind_theologian
-					spawn_unit = {
-						province = 904 # Balkh
-						troops =
-						{
-							horse_archers = { 10000 10000 }
-							light_cavalry = { 6666 6666 }
-							light_infantry = { 2222 2222 }
-							heavy_infantry = { 1112 1112 }
-							knights = { 200 200 }
+					if = {
+						limit = { has_global_flag = better_armies_mode }
+						spawn_unit = {
+							province = 904 # Balkh
+							troops = {
+								horse_archers = { 5000 5000 }
+								light_cavalry = { 3333 3333 }
+								light_infantry = { 1111 1111 }
+								heavy_infantry = { 550 550 }
+								knights = { 100 100 }
+							}
+						}
+					}
+					if = {
+						limit = { NOT = { has_global_flag = better_armies_mode } }
+						spawn_unit = {
+							province = 904 # Balkh
+							troops = {
+								horse_archers = { 10000 10000 }
+								light_cavalry = { 6666 6666 }
+								light_infantry = { 2222 2222 }
+								heavy_infantry = { 1112 1112 }
+								knights = { 200 200 }
+							}
 						}
 					}
 				}
@@ -218,15 +248,30 @@ narrative_event = {
 					remove_trait = martial_cleric
 					remove_trait = scholarly_theologian
 					remove_trait = mastermind_theologian
-					spawn_unit = {
-						province = 904 # Balkh
-						troops =
-						{
-							horse_archers = { 10000 10000 }
-							light_cavalry = { 6666 6666 }
-							light_infantry = { 2222 2222 }
-							heavy_infantry = { 1112 1112 }
-							knights = { 200 200 }
+					if = {
+						limit = { has_global_flag = better_armies_mode }
+						spawn_unit = {
+							province = 904 # Balkh
+							troops = {
+								horse_archers = { 5000 5000 }
+								light_cavalry = { 3333 3333 }
+								light_infantry = { 1111 1111 }
+								heavy_infantry = { 550 550 }
+								knights = { 100 100 }
+							}
+						}
+					}
+					if = {
+						limit = { NOT = { has_global_flag = better_armies_mode } }
+						spawn_unit = {
+							province = 904 # Balkh
+							troops = {
+								horse_archers = { 10000 10000 }
+								light_cavalry = { 6666 6666 }
+								light_infantry = { 2222 2222 }
+								heavy_infantry = { 1112 1112 }
+								knights = { 200 200 }
+							}
 						}
 					}
 				}
@@ -265,15 +310,30 @@ narrative_event = {
 					remove_trait = martial_cleric
 					remove_trait = scholarly_theologian
 					remove_trait = mastermind_theologian
-					spawn_unit = {
-						province = 904 # Balkh
-						troops =
-						{
-							horse_archers = { 10000 10000 }
-							light_cavalry = { 6666 6666 }
-							light_infantry = { 2222 2222 }
-							heavy_infantry = { 1112 1112 }
-							knights = { 200 200 }
+					if = {
+						limit = { has_global_flag = better_armies_mode }
+						spawn_unit = {
+							province = 904 # Balkh
+							troops = {
+								horse_archers = { 5000 5000 }
+								light_cavalry = { 3333 3333 }
+								light_infantry = { 1111 1111 }
+								heavy_infantry = { 550 550 }
+								knights = { 100 100 }
+							}
+						}
+					}
+					if = {
+						limit = { NOT = { has_global_flag = better_armies_mode } }
+						spawn_unit = {
+							province = 904 # Balkh
+							troops = {
+								horse_archers = { 10000 10000 }
+								light_cavalry = { 6666 6666 }
+								light_infantry = { 2222 2222 }
+								heavy_infantry = { 1112 1112 }
+								knights = { 200 200 }
+							}
 						}
 					}
 				}
@@ -312,15 +372,30 @@ narrative_event = {
 					remove_trait = martial_cleric
 					remove_trait = scholarly_theologian
 					remove_trait = mastermind_theologian
-					spawn_unit = {
-						province = 904 # Balkh
-						troops =
-						{
-							horse_archers = { 10000 10000 }
-							light_cavalry = { 6666 6666 }
-							light_infantry = { 2222 2222 }
-							heavy_infantry = { 1112 1112 }
-							knights = { 200 200 }
+					if = {
+						limit = { has_global_flag = better_armies_mode }
+						spawn_unit = {
+							province = 904 # Balkh
+							troops = {
+								horse_archers = { 5000 5000 }
+								light_cavalry = { 3333 3333 }
+								light_infantry = { 1111 1111 }
+								heavy_infantry = { 550 550 }
+								knights = { 100 100 }
+							}
+						}
+					}
+					if = {
+						limit = { NOT = { has_global_flag = better_armies_mode } }
+						spawn_unit = {
+							province = 904 # Balkh
+							troops = {
+								horse_archers = { 10000 10000 }
+								light_cavalry = { 6666 6666 }
+								light_infantry = { 2222 2222 }
+								heavy_infantry = { 1112 1112 }
+								knights = { 200 200 }
+							}
 						}
 					}
 				}
@@ -537,15 +612,30 @@ narrative_event = {
 			}
 			clr_character_flag = centralize_without_penalties
 			wealth = 1000
-			spawn_unit = {
-				province = 893 # Surgut
-				troops =
-				{
-					horse_archers = { 10000 10000 }
-					light_cavalry = { 6666 6666 }
-					light_infantry = { 2222 2222 }
-					heavy_infantry = { 1112 1112 }
-					knights = { 200 200 }
+			if = {
+				limit = { has_global_flag = better_armies_mode }
+				spawn_unit = {
+					province = 893 # Surgut
+					troops = {
+						horse_archers = { 5000 5000 }
+						light_cavalry = { 3333 3333 }
+						light_infantry = { 1111 1111 }
+						heavy_infantry = { 550 550 }
+						knights = { 100 100 }
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { has_global_flag = better_armies_mode } }
+				spawn_unit = {
+					province = 893 # Surgut
+					troops = {
+						horse_archers = { 10000 10000 }
+						light_cavalry = { 6666 6666 }
+						light_infantry = { 2222 2222 }
+						heavy_infantry = { 1112 1112 }
+						knights = { 200 200 }
+					}
 				}
 			}
 			random = {
@@ -582,15 +672,30 @@ narrative_event = {
 					remove_trait = martial_cleric
 					remove_trait = scholarly_theologian
 					remove_trait = mastermind_theologian
-					spawn_unit = {
-						province = 893 # Surgut
-						troops =
-						{
-							horse_archers = { 10000 10000 }
-							light_cavalry = { 6666 6666 }
-							light_infantry = { 2222 2222 }
-							heavy_infantry = { 1112 1112 }
-							knights = { 200 200 }
+					if = {
+						limit = { has_global_flag = better_armies_mode }
+						spawn_unit = {
+							province = 893 # Surgut
+							troops = {
+								horse_archers = { 5000 5000 }
+								light_cavalry = { 3333 3333 }
+								light_infantry = { 1111 1111 }
+								heavy_infantry = { 550 550 }
+								knights = { 100 100 }
+							}
+						}
+					}
+					if = {
+						limit = { NOT = { has_global_flag = better_armies_mode } }
+						spawn_unit = {
+							province = 893 # Surgut
+							troops = {
+								horse_archers = { 10000 10000 }
+								light_cavalry = { 6666 6666 }
+								light_infantry = { 2222 2222 }
+								heavy_infantry = { 1112 1112 }
+								knights = { 200 200 }
+							}
 						}
 					}
 				}
@@ -629,15 +734,30 @@ narrative_event = {
 					remove_trait = martial_cleric
 					remove_trait = scholarly_theologian
 					remove_trait = mastermind_theologian
-					spawn_unit = {
-						province = 893 # Surgut
-						troops =
-						{
-							horse_archers = { 10000 10000 }
-							light_cavalry = { 6666 6666 }
-							light_infantry = { 2222 2222 }
-							heavy_infantry = { 1112 1112 }
-							knights = { 200 200 }
+					if = {
+						limit = { has_global_flag = better_armies_mode }
+						spawn_unit = {
+							province = 893 # Surgut
+							troops = {
+								horse_archers = { 5000 5000 }
+								light_cavalry = { 3333 3333 }
+								light_infantry = { 1111 1111 }
+								heavy_infantry = { 550 550 }
+								knights = { 100 100 }
+							}
+						}
+					}
+					if = {
+						limit = { NOT = { has_global_flag = better_armies_mode } }
+						spawn_unit = {
+							province = 893 # Surgut
+							troops = {
+								horse_archers = { 10000 10000 }
+								light_cavalry = { 6666 6666 }
+								light_infantry = { 2222 2222 }
+								heavy_infantry = { 1112 1112 }
+								knights = { 200 200 }
+							}
 						}
 					}
 				}
@@ -676,15 +796,30 @@ narrative_event = {
 					remove_trait = martial_cleric
 					remove_trait = scholarly_theologian
 					remove_trait = mastermind_theologian
-					spawn_unit = {
-						province = 893 # Surgut
-						troops =
-						{
-							horse_archers = { 10000 10000 }
-							light_cavalry = { 6666 6666 }
-							light_infantry = { 2222 2222 }
-							heavy_infantry = { 1112 1112 }
-							knights = { 200 200 }
+					if = {
+						limit = { has_global_flag = better_armies_mode }
+						spawn_unit = {
+							province = 893 # Surgut
+							troops = {
+								horse_archers = { 5000 5000 }
+								light_cavalry = { 3333 3333 }
+								light_infantry = { 1111 1111 }
+								heavy_infantry = { 550 550 }
+								knights = { 100 100 }
+							}
+						}
+					}
+					if = {
+						limit = { NOT = { has_global_flag = better_armies_mode } }
+						spawn_unit = {
+							province = 893 # Surgut
+							troops = {
+								horse_archers = { 10000 10000 }
+								light_cavalry = { 6666 6666 }
+								light_infantry = { 2222 2222 }
+								heavy_infantry = { 1112 1112 }
+								knights = { 200 200 }
+							}
 						}
 					}
 				}
@@ -723,15 +858,30 @@ narrative_event = {
 					remove_trait = martial_cleric
 					remove_trait = scholarly_theologian
 					remove_trait = mastermind_theologian
-					spawn_unit = {
-						province = 893 # Surgut
-						troops =
-						{
-							horse_archers = { 10000 10000 }
-							light_cavalry = { 6666 6666 }
-							light_infantry = { 2222 2222 }
-							heavy_infantry = { 1112 1112 }
-							knights = { 200 200 }
+					if = {
+						limit = { has_global_flag = better_armies_mode }
+						spawn_unit = {
+							province = 893 # Surgut
+							troops = {
+								horse_archers = { 5000 5000 }
+								light_cavalry = { 3333 3333 }
+								light_infantry = { 1111 1111 }
+								heavy_infantry = { 550 550 }
+								knights = { 100 100 }
+							}
+						}
+					}
+					if = {
+						limit = { NOT = { has_global_flag = better_armies_mode } }
+						spawn_unit = {
+							province = 893 # Surgut
+							troops = {
+								horse_archers = { 10000 10000 }
+								light_cavalry = { 6666 6666 }
+								light_infantry = { 2222 2222 }
+								heavy_infantry = { 1112 1112 }
+								knights = { 200 200 }
+							}
 						}
 					}
 				}
@@ -953,15 +1103,30 @@ narrative_event = {
 			}
 			clr_character_flag = centralize_without_penalties
 			wealth = 1000
-			spawn_unit = {
-				province = 901 # Khiva
-				troops =
-				{
-					horse_archers = { 10000 10000 }
-					light_cavalry = { 6666 6666 }
-					light_infantry = { 2222 2222 }
-					heavy_infantry = { 1112 1112 }
-					knights = { 200 200 }
+			if = {
+				limit = { has_global_flag = better_armies_mode }
+				spawn_unit = {
+					province = 901 # Khiva
+					troops = {
+						horse_archers = { 5000 5000 }
+						light_cavalry = { 3333 3333 }
+						light_infantry = { 1111 1111 }
+						heavy_infantry = { 550 550 }
+						knights = { 100 100 }
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { has_global_flag = better_armies_mode } }
+				spawn_unit = {
+					province = 901 # Khiva
+					troops = {
+						horse_archers = { 10000 10000 }
+						light_cavalry = { 6666 6666 }
+						light_infantry = { 2222 2222 }
+						heavy_infantry = { 1112 1112 }
+						knights = { 200 200 }
+					}
 				}
 			}
 			create_character = {
@@ -996,15 +1161,30 @@ narrative_event = {
 				remove_trait = martial_cleric
 				remove_trait = scholarly_theologian
 				remove_trait = mastermind_theologian
-				spawn_unit = {
-					province = 901 # Khiva
-					troops =
-					{
-						horse_archers = { 10000 10000 }
-						light_cavalry = { 6666 6666 }
-						light_infantry = { 2222 2222 }
-						heavy_infantry = { 1112 1112 }
-						knights = { 200 200 }
+				if = {
+					limit = { has_global_flag = better_armies_mode }
+					spawn_unit = {
+						province = 901 # Khiva
+						troops = {
+							horse_archers = { 5000 5000 }
+							light_cavalry = { 3333 3333 }
+							light_infantry = { 1111 1111 }
+							heavy_infantry = { 550 550 }
+							knights = { 100 100 }
+						}
+					}
+				}
+				if = {
+					limit = { NOT = { has_global_flag = better_armies_mode } }
+					spawn_unit = {
+						province = 901 # Khiva
+						troops = {
+							horse_archers = { 10000 10000 }
+							light_cavalry = { 6666 6666 }
+							light_infantry = { 2222 2222 }
+							heavy_infantry = { 1112 1112 }
+							knights = { 200 200 }
+						}
 					}
 				}
 			}
@@ -1042,15 +1222,30 @@ narrative_event = {
 					remove_trait = martial_cleric
 					remove_trait = scholarly_theologian
 					remove_trait = mastermind_theologian
-					spawn_unit = {
-						province = 901 # Khiva
-						troops =
-						{
-							horse_archers = { 10000 10000 }
-							light_cavalry = { 6666 6666 }
-							light_infantry = { 2222 2222 }
-							heavy_infantry = { 1112 1112 }
-							knights = { 200 200 }
+					if = {
+						limit = { has_global_flag = better_armies_mode }
+						spawn_unit = {
+							province = 901 # Khiva
+							troops = {
+								horse_archers = { 5000 5000 }
+								light_cavalry = { 3333 3333 }
+								light_infantry = { 1111 1111 }
+								heavy_infantry = { 550 550 }
+								knights = { 100 100 }
+							}
+						}
+					}
+					if = {
+						limit = { NOT = { has_global_flag = better_armies_mode } }
+						spawn_unit = {
+							province = 901 # Khiva
+							troops = {
+								horse_archers = { 10000 10000 }
+								light_cavalry = { 6666 6666 }
+								light_infantry = { 2222 2222 }
+								heavy_infantry = { 1112 1112 }
+								knights = { 200 200 }
+							}
 						}
 					}
 				}
@@ -1089,15 +1284,30 @@ narrative_event = {
 					remove_trait = martial_cleric
 					remove_trait = scholarly_theologian
 					remove_trait = mastermind_theologian
-					spawn_unit = {
-						province = 901 # Khiva
-						troops =
-						{
-							horse_archers = { 10000 10000 }
-							light_cavalry = { 6666 6666 }
-							light_infantry = { 2222 2222 }
-							heavy_infantry = { 1112 1112 }
-							knights = { 200 200 }
+					if = {
+						limit = { has_global_flag = better_armies_mode }
+						spawn_unit = {
+							province = 901 # Khiva
+							troops = {
+								horse_archers = { 5000 5000 }
+								light_cavalry = { 3333 3333 }
+								light_infantry = { 1111 1111 }
+								heavy_infantry = { 550 550 }
+								knights = { 100 100 }
+							}
+						}
+					}
+					if = {
+						limit = { NOT = { has_global_flag = better_armies_mode } }
+						spawn_unit = {
+							province = 901 # Khiva
+							troops = {
+								horse_archers = { 10000 10000 }
+								light_cavalry = { 6666 6666 }
+								light_infantry = { 2222 2222 }
+								heavy_infantry = { 1112 1112 }
+								knights = { 200 200 }
+							}
 						}
 					}
 				}
@@ -1136,15 +1346,30 @@ narrative_event = {
 					remove_trait = martial_cleric
 					remove_trait = scholarly_theologian
 					remove_trait = mastermind_theologian
-					spawn_unit = {
-						province = 901 # Khiva
-						troops =
-						{
-							horse_archers = { 10000 10000 }
-							light_cavalry = { 6666 6666 }
-							light_infantry = { 2222 2222 }
-							heavy_infantry = { 1112 1112 }
-							knights = { 200 200 }
+					if = {
+						limit = { has_global_flag = better_armies_mode }
+						spawn_unit = {
+							province = 901 # Khiva
+							troops = {
+								horse_archers = { 5000 5000 }
+								light_cavalry = { 3333 3333 }
+								light_infantry = { 1111 1111 }
+								heavy_infantry = { 550 550 }
+								knights = { 100 100 }
+							}
+						}
+					}
+					if = {
+						limit = { NOT = { has_global_flag = better_armies_mode } }
+						spawn_unit = {
+							province = 901 # Khiva
+							troops = {
+								horse_archers = { 10000 10000 }
+								light_cavalry = { 6666 6666 }
+								light_infantry = { 2222 2222 }
+								heavy_infantry = { 1112 1112 }
+								knights = { 200 200 }
+							}
 						}
 					}
 				}
@@ -1183,15 +1408,30 @@ narrative_event = {
 					remove_trait = martial_cleric
 					remove_trait = scholarly_theologian
 					remove_trait = mastermind_theologian
-					spawn_unit = {
-						province = 901 # Khiva
-						troops =
-						{
-							horse_archers = { 10000 10000 }
-							light_cavalry = { 6666 6666 }
-							light_infantry = { 2222 2222 }
-							heavy_infantry = { 1112 1112 }
-							knights = { 200 200 }
+					if = {
+						limit = { has_global_flag = better_armies_mode }
+						spawn_unit = {
+							province = 901 # Khiva
+							troops = {
+								horse_archers = { 5000 5000 }
+								light_cavalry = { 3333 3333 }
+								light_infantry = { 1111 1111 }
+								heavy_infantry = { 550 550 }
+								knights = { 100 100 }
+							}
+						}
+					}
+					if = {
+						limit = { NOT = { has_global_flag = better_armies_mode } }
+						spawn_unit = {
+							province = 901 # Khiva
+							troops = {
+								horse_archers = { 10000 10000 }
+								light_cavalry = { 6666 6666 }
+								light_infantry = { 2222 2222 }
+								heavy_infantry = { 1112 1112 }
+								knights = { 200 200 }
+							}
 						}
 					}
 				}
@@ -2377,10 +2617,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_kiev }
 	}
@@ -2414,10 +2657,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_novgorod }
 	}
@@ -2451,10 +2697,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_krakow }
 	}
@@ -2488,10 +2737,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_aachen }
 	}
@@ -2525,10 +2777,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_paris }
 	}
@@ -2562,10 +2817,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_london }
 	}
@@ -2599,10 +2857,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_roma }
 	}
@@ -2636,10 +2897,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_venezia }
 	}
@@ -2673,10 +2937,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_constantinople }
 	}
@@ -2710,10 +2977,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_lisboa }
 	}
@@ -2747,10 +3017,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_smolensk }
 	}
@@ -2784,10 +3057,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_praha }
 	}
@@ -2821,10 +3097,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_wien }
 	}
@@ -2858,10 +3137,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_esztergom }
 	}
@@ -2895,10 +3177,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_athens }
 	}
@@ -2932,10 +3217,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_belgrade }
 	}
@@ -2972,10 +3260,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 	}
 
@@ -3008,10 +3299,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_damascus }
 	}
@@ -3051,10 +3345,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_jerusalem }
 	}
@@ -3088,10 +3385,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_alexandria }
 	}
@@ -3125,10 +3425,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_cairo }
 	}
@@ -3163,10 +3466,13 @@ narrative_event = {
 		OR = {
 			has_landed_title = e_il-khanate
 			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
 			liege = { has_landed_title = e_il-khanate }
 			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
 			top_liege = { has_landed_title = e_il-khanate }
 			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
 		}
 		FROM = { title = b_mecca }
 	}
@@ -3180,6 +3486,47 @@ narrative_event = {
 		name = "EVTOPTB60121"
 		trigger = { NOT = { religion_group = muslim } }
 		set_global_flag = mongols_sack_mecca
+	}
+}
+
+# Mongols sack New Persepolis
+narrative_event = {
+	id = 1000182161
+	title = "EVTNAME1000182161"
+	desc = "EVTDESC1000182161"
+	major = yes
+
+	picture = "GFX_evt_mongols"
+	border = "GFX_event_narrative_frame_war"
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_global_flag = mongols_sack_new_persepolis }
+		NOT = { religion_group = muslim }
+		OR = {
+			has_landed_title = e_il-khanate
+			has_landed_title = e_golden_horde
+			has_landed_title = e_mongol_empire
+			liege = { has_landed_title = e_il-khanate }
+			liege = { has_landed_title = e_golden_horde }
+			liege = { has_landed_title = e_mongol_empire }
+			top_liege = { has_landed_title = e_il-khanate }
+			top_liege = { has_landed_title = e_golden_horde }
+			top_liege = { has_landed_title = e_mongol_empire }
+		}
+		FROM = { title = b_new_persepolis }
+	}
+
+	option = {
+		name = "EVTOPTA60121"
+		trigger = { religion_group = zoroastrian_group }
+		set_global_flag = mongols_sack_new_persepolis
+	}
+	option = {
+		name = "EVTOPTB60121"
+		trigger = { NOT = { religion_group = zoroastrian_group } }
+		set_global_flag = mongols_sack_new_persepolis
 	}
 }
 
@@ -3402,15 +3749,30 @@ narrative_event = {
 			}
 			clr_character_flag = centralize_without_penalties
 			wealth = 500
-			spawn_unit = {
-				province = 907 # Balkh
-				troops =
-				{
-					horse_archers = { 10000 10000 }
-					light_cavalry = { 6666 6666 }
-					light_infantry = { 2222 2222 }
-					heavy_infantry = { 1112 1112 }
-					knights = { 200 200 }
+			if = {
+				limit = { has_global_flag = better_armies_mode }
+				spawn_unit = {
+					province = 907 # Balkh
+					troops = {
+						horse_archers = { 5000 5000 }
+						light_cavalry = { 3333 3333 }
+						light_infantry = { 1111 1111 }
+						heavy_infantry = { 550 550 }
+						knights = { 100 100 }
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { has_global_flag = better_armies_mode } }
+				spawn_unit = {
+					province = 907 # Balkh
+					troops = {
+						horse_archers = { 10000 10000 }
+						light_cavalry = { 6666 6666 }
+						light_infantry = { 2222 2222 }
+						heavy_infantry = { 1112 1112 }
+						knights = { 200 200 }
+					}
 				}
 			}
       character_event = { id = 90009020 days = 1 }
@@ -3448,15 +3810,30 @@ narrative_event = {
 					remove_trait = martial_cleric
 					remove_trait = scholarly_theologian
 					remove_trait = mastermind_theologian
-					spawn_unit = {
-						province = 907 # Balkh
-						troops =
-						{
-							horse_archers = { 10000 10000 }
-							light_cavalry = { 6666 6666 }
-							light_infantry = { 2222 2222 }
-							heavy_infantry = { 1112 1112 }
-							knights = { 200 200 }
+					if = {
+						limit = { has_global_flag = better_armies_mode }
+						spawn_unit = {
+							province = 907 # Balkh
+							troops = {
+								horse_archers = { 5000 5000 }
+								light_cavalry = { 3333 3333 }
+								light_infantry = { 1111 1111 }
+								heavy_infantry = { 550 550 }
+								knights = { 100 100 }
+							}
+						}
+					}
+					if = {
+						limit = { NOT = { has_global_flag = better_armies_mode } }
+						spawn_unit = {
+							province = 907 # Balkh
+							troops = {
+								horse_archers = { 10000 10000 }
+								light_cavalry = { 6666 6666 }
+								light_infantry = { 2222 2222 }
+								heavy_infantry = { 1112 1112 }
+								knights = { 200 200 }
+							}
 						}
 					}
 				}
@@ -3495,15 +3872,30 @@ narrative_event = {
 					remove_trait = martial_cleric
 					remove_trait = scholarly_theologian
 					remove_trait = mastermind_theologian
-					spawn_unit = {
-						province = 907 # Balkh
-						troops =
-						{
-							horse_archers = { 10000 10000 }
-							light_cavalry = { 6666 6666 }
-							light_infantry = { 2222 2222 }
-							heavy_infantry = { 1112 1112 }
-							knights = { 200 200 }
+					if = {
+						limit = { has_global_flag = better_armies_mode }
+						spawn_unit = {
+							province = 907 # Balkh
+							troops = {
+								horse_archers = { 5000 5000 }
+								light_cavalry = { 3333 3333 }
+								light_infantry = { 1111 1111 }
+								heavy_infantry = { 550 550 }
+								knights = { 100 100 }
+							}
+						}
+					}
+					if = {
+						limit = { NOT = { has_global_flag = better_armies_mode } }
+						spawn_unit = {
+							province = 907 # Balkh
+							troops = {
+								horse_archers = { 10000 10000 }
+								light_cavalry = { 6666 6666 }
+								light_infantry = { 2222 2222 }
+								heavy_infantry = { 1112 1112 }
+								knights = { 200 200 }
+							}
 						}
 					}
 				}
@@ -3542,15 +3934,30 @@ narrative_event = {
 					remove_trait = martial_cleric
 					remove_trait = scholarly_theologian
 					remove_trait = mastermind_theologian
-					spawn_unit = {
-						province = 907 # Balkh
-						troops =
-						{
-							horse_archers = { 10000 10000 }
-							light_cavalry = { 6666 6666 }
-							light_infantry = { 2222 2222 }
-							heavy_infantry = { 1112 1112 }
-							knights = { 200 200 }
+					if = {
+						limit = { has_global_flag = better_armies_mode }
+						spawn_unit = {
+							province = 907 # Balkh
+							troops = {
+								horse_archers = { 5000 5000 }
+								light_cavalry = { 3333 3333 }
+								light_infantry = { 1111 1111 }
+								heavy_infantry = { 550 550 }
+								knights = { 100 100 }
+							}
+						}
+					}
+					if = {
+						limit = { NOT = { has_global_flag = better_armies_mode } }
+						spawn_unit = {
+							province = 907 # Balkh
+							troops = {
+								horse_archers = { 10000 10000 }
+								light_cavalry = { 6666 6666 }
+								light_infantry = { 2222 2222 }
+								heavy_infantry = { 1112 1112 }
+								knights = { 200 200 }
+							}
 						}
 					}
 				}
@@ -3589,15 +3996,30 @@ narrative_event = {
 					remove_trait = martial_cleric
 					remove_trait = scholarly_theologian
 					remove_trait = mastermind_theologian
-					spawn_unit = {
-						province = 907 # Balkh
-						troops =
-						{
-							horse_archers = { 10000 10000 }
-							light_cavalry = { 6666 6666 }
-							light_infantry = { 2222 2222 }
-							heavy_infantry = { 1112 1112 }
-							knights = { 200 200 }
+					if = {
+						limit = { has_global_flag = better_armies_mode }
+						spawn_unit = {
+							province = 907 # Balkh
+							troops = {
+								horse_archers = { 5000 5000 }
+								light_cavalry = { 3333 3333 }
+								light_infantry = { 1111 1111 }
+								heavy_infantry = { 550 550 }
+								knights = { 100 100 }
+							}
+						}
+					}
+					if = {
+						limit = { NOT = { has_global_flag = better_armies_mode } }
+						spawn_unit = {
+							province = 907 # Balkh
+							troops = {
+								horse_archers = { 10000 10000 }
+								light_cavalry = { 6666 6666 }
+								light_infantry = { 2222 2222 }
+								heavy_infantry = { 1112 1112 }
+								knights = { 200 200 }
+							}
 						}
 					}
 				}

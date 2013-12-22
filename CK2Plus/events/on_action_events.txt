@@ -2062,7 +2062,7 @@ character_event = {
 		NOT = { trait = maimed }
 	}
 
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 3
@@ -2745,7 +2745,7 @@ character_event = {
 		NOT = { trait = maimed }
 	}
 
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 3
@@ -3037,6 +3037,19 @@ character_event = {
 	hide_from = yes
 	is_triggered_only = yes
 
+	immediate = {
+		if = {
+			limit = {
+				spouse = { character = FROM }
+				FROM = { 
+					ai = no
+					NOT = { has_character_flag = achievement_spouse_killer } 
+				}
+			}
+			FROM = { set_character_flag = achievement_spouse_killer }
+		}
+	}
+	
 	option = {
 		name = "EVTOPTA162"
 		hidden_tooltip = {
@@ -4778,24 +4791,23 @@ diploresponse_event = {
 	}
 }
 
-# GRANT_LANDED_TITLE_INTERACTION_ACCEPT_EVENT =
-diploresponse_event = {
-	id = 228
-
-	is_triggered_only = yes
-	major = no
-	is_friendly = yes
-
-	trigger = {
-		ai = no
-	}
-
-	desc = "EVTDESC228"
-
-	option = {
-		name = "OK"
-	}
-}
+# GRANT_LANDED_TITLE_INTERACTION_DECLINE_EVENT =
+#diploresponse_event = {
+#	id = 229
+#
+#	is_triggered_only = yes
+#	major = no
+#
+#	trigger = {
+#		ai = no
+#	}
+#
+#	desc = "EVTDESC229"
+#
+#	option = {
+#		name = "OK"
+#	}
+#}
 
 # GRANT_LANDED_TITLE_INTERACTION_DECLINE_EVENT =
 diploresponse_event = {
@@ -5293,7 +5305,11 @@ character_event = {
 		FROM = { NOT = { has_character_flag = marriage_duty } }
 		NOT = { religion_group = muslim }
 		OR = {
-			NOT = { religion = zoroastrian }
+			NOT = { 
+				religion = zoroastrian
+				religion = egyptian_pagan
+				religion = aten_pagan
+			}
 			NOT = { new_character = { is_close_relative = FROM } }
 		}
 		OR = {
@@ -5308,6 +5324,15 @@ character_event = {
 			}
 		}
 	}
+	
+	immediate = {
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				set_character_flag = achievement_get_married
+			}
+		}
+	}	
 
 	option = {
 		name = "EVTOPTA500"
@@ -5425,7 +5450,7 @@ character_event = {
 				set_character_flag = achievement_get_married
 			}
 		}
-	}
+	}	
 
 	option = {
 		name = "EVTOPTA500"
@@ -5522,6 +5547,127 @@ character_event = {
 		trigger = {
 			FROM = { has_character_flag = marriage_duty }
 			piety = 25
+		}
+	}
+}
+
+# On-action event: Kemetic marriage
+character_event = {
+	id = 1000182164
+	desc = "EVTDESC1000182164"
+	picture = "GFX_evt_egyptian_marriage"
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			religion = egyptian_pagan
+			religion = aten_pagan
+		}
+		new_character = { is_close_relative = FROM }
+		OR = {
+			FROM = { character = ROOT }
+			AND = {
+				FROM = {
+					dynasty = ROOT
+					is_primary_heir = ROOT
+				}
+				new_character = {
+					NOT = { character = ROOT }
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_tooltip = {
+			if = {
+				limit = { ai = no }
+				set_character_flag = achievement_get_married
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA500"
+		piety = 100
+		if = {
+			limit = {
+				tier = baron
+				is_patrician = no
+			}
+			wealth = 10
+		}
+		if = {
+			limit = {
+				OR = {
+					tier = count
+					AND = {
+						tier = baron
+						is_patrician = yes
+					}
+				}
+			}
+			wealth = 25
+		}
+		if = {
+			limit = {
+				tier = duke
+			}
+			wealth = 50
+		}
+		if = {
+			limit = {
+				tier = king
+			}
+			wealth = 100
+		}
+		if = {
+			limit = {
+				tier = emperor
+			}
+			wealth = 200
+		}
+	}
+	option = {
+		name = "EVTOPTB500"
+		piety = 100
+		if = {
+			limit = {
+				tier = baron
+				is_patrician = no
+			}
+			prestige = 10
+		}
+		if = {
+			limit = {
+				OR = {
+					tier = count
+					AND = {
+						tier = baron
+						is_patrician = yes
+					}
+				}
+			}
+			prestige = 25
+		}
+		if = {
+			limit = {
+				tier = duke
+			}
+			prestige = 50
+		}
+		if = {
+			limit = {
+				tier = king
+			}
+			prestige = 100
+		}
+		if = {
+			limit = {
+				tier = emperor
+			}
+			prestige = 200
 		}
 	}
 }
@@ -6183,6 +6329,10 @@ narrative_event = {
 	only_rulers = yes
 
 	immediate = {
+		if = {
+			limit = { ai = no }
+			set_character_flag = achievement_new_ways
+		}	
 		any_courtier = {
 			limit = {
 				is_heresy_of = ROOT
@@ -6218,19 +6368,48 @@ narrative_event = {
 			set_global_flag = norse_reformation
 		}
 		if = {
-			limit = { religion = gaelic_pagan_reformed }
+			limit = { religion = celtic_pagan_reformed }
 			d_fianna = {
-				religion = gaelic_pagan_reformed # This Holy Order now changes religion
+				religion = celtic_pagan_reformed # This Holy Order now changes religion
 			}
-			set_global_flag = gaelic_reformation
+			d_gwydion	 = {
+				religion = celtic_pagan_reformed # This Holy Order now changes religion
+			}			
+			set_global_flag = celtic_reformation
 		}
 		if = {
-			limit = { religion = druidic_reformed }
-			d_gwydion = {
-				religion = druidic_reformed # This Holy Order now changes religion
-			}
-			set_global_flag = druidic_reformation
+			limit = { religion = tengri_pagan_reformed }
+			d_great_host = {
+				religion = tengri_pagan_reformed # This Holy Order now changes religion
+			}			
+			set_global_flag = tengri_reformation
 		}
+		if = {
+			limit = { religion = baltic_pagan_reformed }
+			d_guardians_of_the_sacred_flame = {
+				religion = baltic_pagan_reformed # This Holy Order now changes religion
+			}				
+			set_global_flag = baltic_reformation
+		}
+		if = {
+			limit = { religion = finnish_pagan_reformed }
+			d_disciples_of_the_old_gods = {
+				religion = finnish_pagan_reformed # This Holy Order now changes religion
+			}				
+			set_global_flag = finnish_reformation
+		}
+		if = {
+			limit = { religion = aztec_pagan_reformed }
+			set_global_flag = aztec_pagan_reformation
+		}
+		if = {
+			limit = { religion = slavic_pagan_reformed }
+			set_global_flag = slavic_reformation
+		}
+		if = {
+			limit = { religion = west_african_pagan_reformed }
+			set_global_flag = west_african_reformation
+		}		
 	}
 
 	option = {
@@ -6315,5 +6494,31 @@ narrative_event = {
 			NOT = { religion = ROOT }
 			NOT = { is_heresy_of = ROOT }
 		}
+	}
+}
+
+character_event = {
+	id = 675
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		controls_religion = yes
+		death_reason = death_sacrificed
+		killer = {
+			ai = no
+			NOT = { has_character_flag = achievement_holy_smoke }
+		}
+	}
+	
+	immediate = {
+		killer = {
+			set_character_flag = achievement_holy_smoke
+		}
+	}
+	
+	option = {
+		name = "OK"
 	}
 }

@@ -114,6 +114,9 @@
 }
 1066.1.1={
 	holder=161281 #Kadoc of Cornwall
+} 
+1066.10.14={
+  liege=k_englandnorman
 }
 1071.1.1={
 	holder=354 #Brian of Penthièvre
@@ -135,7 +138,11 @@
 }
 1141.1.1={
 	holder=204571 #Reginald de Dunstanville
+	liege = d_normandy
 }
+1153.8.1 = {
+	liege = k_englandnorman
+	}
 1175.1.1={
 	holder=204514 #John
 }

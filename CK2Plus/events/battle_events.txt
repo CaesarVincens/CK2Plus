@@ -1,5 +1,3 @@
-namespace = ancrel
-
 #On-action combat event: Killed in action
 character_event = {
 	id = 242
@@ -13,7 +11,7 @@ character_event = {
 		NOT = { trait = berserker }
 	}
 
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 0.1
@@ -196,7 +194,7 @@ character_event = {
 		NOT = { trait = immortal }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		
 		modifier = {
@@ -371,7 +369,7 @@ character_event = {
 		NOT = { trait = immortal }
 	}
 
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		
 		modifier = {
@@ -545,7 +543,7 @@ character_event = {
 		NOT = { trait = immortal }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		
 		modifier = {
@@ -722,7 +720,7 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 1.5
@@ -892,7 +890,7 @@ character_event = {
 		NOT = { martial = 20 }
 	}
 
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 1.5
@@ -1045,7 +1043,7 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 1.5
@@ -1199,7 +1197,7 @@ character_event = {
 		NOT = { trait = immortal }
 	}
 
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 
 		modifier = {
@@ -1348,7 +1346,7 @@ character_event = {
 		NOT = { trait = immortal }
 	}
 
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -1511,7 +1509,7 @@ character_event = {
 		NOT = { trait = immortal }
 	}
 
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 	}
 
@@ -1537,7 +1535,7 @@ character_event = {
 		NOT = { trait = immortal }
 	}
 
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 	}
 
@@ -1559,7 +1557,7 @@ character_event = {
 		NOT = { trait = craven }
 	}
 
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 2.0
@@ -1708,7 +1706,7 @@ character_event = {
 		is_alive = yes
 	}
 
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 1.5
@@ -1760,10 +1758,8 @@ character_event = {
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					NOT = {
 						trait = head1
@@ -1773,67 +1769,57 @@ character_event = {
 						trait = head5
 					}
 				}
-				character_event = { id = ancrel.0010 }
+				character_event = { id = 1000182167 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head1
 				}
-				character_event = { id = ancrel.0011 }
+				character_event = { id = 1000182168 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head2
 				}
-				character_event = { id = ancrel.0012 }
+				character_event = { id = 1000182169 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head3
 				}
-				character_event = { id = ancrel.0013 }
+				character_event = { id = 1000182170 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head4
 				}
-				character_event = { id = ancrel.0014 }
+				character_event = { id = 1000182171 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head5
 				}
-				character_event = { id = ancrel.0015 }
+				character_event = { id = 1000182172 }
 			}
 		}
 	}
@@ -1855,10 +1841,8 @@ character_event = {
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					NOT = {
 						trait = head1
@@ -1868,67 +1852,57 @@ character_event = {
 						trait = head5
 					}
 				}
-				character_event = { id = ancrel.0010 }
+				character_event = { id = 1000182167 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head1
 				}
-				character_event = { id = ancrel.0011 }
+				character_event = { id = 1000182168 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head2
 				}
-				character_event = { id = ancrel.0012 }
+				character_event = { id = 1000182169 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head3
 				}
-				character_event = { id = ancrel.0013 }
+				character_event = { id = 1000182170 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head4
 				}
-				character_event = { id = ancrel.0014 }
+				character_event = { id = 1000182171 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head5
 				}
-				character_event = { id = ancrel.0015 }
+				character_event = { id = 1000182172 }
 			}
 		}
 	}
@@ -1950,10 +1924,8 @@ hidden_tooltip = {
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					NOT = {
 						trait = head1
@@ -1963,67 +1935,57 @@ hidden_tooltip = {
 						trait = head5
 					}
 				}
-				character_event = { id = ancrel.0010 }
+				character_event = { id = 1000182167 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head1
 				}
-				character_event = { id = ancrel.0011 }
+				character_event = { id = 1000182168 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head2
 				}
-				character_event = { id = ancrel.0012 }
+				character_event = { id = 1000182169 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head3
 				}
-				character_event = { id = ancrel.0013 }
+				character_event = { id = 1000182170 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head4
 				}
-				character_event = { id = ancrel.0014 }
+				character_event = { id = 1000182171 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head5
 				}
-				character_event = { id = ancrel.0015 }
+				character_event = { id = 1000182172 }
 			}
 		}
 	}
@@ -2045,10 +2007,8 @@ hidden_tooltip = {
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					NOT = {
 						trait = head1
@@ -2058,67 +2018,57 @@ hidden_tooltip = {
 						trait = head5
 					}
 				}
-				character_event = { id = ancrel.0010 }
+				character_event = { id = 1000182167 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head1
 				}
-				character_event = { id = ancrel.0011 }
+				character_event = { id = 1000182168 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head2
 				}
-				character_event = { id = ancrel.0012 }
+				character_event = { id = 1000182169 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head3
 				}
-				character_event = { id = ancrel.0013 }
+				character_event = { id = 1000182170 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head4
 				}
-				character_event = { id = ancrel.0014 }
+				character_event = { id = 1000182171 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head5
 				}
-				character_event = { id = ancrel.0015 }
+				character_event = { id = 1000182172 }
 			}
 		}
 	}
@@ -2140,10 +2090,8 @@ hidden_tooltip = {
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					NOT = {
 						trait = head1
@@ -2153,67 +2101,57 @@ hidden_tooltip = {
 						trait = head5
 					}
 				}
-				character_event = { id = ancrel.0010 }
+				character_event = { id = 1000182167 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head1
 				}
-				character_event = { id = ancrel.0011 }
+				character_event = { id = 1000182168 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head2
 				}
-				character_event = { id = ancrel.0012 }
+				character_event = { id = 1000182169 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head3
 				}
-				character_event = { id = ancrel.0013 }
+				character_event = { id = 1000182170 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head4
 				}
-				character_event = { id = ancrel.0014 }
+				character_event = { id = 1000182171 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head5
 				}
-				character_event = { id = ancrel.0015 }
+				character_event = { id = 1000182172 }
 			}
 		}
 	}
@@ -2235,10 +2173,8 @@ character_event = {
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					NOT = {
 						trait = head1
@@ -2248,67 +2184,57 @@ character_event = {
 						trait = head5
 					}
 				}
-				character_event = { id = ancrel.0010 }
+				character_event = { id = 1000182167 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head1
 				}
-				character_event = { id = ancrel.0011 }
+				character_event = { id = 1000182168 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head2
 				}
-				character_event = { id = ancrel.0012 }
+				character_event = { id = 1000182169 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head3
 				}
-				character_event = { id = ancrel.0013 }
+				character_event = { id = 1000182170 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head4
 				}
-				character_event = { id = ancrel.0014 }
+				character_event = { id = 1000182171 }
 			}
 			if = {
 				limit = {
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 					trait = head5
 				}
-				character_event = { id = ancrel.0015 }
+				character_event = { id = 1000182172 }
 			}
 		}
 	}
@@ -2332,7 +2258,7 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 
 		modifier = {
@@ -2501,7 +2427,7 @@ character_event = {
 		trait = cruel
 	}
 
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 	}
 
@@ -2606,7 +2532,7 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 1.5
@@ -2844,7 +2770,7 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 1.5
@@ -3055,7 +2981,7 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 1.5

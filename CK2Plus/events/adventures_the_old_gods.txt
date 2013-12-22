@@ -24,16 +24,17 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
-
+	
 	trigger = {
 		has_dlc = "The Old Gods"
-
+		
 		is_ruler = no
 
 		any_claim = {
 			has_holder = yes
 			holder_scope = {
 				independent = yes # Only do this vs independent rulers
+				NOT = { has_character_modifier = holy_truce_timer }
 			}
 			OR = {
 				tier = KING
@@ -57,11 +58,15 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		years = 34
+		years = 50
 		modifier = {
 			factor = 0.5
 			trait = ambitious
 		}
+		modifier = {
+			factor = 0.2
+			has_character_flag = demon_child_non_pagan
+		}		
 		modifier = {
 			factor = 0.5
 			trait = envious
@@ -110,7 +115,12 @@ character_event = {
 				has_holder = yes
 				holder_scope = {
 					independent = yes # Only do this vs independent rulers
-				}
+					OR = {
+						# Don't target a liege unless I am ambitious
+						NOT = { is_vassal_or_below = ROOT }
+						ROOT = { trait = ambitious }
+					}							
+				}		
 			}
 
 			holder_scope = {
@@ -166,7 +176,7 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		is_ruler = no
+	is_ruler = no
 		prisoner = no
 		NOT = { trait = incapable }
 
@@ -174,6 +184,11 @@ character_event = {
 			has_holder = yes
 			holder_scope = {
 				independent = yes # Only do this vs independent rulers
+				OR = {
+					# Don't target a liege unless I am ambitious
+					NOT = { is_vassal_or_below = ROOT }
+					ROOT = { trait = ambitious }
+				}				
 			}
 			OR = {
 				tier = KING
@@ -580,13 +595,13 @@ character_event = {
 
 	trigger = {
 		has_dlc = "The Old Gods"
-
+		
 		is_ruler = no
-
-		diplomacy = 7
-		martial = 7
+		
+		diplomacy = 9
+		martial = 9
 		health = 4
-
+		
 		NOT = { trait = content }
 		NOT = { trait = craven }
 
@@ -602,6 +617,7 @@ character_event = {
 				culture = hungarian
 				NOT = { year = 1066 }
 			}
+			has_character_flag = demon_child_non_pagan			
 		}
 
 		NOT = { # Somewhat clunky way of checking that the character does not stand to inherit any titles
@@ -609,12 +625,13 @@ character_event = {
 				always = yes
 			}
 		}
-
+		
 		NOT = { # Handled by event 1200
 			any_claim = {
 				has_holder = yes
 				holder_scope = {
 					independent = yes
+					NOT = { has_character_modifier = holy_truce_timer }
 				}
 				OR = {
 					tier = KING
@@ -652,7 +669,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		years = 70
+		years = 100
 		modifier = {
 			factor = 0.5
 			trait = ambitious
@@ -674,6 +691,10 @@ character_event = {
 			factor = 0.5
 			has_character_flag = flag_denied_title
 		}
+		modifier = {
+			factor = 0.2
+			has_character_flag = demon_child_non_pagan
+		}		
 		modifier = {
 			factor = 0.75
 			diplomacy = 12
@@ -702,6 +723,18 @@ character_event = {
 			factor = 3.0
 			trait = kind
 		}
+		modifier = {
+			factor = 3.0
+			any_liege = {
+				ai = no
+			}
+		}
+		modifier = {
+			factor = 3.0
+			top_liege = {
+				tier = emperor
+			}
+		}		
 	}
 
 	immediate = {
@@ -711,10 +744,33 @@ character_event = {
 				is_landed = yes
 				independent = yes
 				NOT = { is_vassal_or_below = ROOT }
+				NOT = { has_character_modifier = holy_truce_timer }
 				any_realm_province = {
 					OR = {
 						AND = {
-							port = yes
+							num_of_ports = 2
+							NOT = {
+								has_landed_title = e_il-khanate
+								has_landed_title = e_golden_horde
+								has_landed_title = e_timurids
+								has_landed_title = e_mongol_empire
+								has_landed_title = e_mexikha
+								capital_scope = {
+									kingdom = { title = k_persia }
+								}
+								capital_scope = {
+									kingdom = { title = k_arabia }
+								}
+								capital_scope = {
+									kingdom = { title = k_adal }
+								}
+								capital_scope = {
+									kingdom = { title = k_abyssinia }
+								}
+								capital_scope = {
+									kingdom = { title = k_nubia }
+								}
+							}
 							ROOT = {
 								NOT = { culture_group = altaic }
 								NOT = { culture = hungarian }
@@ -724,11 +780,6 @@ character_event = {
 							owner = {
 								same_realm = ROOT
 							}
-						}
-					}
-					NOT = {
-						empire = {
-							title = e_scandinavia
 						}
 					}
 					NOT = {
@@ -743,7 +794,29 @@ character_event = {
 				limit = {
 					OR = {
 						AND = {
-							port = yes
+							num_of_ports = 2
+							NOT = {
+								has_landed_title = e_il-khanate
+								has_landed_title = e_golden_horde
+								has_landed_title = e_timurids
+								has_landed_title = e_mongol_empire
+								has_landed_title = e_mexikha
+								capital_scope = {
+									kingdom = { title = k_persia }
+								}
+								capital_scope = {
+									kingdom = { title = k_arabia }
+								}
+								capital_scope = {
+									kingdom = { title = k_adal }
+								}
+								capital_scope = {
+									kingdom = { title = k_abyssinia }
+								}
+								capital_scope = {
+									kingdom = { title = k_nubia }
+								}
+							}
 							ROOT = {
 								NOT = { culture_group = altaic }
 								NOT = { culture = hungarian }
@@ -753,11 +826,6 @@ character_event = {
 							owner = {
 								same_realm = ROOT
 							}
-						}
-					}
-					NOT = {
-						empire = {
-							title = e_scandinavia
 						}
 					}
 					NOT = {
@@ -824,7 +892,7 @@ character_event = {
 
 	trigger = {
 		has_dlc = "The Old Gods"
-
+		
 		is_ruler = no
 		prisoner = no
 		NOT = { trait = incapable }
@@ -853,11 +921,6 @@ character_event = {
 						owner = {
 							same_realm = ROOT
 						}
-					}
-				}
-				NOT = {
-					empire = {
-						title = e_scandinavia
 					}
 				}
 				NOT = {
@@ -907,11 +970,6 @@ character_event = {
 								}
 							}
 							NOT = {
-								empire = {
-									title = e_scandinavia
-								}
-							}
-							NOT = {
 								duchy = {
 									title = d_bjarmia
 								}
@@ -936,11 +994,6 @@ character_event = {
 									owner = {
 										same_realm = ROOT
 									}
-								}
-							}
-							NOT = {
-								empire = {
-									title = e_scandinavia
 								}
 							}
 							NOT = {

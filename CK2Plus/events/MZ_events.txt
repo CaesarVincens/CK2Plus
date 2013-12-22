@@ -96,7 +96,46 @@ character_event = {
 		add_character_modifier = {
 			name = zoroastrian_tolerance
 			duration = 365
+		}
+		hidden_tooltip = {
+			any_realm_character = {
+				if = {
+					limit = { religion_group = muslim }
+					opinion = {
+						who = ROOT
+						modifier = opinion_tolerant_muslims
+						months = 60
+					}
+				}
+				if = {
+					limit = { religion_group = zoroastrian_group }
+					opinion = {
+						who = ROOT
+						modifier = opinion_tolerant
+						months = 60
+					}
+				}
 			}
+			any_independent_ruler = {
+				if = {
+					limit = { religion_group = muslim }
+					opinion = {
+						who = ROOT
+						modifier = opinion_tolerant_muslims
+						months = 60
+					}
+				}
+				if = {
+					limit = { religion_group = zoroastrian_group }
+					opinion = {
+						who = ROOT
+						modifier = opinion_tolerant
+						months = 60
+					}
+				}
+			
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTB1000094002"
@@ -216,74 +255,98 @@ character_event = {
 	}
 }
 
-####Rebuild Persepolis
+####Rebuild Persepolis Phase 1 - Laying the foundation
 province_event = {
 	id = 1000182065
 	title = "EVTNAME1000182065"
 	desc = "EVTDESC1000182065"
 	picture = "GFX_persepolis_ruin"
-	
+
 	is_triggered_only = yes
 	
+	immediate = {
+		646 = { set_province_flag = reb_pers_1 }
+	}	
 
 	option = {
 		name = "EVTOPTC1000182065" # Make it the greatest city there ever was!
 		wealth = -1000
-		capital_scope = {
-				add_province_modifier = { name = "rebuilding_persepolis_local" duration = 3650 }
-			}
-		character_event = { id = 1000182066 days = 2920}
 	}
 }
 
-####Rebuild Persepolis 2
-character_event = {
+####Rebuild Persepolis Phase 2 - Add Esfahan bonus modifier ~8 years
+province_event = {
 	id = 1000182066
 	title = "EVTNAME1000182066"
 	desc = "EVTDESC1000182066"
 	picture = "GFX_persepolis_built"
+
+	trigger = {
+		has_global_flag = rebuilding_persepolis
+		province_id = 646 # Esfahan
+		NOT = { has_global_flag = persepolis_rebuilt }
+		had_province_flag = { flag = reb_pers_1 days = 2555 random = 365 }
+		NOT = { has_province_flag = reb_pers_2 }
+	}
+
+	immediate = {
+		set_province_flag = reb_pers_2
+	}
 	
-	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
 	
 	option = {
 		name = "EVTOPTA1000182066" #Library
-		set_global_flag = persepolis_rebuilt
-		capital_scope = {
+		646 = {
 			add_province_modifier = { name = "persepolis_library" duration = -1 }
 			}
-		character_event = { id = 1000182067 days = 730 }	
 	}
 	option = {
 		name = "EVTOPTB1000182066" #Irrigation system
-		set_global_flag = persepolis_rebuilt
-		capital_scope = {
+		646 = {
 			add_province_modifier = { name = "persepolis_irrigation" duration = -1 }
 			}
-		character_event = { id = 1000182067 days = 730 }
 	}
 	option = {
 		name = "EVTOPTC1000182066" #Gate of all nations
-		set_global_flag = persepolis_rebuilt
-		capital_scope = {
+		646 = {
 			add_province_modifier = { name = "persepolis_gate" duration = -1 }
 			}
-		character_event = { id = 1000182067 days = 730 }
 	}
 }
 
 ####Rebuild Persepolis 3
 
-character_event = {
+province_event = {
 	id = 1000182067
 	title = "EVTNAME1000182067"
 	desc = "EVTDESC1000182067"
 	picture = "GFX_persepolis_built"
 	
-	is_triggered_only = yes
+	trigger = {
+		has_global_flag = rebuilding_persepolis
+		province_id = 646 # Esfahan
+		NOT = { has_global_flag = persepolis_rebuilt }
+		has_province_flag = reb_pers_1
+		had_province_flag = { flag = reb_pers_2 days = 638 random = 92 }		
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
 	
+	immediate = {
+		clr_global_flag = rebuilding_persepolis
+		set_global_flag = persepolis_rebuilt
+		clr_province_flag = reb_pers_1
+		clr_province_flag = reb_pers_2
+	}
+
 	option = {
 		name = "EVTOPTA1000182067"
-		capital_scope = {
+		646 = {
 			build_holding = {
 			   title = b_new_persepolis
 			   type = temple
@@ -291,6 +354,12 @@ character_event = {
 			}
 		}
 		prestige = 500
+		hidden_tooltip = {
+			owner = {
+				set_character_flag = event_1000182067
+				narrative_event = { id = 1000182068 days = 7 }
+			}
+		}
 	}
 }
 
@@ -304,13 +373,158 @@ narrative_event = {
 	
 	major = yes
 	only_rulers = yes
-	
 	is_triggered_only = yes
 	
 	option = {
+		trigger = {
+			has_character_flag = event_1000182067
+		}
+		clr_character_flag = event_1000182067
+		name = "1000182008.a"
+	}
+	
+	option = {
+		trigger = {
+			NOT = { has_character_flag = event_1000182067 }
+		}
 		name = "EVTOPTA1000182068"
 	}
 }
+
+# Zhayedan 1
+narrative_event = {
+	id = 1000182157
+	title = "EVTNAME1000182157"
+	desc = "EVTDESC1000182157"
+	picture = "GFX_evt_zhayedan"
+	border = "GFX_event_narrative_frame_religion"
+	
+	major = yes
+	only_rulers = yes
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			has_character_flag = event_1000182157
+		}
+		clr_character_flag = event_11000182157
+		name = "1000182008.a"
+	}
+	
+	option = {
+		trigger = {
+			NOT = { has_character_flag = event_1000182157 }
+		}
+		name = "EVTOPTA1000182068"
+	}
+}
+
+narrative_event = {
+	id = 1000182158
+	title = "EVTNAME1000182158"
+	desc = "EVTDESC1000182158"
+	picture = "GFX_evt_zhayedan"
+	border = "GFX_event_narrative_frame_religion"
+	
+	major = yes
+	only_rulers = yes
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			has_character_flag = event_1000182158
+		}
+		clr_character_flag = event_11000182158
+		name = "1000182008.a"
+	}
+	
+	option = {
+		trigger = {
+			NOT = { has_character_flag = event_1000182158 }
+		}
+		name = "EVTOPTA1000182068"
+	}
+}
+
+character_event = {
+	id = 1000182159
+	title = "EVTNAME1000182159"
+	desc = "EVTDESC1000182159"
+	picture = "GFX_evt_sacrifice"
+	
+	is_triggered_only = yes
+	hide_from = yes	
+	
+	option = {
+		scaled_wealth = -0.3
+		piety = -30
+		add_character_modifier = {
+			name = zoroastrian_sacrifice_mithra
+			duration = 365
+		}
+		name = "EVTOPTA1000182159"
+	}
+	
+	option = {
+		scaled_wealth = -0.3
+		piety = -30
+		add_character_modifier = {
+			name = zoroastrian_sacrifice_parendi
+			duration = 365
+		}
+		hidden_tooltip = {
+			clr_character_flag = made_sacrifice_1
+			set_character_flag = made_sacrifice_1
+		}
+		name = "EVTOPTB1000182159"
+	}
+	
+	option = {
+		scaled_wealth = -0.3
+		piety = -30
+		add_character_modifier = {
+			name = zoroastrian_sacrifice_chisti
+			duration = 365
+		}
+		hidden_tooltip = {
+			clr_character_flag = made_sacrifice_1
+			set_character_flag = made_sacrifice_1
+		}
+		name = "EVTOPTC1000182159"
+	}
+	
+	option = {
+		trigger = {
+			ai = no
+		}
+		hidden_tooltip = {
+			clr_character_flag = made_sacrifice_1
+		}
+		name = "EVTOPTD1000182159"
+	}
+}
+
+character_event = {
+	id = 1000182160
+	title = "EVTNAME1000182160"
+	desc = "EVTDESC1000182160"
+	picture = "GFX_evt_sacrifice"
+	
+	is_triggered_only = yes
+	hide_from = yes	
+	
+	option = {
+		scaled_wealth = -0.30
+		piety = 25
+		add_character_modifier = {
+			name = zoroastrian_cleansing
+			duration = 365
+		}
+		name = "EVTOPTA1000182160"
+	}
+	
+}
+
 
 # On-action event: Zoroastrian Marriage
 #character_event = {

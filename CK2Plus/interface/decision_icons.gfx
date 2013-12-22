@@ -190,7 +190,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_request_holy_war_sanction"
-		texturefile = "gfx\\CK2Plus\\decision_icon_approveholywar.dds"
+		texturefile = "gfx\\CK2Plus\\decision_icon_approveholywar.tga"
 	}	
 	spriteType = {
 		name = "GFX_employ_chancellor"
@@ -210,7 +210,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_give_to_charity"
-		texturefile = "gfx\\CK2Plus\\decision_icon_charity.dds"
+		texturefile = "gfx\\CK2Plus\\decision_icon_charity.tga"
 	}
 	spriteType = {
 		name = "GFX_faction_separatist_war"
@@ -364,5 +364,356 @@ spriteTypes = {
 		name = "GFX_convert_to_norman"
 		texturefile = "gfx\\interface\\decision_icon_convert_to_norman.dds"
 	}
-
+	spriteType = {
+		name = "GFX_1000182042"
+		texturefile = "gfx\\CK2Plus\\decision_icon_raise_banner.dds"
+	}
+	spriteType = {
+		name = "GFX_1000182044"
+		texturefile = "gfx\\CK2Plus\\decision_icon_raise_banner.dds"
+	}
+	spriteType = {
+		name = "GFX_1000182043"
+		texturefile = "gfx\\CK2Plus\\decision_icon_lower_banner.dds"
+	}
+	spriteType = {
+		name = "GFX_1000182045"
+		texturefile = "gfx\\CK2Plus\\decision_icon_lower_banner.dds"
+	}
+	spriteType = {
+		name = "GFX_1000182046"
+		texturefile = "gfx\\CK2Plus\\decision_icon_vassalize_all.dds"
+	}
+	spriteType = {
+		name = "GFX_1000182047"
+		texturefile = "gfx\\CK2Plus\\decision_icon_vassalize_all_barons.dds"
+	}
+	spriteType = {
+		name = "GFX_1000182048"
+		texturefile = "gfx\\CK2Plus\\decision_icon_vassalize_all.dds"
+	}
+	spriteType = {
+		name = "GFX_1000182049"
+		texturefile = "gfx\\CK2Plus\\decision_icon_vassalize_all_barons.dds"
+	}
+	spriteType = {
+		name = "GFX_gone_pagan"
+		texturefile = "gfx\\CK2Plus\\decision_icon_gone_pagan.dds"
+	}	
+	spriteType = {
+		name = "GFX_build_pyramid"
+		texturefile = "gfx\\CK2Plus\\decision_icon_build_pyramid.dds"
+	}
+	spriteType = {
+		name = "GFX_restore_priesthood_egyptian_pagan"
+		texturefile = "gfx\\CK2Plus\\decision_icon_restore_priesthood_egyptian_pagan.dds"
+	}
+	spriteType = {
+		name = "GFX_organize_anubis"
+		texturefile = "gfx\\CK2Plus\\decision_icon_egyptian_pagan_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_organize_horus"
+		texturefile = "gfx\\CK2Plus\\decision_icon_egyptian_pagan_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_make_sacrifice"
+		texturefile = "gfx\\interface\\decision_icon_make_sacrifice.dds"
+	}
+	spriteType = {
+		name = "GFX_undergo_cleansing_ritual"
+		texturefile = "gfx\\interface\\decision_icon_cleansing_ritual.dds"
+	}
+	spriteType = {
+		name = "GFX_vassal_blinding_decision_persian"
+		texturefile = "gfx\\interface\\decision_icon_vassal_blinding_decision.dds"
+	}
+	spriteType = {
+		name = "GFX_rebuild_persepolis"
+		texturefile = "gfx\\interface\\decision_icon_rebuild_persepolis.dds"
+	}
+	spriteType = {
+		name = "GFX_organize_zhayedan_1"
+		texturefile = "gfx\\interface\\decision_icon_zhayedan.dds"
+	}
+	spriteType = {
+		name = "GFX_organize_zhayedan_2"
+		texturefile = "gfx\\interface\\decision_icon_zhayedan.dds"
+	}	
+	spriteType = {
+		name = "GFX_nominate_vestalis_decision"
+		texturefile = "gfx\\interface\\decision_icon_nominate_vestalis.dds"
+	}	
+	spriteType = {
+		name = "GFX_reveal_plots_dec"
+		texturefile = "gfx\\additional_objectivesGFX\\decision_icon_exposeplot.dds"
+	}
+	spriteType = {
+		name = "GFX_request_legit_for_son"
+		texturefile = "gfx\\additional_objectivesGFX\\decision_icon_bastardlegit.dds"
+	}
+	spriteType = {
+		name = "GFX_get_married_help"
+		texturefile = "gfx\\ambitions\\obj_get_married.tga"
+	}
+	spriteType = {
+		name = "GFX_church_career_help"
+		texturefile = "gfx\\additional_objectivesGFX\\obj_church_career.tga"
+	}
+	spriteType = {
+		name = "GFX_mentor_child_help"
+		texturefile = "gfx\\additional_objectivesGFX\\decision_icon_wardchild.dds"
+	}
+	spriteType = {
+		name = "GFX_amass_wealth_help"
+		texturefile = "gfx\\additional_objectivesGFX\\decision_icon_amass_help.dds"
+	}
+	spriteType = {
+		name = "GFX_forced_peace_help"
+		texturefile = "gfx\\additional_objectivesGFX\\decision_icon_peace_request.dds"
+	}
+	spriteType = {
+		name = "GFX_check_notable_persons"
+		texturefile = "gfx\\additional_objectivesGFX\\decision_icon_friendcheck.dds"
+	}	
+	spriteType = {
+		name = "GFX_ransom_nonvassal"
+		texturefile = "gfx\\CK2Plus\\decision_icon_ransom_nonvassal.dds"
+	}
+	spriteType = {
+		name = "GFX_ransom_all"
+		texturefile = "gfx\\CK2Plus\\decision_icon_ransom_all.dds"
+	}
+spriteType = {
+		name = "GFX_build_third_temple"
+		texturefile = "gfx\\interface\\decision_icon_mend_great_schism.dds"
+	}
+	spriteType = {
+		name = "GFX_restore_high_priesthood"
+		texturefile = "gfx\\interface\\decision_icon_restore_high_priesthood.dds"
+	}
+	spriteType = {
+		name = "GFX_create_israel"
+		texturefile = "gfx\\interface\\decision_icon_create_israel.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_jews"
+		texturefile = "gfx\\interface\\decision_icon_expel_jews.dds"
+	}
+	spriteType = {
+		name = "GFX_welcome_jews"
+		texturefile = "gfx\\interface\\decision_icon_welcome_jews.dds"
+	}
+	spriteType = {
+		name = "GFX_celebrate_passover"
+		texturefile = "gfx\\interface\\decision_icon_celebrate_passover.dds"
+	}
+	spriteType = {
+		name = "GFX_catholic_pilgrimage"
+		texturefile = "gfx\\interface\\decision_icon_catholic_pilgrimage.dds"
+	}
+	spriteType = {
+		name = "GFX_convert_to_spouse_jewish"
+		texturefile = "gfx\\interface\\decision_icon_convert_to_spouse_jewish.dds"
+	}
+	spriteType = {
+		name = "GFX_borrow_money_jews"
+		texturefile = "gfx\\interface\\decision_icon_borrow_money.dds"
+	}
+	spriteType = {
+		name = "GFX_borrow_money_knights_templar"
+		texturefile = "gfx\\interface\\decision_icon_borrow_money.dds"
+	}
+	spriteType = {
+		name = "GFX_borrow_money_assassins"
+		texturefile = "gfx\\interface\\decision_icon_borrow_money.dds"
+	}
+	spriteType = {
+		name = "GFX_borrow_money_bektashi"
+		texturefile = "gfx\\interface\\decision_icon_borrow_money.dds"
+	}
+	spriteType = {
+		name = "GFX_borrow_money_assassins"
+		texturefile = "gfx\\interface\\decision_icon_borrow_money.dds"
+	}
+	spriteType = {
+		name = "GFX_repay_money_jews"
+		texturefile = "gfx\\interface\\decision_icon_repay_loan.dds"
+	}
+	spriteType = {
+		name = "GFX_create_fraticelli_papacy"
+		texturefile = "gfx\\interface\\decision_icon_create_fraticelli_papacy.dds"
+	}
+	spriteType = {
+		name = "GFX_create_iconoclast_patriarchy"
+		texturefile = "gfx\\interface\\decision_icon_create_iconoclast_patriarchy.dds"
+	}
+	spriteType = {
+		name = "GFX_embrace_mutazila"
+		texturefile = "gfx\\interface\\decision_icon_embrace_mutazila.dds"
+	}
+	spriteType = {
+		name = "GFX_embrace_ashari"
+		texturefile = "gfx\\interface\\decision_icon_embrace_ashari.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_the_knights_templar"
+		texturefile = "gfx\\interface\\decision_icon_expel_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_the_knights_hospitaler"
+		texturefile = "gfx\\interface\\decision_icon_expel_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_the_teutonic_order"
+		texturefile = "gfx\\interface\\decision_icon_expel_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_the_jomsvikings"
+		texturefile = "gfx\\interface\\decision_icon_expel_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_the_assassins"
+		texturefile = "gfx\\interface\\decision_icon_expel_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_the_holy_sepulchre"
+		texturefile = "gfx\\interface\\decision_icon_expel_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_saint_anthony"
+		texturefile = "gfx\\interface\\decision_icon_expel_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_immortals"
+		texturefile = "gfx\\interface\\decision_icon_expel_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_zealots"
+		texturefile = "gfx\\interface\\decision_icon_expel_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_sky_lords"
+		texturefile = "gfx\\interface\\decision_icon_expel_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_spirit_guardians"
+		texturefile = "gfx\\interface\\decision_icon_expel_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_warriors_perun"
+		texturefile = "gfx\\interface\\decision_icon_expel_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_chosen_perkunas"
+		texturefile = "gfx\\interface\\decision_icon_expel_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_sons_kaleva"
+		texturefile = "gfx\\interface\\decision_icon_expel_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_huitzilopochtli"
+		texturefile = "gfx\\interface\\decision_icon_expel_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_knights_santiago"
+		texturefile = "gfx\\interface\\decision_icon_expel_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_knights_calatrava"
+		texturefile = "gfx\\interface\\decision_icon_expel_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_money_to_knights_hospitaler"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_money_to_teutonic_order"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_money_to_jomsvikings"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_money_to_holy_sepulchre"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_money_to_saint_anthony"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_money_to_the_immortals"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_money_to_the_zealots"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_money_to_sky_lords"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_money_to_spirit_guardians"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_money_to_warriors_perun"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_money_to_chosen_perkunas"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_money_to_sons_kaleva"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_money_to_huitzilopochtli"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_money_to_knights_santiago"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_money_to_knights_calatrava"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_vassalize_knights_templar"
+		texturefile = "gfx\\interface\\decision_icon_vassalize_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_vassalize_knights_hospitaler"
+		texturefile = "gfx\\interface\\decision_icon_vassalize_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_restore_pope_in_rome"
+		texturefile = "gfx\\interface\\decision_icon_create_fraticelli_papacy.dds"
+	}	
+	spriteType = {
+		name = "GFX_organise_herculeans"
+		texturefile = "gfx\\interface\\decision_icon_heracles.dds"
+	}	
+	spriteType = {
+		name = "GFX_organise_sacred_band"
+		texturefile = "gfx\\interface\\decision_icon_heracles.dds"
+	}	
+	spriteType = {
+		name = "GFX_organise_ulfhednar"
+		texturefile = "gfx\\interface\\decision_icon_berserker.dds"
+	}	
+	spriteType = {
+		name = "GFX_organise_braedralag"
+		texturefile = "gfx\\interface\\decision_icon_berserker.dds"
+	}	
+	spriteType = {
+		name = "GFX_restore_the_pontifex"
+		texturefile = "gfx\\interface\\decision_icon_augustus.dds"
+	}	
 }

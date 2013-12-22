@@ -1,11 +1,13 @@
 860.1.1={
-	liege="k_italy"
+	liege="e_hre"
 }
 860.1.1={
 	holder=163069 
 }
-961.1.1={
-	liege="k_germany"
+925.1.1={
+	holder=1000094288
+}
+954.1.1={
 	holder=7727
 }
 991.1.1={

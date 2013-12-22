@@ -171,7 +171,6 @@
 	trait="tall"
 	trait="brave"
 	trait="skilled_tactician"
-	trait="placeholder"	
 	father=102500
 	mother=102501
 	1015.1.2={
@@ -182,7 +181,10 @@
 	}
 	1066.1.5={
 		add_claim = k_england
-		give_nickname = nick_haardraade
+		give_nickname = nick_haardraade   
+	  effect = {
+	    set_character_flag = harald_hardrada
+	  }
 	}
 
 	1066.9.14 = {
@@ -193,7 +195,6 @@
 		}
 	}
 	1066.9.26 = {
-		remove_trait="placeholder"
 		raise_levies = {
 			dismiss = yes
 			location = 57 # York

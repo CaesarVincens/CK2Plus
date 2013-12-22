@@ -18,6 +18,12 @@ character_event = {
 		OR = {
 			capital_scope = {
 				kingdom = { title = k_england }
+			} 
+			capital_scope = {
+				kingdom = { title = k_englandnorman }
+			}  
+			capital_scope = {
+				kingdom = { title = k_englandnorwegian }
 			}
 			capital_scope = {
 				empire = { title = e_britannia }
@@ -30,6 +36,18 @@ character_event = {
 			any_demesne_province = {
 				kingdom = {
 					title = k_england
+				}
+				culture = saxon
+			}
+			any_demesne_province = {
+				kingdom = {
+					title = k_englandnorman
+				}
+				culture = saxon
+			} 
+			any_demesne_province = {
+				kingdom = {
+					title = k_englandnorwegian
 				}
 				culture = saxon
 			}
@@ -168,6 +186,12 @@ character_event = {
 				OR = {
 					kingdom = {
 						title = k_england
+					}  
+					kingdom = {
+						title = k_englandnorman
+					} 
+					kingdom = {
+						title = k_englandnorwegian
 					}
 					empire = {
 						title = e_britannia
@@ -196,6 +220,12 @@ character_event = {
 			OR = {
 				kingdom = {
 					title = k_england
+				} 
+				kingdom = {
+					title = k_englandnorman
+				}
+				kingdom = {
+					title = k_englandnorwegian
 				}
 				empire = {
 					title = e_britannia
@@ -224,6 +254,12 @@ character_event = {
 					OR = {
 						capital_scope = {
 							kingdom = { title = k_england }
+						}
+						capital_scope = {
+							kingdom = { title = k_englandnorman }
+						}
+						capital_scope = {
+							kingdom = { title = k_englandnorwegian }
 						}
 						capital_scope = {
 							empire = { title = e_britannia }
@@ -258,6 +294,12 @@ character_event = {
 					kingdom = {
 						title = k_england
 					}
+					kingdom = {
+						title = k_englandnorman
+					}
+					kingdom = {
+						title = k_englandnorwegian
+					}
 					empire = {
 						title = e_britannia
 					}
@@ -285,6 +327,12 @@ character_event = {
 						OR = {
 							capital_scope = {
 								kingdom = { title = k_england }
+							} 
+							capital_scope = {
+								kingdom = { title = k_englandnorman }
+							}
+							capital_scope = {
+								kingdom = { title = k_englandnorwegian }
 							}
 							capital_scope = {
 								empire = { title = e_britannia }
@@ -299,6 +347,11 @@ character_event = {
 			}
 			culture = english
 			set_province_flag = melting_pot
+			hidden_tooltip = {
+				ROOT = {
+					set_character_flag = civilized_province
+				}
+			}
 		}
 	}
 }
@@ -319,6 +372,12 @@ character_event = {
 		OR = {
 			capital_scope = {
 				kingdom = { title = k_england }
+			}
+			capital_scope = {
+				kingdom = { title = k_englandnorman }
+			} 
+			capital_scope = {
+				kingdom = { title = k_englandnorwegian }
 			}
 			capital_scope = {
 				empire = { title = e_britannia }
@@ -390,6 +449,12 @@ character_event = {
 				kingdom = { title = k_england }
 			}
 			capital_scope = {
+				kingdom = { title = k_englandnorman }
+			}
+			capital_scope = {
+				kingdom = { title = k_englandnorwegian }
+			}
+			capital_scope = {
 				empire = { title = e_britannia }
 			}
 			capital_scope = {
@@ -407,6 +472,16 @@ character_event = {
 				any_demesne_province = {
 					kingdom = {
 						title = k_england
+					}
+				}
+				any_demesne_province = {
+					kingdom = {
+						title = k_englandnorman
+					}
+				}
+				any_demesne_province = {
+					kingdom = {
+						title = k_englandnorwegian
 					}
 				}
 				any_demesne_province = {
@@ -449,6 +524,16 @@ character_event = {
 					any_demesne_province = {
 						kingdom = {
 							title = k_england
+						}
+					}
+					any_demesne_province = {
+						kingdom = {
+							title = k_englandnorman
+						}
+					}
+					any_demesne_province = {
+						kingdom = {
+							title = k_englandnorwegian
 						}
 					}
 					any_demesne_province = {
@@ -772,6 +857,11 @@ character_event = {
 			}
 			culture = sicilian
 			set_province_flag = melting_pot
+			hidden_tooltip = {
+				ROOT = {
+					set_character_flag = civilized_province
+				}
+			}
 		}
 	}
 }
@@ -1221,6 +1311,11 @@ character_event = {
 			}
 			culture = sicilian_greek
 			set_province_flag = melting_pot
+			hidden_tooltip = {
+				ROOT = {
+					set_character_flag = civilized_province
+				}
+			}
 		}
 	}
 }
@@ -1594,6 +1689,11 @@ character_event = {
 			}
 			culture = sicilian_arabic
 			set_province_flag = melting_pot
+			hidden_tooltip = {
+				ROOT = {
+					set_character_flag = civilized_province
+				}
+			}
 		}
 	}
 }
@@ -1691,16 +1791,38 @@ character_event = {
 			independent = yes
 			top_liege = { culture = english_norse }
 		}
-		capital_scope = {
-			kingdom = { title = k_england }
-		}
+    OR = {
+		    capital_scope = {
+		    	kingdom = { title = k_england }
+	     	}
+		    capital_scope = {
+		    	kingdom = { title = k_englandnorman }
+	     	}
+		    capital_scope = {
+		    	kingdom = { title = k_englandnorwegian }
+	     	}
+    }    
 		culture_group = north_germanic
-		any_demesne_province = {
-			kingdom = {
-				title = k_england
-			}
-			culture = saxon
-		}
+    OR = {
+		    any_demesne_province = {  
+		      	kingdom = {
+			       	title = k_england
+			     }
+		   	culture = saxon
+		    }
+		    any_demesne_province = {  
+		      	kingdom = {
+			       	title = k_englandnorman
+			     }
+		   	culture = saxon
+		    }
+		    any_demesne_province = {  
+		      	kingdom = {
+			       	title = k_englandnorwegian
+			     }
+		   	culture = saxon
+		    }
+    }    
 	}
 
 	mean_time_to_happen = {
@@ -1820,10 +1942,18 @@ character_event = {
 		culture = english_norse
 		random_demesne_province = {
 			limit = {
-				kingdom = {
-					title = k_england
-				}
-				culture = saxon
+        OR = {
+				  kingdom = {
+					 title = k_england
+				  } 
+				  kingdom = {
+					 title = k_englandnorman
+				  }
+				  kingdom = {
+					 title = k_englandnorwegian
+				  }
+        }  
+				culture = saxon   
 			}
 			culture = english_norse
 			set_province_flag = melting_pot
@@ -1840,7 +1970,11 @@ character_event = {
 	trigger = {
 		year = 1100
 		any_demesne_province = {
-			kingdom = { title = k_england }
+       OR = {
+		    	kingdom = { title = k_england } 
+		    	kingdom = { title = k_englandnorman }
+		    	kingdom = { title = k_englandnorwegian }
+      }    
 			culture = saxon
 			OR = {
 				AND = {
@@ -1853,7 +1987,11 @@ character_event = {
 						top_liege = { culture = english_norse }
 					}
 					capital_scope = {
-						kingdom = { title = k_england }
+						OR = {
+                kingdom = { title = k_england } 
+                kingdom = { title = k_englandnorman }
+                kingdom = { title = k_englandnorwegian }
+                }
 					}
 					culture = english_norse
 				}
@@ -1878,7 +2016,11 @@ character_event = {
 		name = "EVTOPTA100009031"
 		random_demesne_province = {
 			limit = {
-				kingdom = { title = k_england }
+						OR = {
+                kingdom = { title = k_england } 
+                kingdom = { title = k_englandnorman }
+                kingdom = { title = k_englandnorwegian }
+                }
 				culture = saxon
 				OR = {
 					AND = {
@@ -1891,7 +2033,11 @@ character_event = {
 							top_liege = { culture = english_norse }
 						}
 						capital_scope = {
-							kingdom = { title = k_england }
+						OR = {
+                kingdom = { title = k_england } 
+                kingdom = { title = k_englandnorman }
+                kingdom = { title = k_englandnorwegian }
+                }
 						}
 						culture = english_norse
 					}
@@ -1900,6 +2046,11 @@ character_event = {
 			}
 			culture = english_norse
 			set_province_flag = melting_pot
+			hidden_tooltip = {
+				ROOT = {
+					set_character_flag = civilized_province
+				}
+			}
 		}
 	}
 }
@@ -1917,7 +2068,11 @@ character_event = {
 			top_liege = { culture = english_norse }
 		}
 		capital_scope = {
-			kingdom = { title = k_england }
+						OR = {
+                kingdom = { title = k_england } 
+                kingdom = { title = k_englandnorman }
+                kingdom = { title = k_englandnorwegian }
+                }
 		}
 		culture = english_norse
 		any_courtier = {
@@ -1981,7 +2136,7 @@ character_event = {
 	picture = GFX_evt_throne_room
 
 	trigger = {
-		year = 1100
+		has_global_flag = christian_crusades_unlocked
 		NOT = { culture = outremer }
 		NOT = { culture_group = arabic }
 		OR = {
@@ -2002,7 +2157,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 120
+		months = 500
 		modifier = {
 			factor = 0.01
 			independent = no
@@ -2126,7 +2281,7 @@ character_event = {
 	picture = GFX_evt_throne_room
 
 	trigger = {
-		year = 1100
+		has_global_flag = christian_crusades_unlocked
 		OR = {
 			independent = yes
 			top_liege = { culture = outremer }
@@ -2221,7 +2376,7 @@ character_event = {
 	picture = GFX_evt_throne_room
 
 	trigger = {
-		year = 1100
+		has_global_flag = christian_crusades_unlocked
 		NOT = { culture = latin }
 		NOT = { culture_group = byzantine }
 		OR = {
@@ -2239,18 +2394,10 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 120
+		months = 500
 		modifier = {
 			factor = 0.01
 			independent = no
-		}
-		modifier = {
-			factor = 0.5
-			year = 1150
-		}
-		modifier = {
-			factor = 0.5
-			year = 1200
 		}
 		modifier = {
 			factor = 1.05
@@ -2363,7 +2510,7 @@ character_event = {
 	picture = GFX_evt_throne_room
 
 	trigger = {
-		year = 1100
+		has_global_flag = christian_crusades_unlocked
 		OR = {
 			independent = yes
 			top_liege = { culture = latin }
@@ -2720,6 +2867,11 @@ character_event = {
 			}
 			culture = gallawa
 			set_province_flag = melting_pot
+			hidden_tooltip = {
+				ROOT = {
+					set_character_flag = civilized_province
+				}
+			}
 		}
 	}
 }

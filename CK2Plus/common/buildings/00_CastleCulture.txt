@@ -360,6 +360,7 @@ castle = {
 					culture = norman
 					culture = german
 					culture = breton
+					culture = cornish
 					culture_group = crusader_group
 				}
 			}
@@ -384,6 +385,8 @@ castle = {
 					culture = norman
 					culture = german
 					culture = breton
+					culture = cornish
+					culture_group = crusader_group
 				}
 			}
 		}
@@ -407,6 +410,8 @@ castle = {
 					culture = norman
 					culture = german
 					culture = breton
+					culture = cornish
+					culture_group = crusader_group
 				}
 			}
 		}
@@ -430,6 +435,8 @@ castle = {
 					culture = norman
 					culture = german
 					culture = breton
+					culture = cornish
+					culture_group = crusader_group
 				}
 			}
 		}
@@ -510,7 +517,12 @@ castle = {
 	ca_culture_italian_1 = {
 		desc = ca_culture_italian_1_desc
 		potential = {
-			FROM = { culture = italian }
+			FROM = { 
+				OR = {
+					culture = italian
+					culture = sicilian
+				}
+			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		prerequisites = { ca_wall_2 }
@@ -525,7 +537,12 @@ castle = {
 	ca_culture_italian_2 = {
 		desc = ca_culture_italian_1_desc
 		potential = {
-			FROM = { culture = italian }
+			FROM = { 
+				OR = {
+					culture = italian
+					culture = sicilian
+				}
+			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		upgrades_from = ca_culture_italian_1
@@ -540,7 +557,12 @@ castle = {
 	ca_culture_italian_3 = {
 		desc = ca_culture_italian_1_desc
 		potential = {
-			FROM = { culture = italian }
+			FROM = { 
+				OR = {
+					culture = italian
+					culture = sicilian
+				}
+			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
 		upgrades_from = ca_culture_italian_2
@@ -638,6 +660,7 @@ castle = {
 				OR = {
 					culture_group = north_germanic
 					culture = saxon
+					culture = gallawa
 				}
 			}
 		}
@@ -658,6 +681,7 @@ castle = {
 				OR = {
 					culture_group = north_germanic
 					culture = saxon
+					culture = gallawa
 				}
 			}
 		}
@@ -678,6 +702,7 @@ castle = {
 				OR = {
 					culture_group = north_germanic
 					culture = saxon
+					culture = gallawa
 				}
 			}
 		}
@@ -698,6 +723,7 @@ castle = {
 				OR = {
 					culture_group = north_germanic
 					culture = saxon
+					culture = gallawa
 				}
 			}
 		}
@@ -859,8 +885,8 @@ castle = {
 	# Byzantine Cataphracts
 	ca_culture_group_byzantine_1 = {
 		desc = ca_culture_group_byzantine_1_desc
-		potential = {
-			FROM = { culture_group = byzantine }
+		potential = { 
+			FROM = { culture_group = byzantine } 
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		prerequisites = { ca_wall_2 }
@@ -876,8 +902,8 @@ castle = {
 	}
 	ca_culture_group_byzantine_2 = {
 		desc = ca_culture_group_byzantine_1_desc
-		potential = {
-			FROM = { culture_group = byzantine }
+		potential = { 
+			FROM = { culture_group = byzantine } 
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		upgrades_from = ca_culture_group_byzantine_1
@@ -893,8 +919,8 @@ castle = {
 	}
 	ca_culture_group_byzantine_3 = {
 		desc = ca_culture_group_byzantine_1_desc
-		potential = {
-			FROM = { culture_group = byzantine }
+		potential = { 
+			FROM = { culture_group = byzantine } 
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
 		upgrades_from = ca_culture_group_byzantine_2
@@ -910,8 +936,8 @@ castle = {
 	}
 	ca_culture_group_byzantine_4 = {
 		desc = ca_culture_group_byzantine_1_desc
-		potential = {
-			FROM = { culture_group = byzantine }
+		potential = { 
+			FROM = { culture_group = byzantine } 
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
 		upgrades_from = ca_culture_group_byzantine_3
@@ -1317,4 +1343,127 @@ castle = {
 
 		extra_tech_building_start = 0.8
 	}
+	
+	# Roman Legionary
+	ca_culture_roman_1 = {
+		desc = ca_culture_roman_1_desc
+		potential = {
+			FROM = { culture = roman }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		build_cost = 200
+		build_time = 730
+		heavy_infantry = 30
+		heavy_infantry_defensive = 0.15
+		ai_creation_factor = 101
+
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_roman_2 = {
+		desc = ca_culture_roman_1_desc
+		potential = {
+			FROM = { culture = roman }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_roman_1
+		build_cost = 300
+		build_time = 1095
+		heavy_infantry = 40
+		heavy_infantry_defensive = 0.15
+		ai_creation_factor = 101
+
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_roman_3 = {
+		desc = ca_culture_roman_1_desc
+		potential = {
+			FROM = { culture = roman }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_roman_2
+		build_cost = 400
+		build_time = 2190
+		heavy_infantry = 50
+		heavy_infantry_defensive = 0.15
+		ai_creation_factor = 101
+
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_roman_4 = {
+		desc = ca_culture_roman_1_desc
+		potential = {
+			FROM = { culture = roman }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_roman_3
+		build_cost = 500
+		build_time = 2190
+		heavy_infantry = 60
+		heavy_infantry_defensive = 0.15
+		ai_creation_factor = 101
+
+		extra_tech_building_start = 0.8
+	}
+	# Jewish Heavy Infantry
+	ca_culture_jewish_1 = {
+		desc = ca_culture_jewish_1_desc
+		potential = {
+			FROM = { religion_group = jewish_group }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		build_cost = 200
+		build_time = 730
+		heavy_infantry = 30
+		heavy_infantry_morale = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_jewish_2 = {
+		desc = ca_culture_jewish_1_desc
+		potential = {
+			FROM = { religion_group = jewish_group }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_jewish_1
+		build_cost = 300
+		build_time = 1095
+		heavy_infantry = 40
+		heavy_infantry_morale = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_jewish_3 = {
+		desc = ca_culture_jewish_1_desc
+		potential = {
+			FROM = { religion_group = jewish_group }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_jewish_2
+		build_cost = 400
+		build_time = 2190
+		heavy_infantry = 50
+		heavy_infantry_morale = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_jewish_4 = {
+		desc = ca_culture_jewish_1_desc
+		potential = {
+			FROM = { religion_group = jewish_group }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_jewish_3
+		build_cost = 500
+		build_time = 2190
+		heavy_infantry = 60
+		heavy_infantry_morale = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}	
 }

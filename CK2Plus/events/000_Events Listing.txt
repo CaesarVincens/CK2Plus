@@ -52,7 +52,7 @@
 #1000182040 - Inside Man Fails
 #1000182041 - Inside Man fails, reveals the plotter's name
 
-#No Hassles Vassals
+#No Hassles Vassals (NHV)
 #1000182042 - Flag Province
 #1000182043 - Unflag Province
 #1000182044 - Flag Province (Marshal)
@@ -117,4 +117,559 @@
 #1000182093 - plotter alerted to exposure
 #1000182094 - target grateful
 
+#Aonach Tailteann
+#1000182095 - Invitation
+#1000182096 - Start of Aonach
+#1000182097 - Aonach has been cancelled
+#1000182098 - Invitations have gone out
+#1000182099 - Ruler has died, the Aonach is over
+#1000182100 - The Aonach has been cancelled due to Ruler's death
+#1000182101 - Choose who to honor at the bonfire
+#1000182102 - In memory of father
+#1000182103 - In memory of mother
+#1000182104 - Ruler chooses which caste to favor
+#1000182105 - Learn of new laws from Ollamh ( Wariors )
+#1000182106 - Learn of new laws from Ollamh ( Druids )
+#1000182107 - Learn of new laws from Ollamh ( Merchants )
+#1000182108 - Learn of new laws from Ollamh ( Balanced )
+#1000182109 - Learn of new laws from Ollamh ( Fianna )
+#1000182110 - Learn of new laws from Ollamh ( Crown )
+#1000182111 - Learn of new laws from Ollamh ( Birds )
+#1000182112 - Law Phase ( Wariors )
+#1000182113 - Law phase ( Druids )
+#1000182114 - Law phase ( Merchants )
+#1000182115 - Law phase ( Balanced )
+#1000182116 - Law phase ( Fianna )
+#1000182117 - Law phase ( Crown )
+#1000182118 - Law phase ( Birds )
+#1000182119 - Character is the best athlete
+#1000182120 - Inform about best athlete
+#1000182121 - Best fighter
+#1000182122 - Inform about best fighter
+#1000182123 - Character wins best crafstman
+#1000182124 - Inform about best crafstman
+#1000182125 - Tailteann is over
+#1000182126 - Message about death
+#1000182127 - Message about maimed
+#1000182128 - Message about wounded
+#1000182129 - End of tailteann event
+#1000182130 - End of tailteann event
+#1000182131 - End of tailteann event
+#1000182132 - End of tailteann event
+#1000182133 - End of tailteann event
+#1000182134 - End of tailteann event
+#1000182135 - Character is killed
+#1000182136 - Character is maimed
+#1000182137 - Character is wounded
+#1000182138 - Character becomes craven
+#1000182139 - Character becomes brave
+#1000182140 - Character becomes tough soldier
+#1000182141 - Character becomes skilled tactician
+#1000182142 - Character becomes brilliant strategist
+#1000182143 - Character becomes skilled tactician
+#1000182144 - Character becomes tough soldier
+#1000182145 - Character becomes misguided warrior
+#1000182146 - Character becomes homosexual
+#1000182147 - Character becomes syphilitic
+#1000182148 - Character becomes drunkard
+#1000182149 - Character becomes duelist
+#1000182150 - Character gains diplomacy
+#1000182151 - Character loses diplomacy
+#1000182152 - Character gains stewardship
+#1000182153 - Character loses stewardship
+#1000182154 - Character gains diplomacy
+#1000182155 - Character loses diplomacy
+#1000182156 - Game Phase
 
+#MZ Zhayedan (Immortals)
+#1000182157 - First Immortals
+#1000182158 - Second Immortals
+
+#MZ Sacrifices & Ritual
+#1000182159 - Pick a sacrifice
+#1000182160 - Cleansing Ritual
+
+#MZ Mongols
+#1000182161 - Mongols Sack New Persepolis
+
+#Mongol Bloodlust Maintenance Event
+#1000182162 - Add Bloodlust
+#1000182163 - Remove Bloodlust
+
+#Kemetic Dynastic Marriage
+#1000182164 - on_action event
+
+#Brythonic Druidism
+#1000182165 - Meeting a Bard
+#1000182166 - The Afanc
+
+#Druidic Headhunters
+#1000182167 - Druidic character takes first enemy head
+#1000182168	- Druidic character takes second enemy head
+#1000182169 - Druidic character takes third enemy head
+#1000182170 - Druidic character takes fourth enemy head
+#1000182171 - Druidic character takes fifth enemy head and becomes a legend
+#1000182172 - Druidic hero takes a enemy head
+
+#Rebirth of Druidism
+#1000182173 - Old "Wizard" Appears
+#1000182174 - Adopt celtic rites
+#1000182175 - Bishop asks character to reform Celtic ways
+#1000182176 - Adopt celtic rites (vassal)
+#1000182177 - Vassal adopted celtic rites
+#1000182178 - Vassal refuses celtic rites
+
+### Lunatic and Possessed conversion
+#1000182179 - Hear a tapping at the door
+#1000182180 - The elves come in
+#1000182181 - King of the Elves!
+
+#Celtic Divination Events
+#1000182182 - You summon your vassals to the divination
+#1000182183 - Summoned to divination (Vassal)
+#1000182184 - Non-Druidic Pagans pay to skip divination
+#1000182185 - Non-Druidic Pagans pay to skip divination (Liege)
+#1000182186 - Non-Druidic Pagans refuse to pay to skip divination (Liege)
+#1000182187 - Divination Begin! (Liege)
+#1000182188 - Divination Begin! (Vassal)
+#1000182189 - Sacrifice Prisoner 1 (Prisoner)
+#1000182190 - Sacrifice Prisoner 2 (Prisoner)
+#1000182191 - Sacrifice Prisoner 3 (Prisoner)
+#1000182192 - Sacrifice Prisoner 4 (Prisoner)
+#1000182193 - Sacrifice Generic 1 (Liege)
+#1000182194 - Sacrifice Christian (Liege)
+#1000182195 - Sacrifice Muslim (Liege)
+#1000182196 - Sacrifice Brother (Liege)
+#1000182197 - Sacrifice Sister (Liege)
+#1000182198 - Sacrifice Father (Liege)
+#1000182199 - Sacrifice Mother (Liege)
+#1000182200 - Sacrifice Son (Liege)
+#1000182201 - Sacrifice Daughter (Liege)
+#1000182202 - Sacrifice Other Kinsman (Liege)
+#1000182203 - Sacrifice Spouse/Consort (Liege)
+#1000182204 - Sacrifice Aztec (Liege)
+#1000182205 - Sacrifice Generic (Vassal)
+#1000182206 - Sacrifice Christian (Vassal)
+#1000182207 - Sacrifice Muslim (Vassal)
+#1000182208 - Sacrifice Brother (Vassal)
+#1000182209 - Sacrifice Sister (Vassal)
+#1000182210 - Sacrifice Father (Vassal)
+#1000182211 - Sacrifice Mother (Vassal)
+#1000182212 - Sacrifice Son (Vassal)
+#1000182213 - Sacrifice Daughter (Vassal)
+#1000182214 - Sacrifice Other Kinsman (Vassal)
+#1000182215 - Sacrifice Spouse/Consort (Vassal)
+#1000182216 - Sacrifice Aztec (Vassal)
+#1000182217 - No Prisoners, Slaves sacrificed instead (Liege)
+#1000182218 - No Prisoners, Slaves sacrificed instead (Vassal)
+#1000182219 - Liege changed his mind about sacrifice (prisoner)
+#1000182220 - Prisoner 2 (Liege invisible)
+#1000182221 - Prisoner 3 (Liege invisible)
+#1000182222 - Prisoner 4 (Liege invisible)
+#1000182223 - Divination Glory (Liege)
+#1000182224 - Divination Victory (Liege)
+#1000182225 - Divination Ends (Liege)
+#1000182226 - Divination Ends (Vassal)
+#1000182227 - Divination Wealth (Liege)
+#1000182228 - Divination Loss (Liege)
+#1000182229 - Divination Anger (Liege)
+#1000182230 - Divination Glory (Vassal)
+#1000182231 - Divination Victory (Vassal)
+#1000182232 - Divination Wealth (Vassal)
+#1000182233 - Divination Loss (Vassal)
+#1000182234 - Divination Anger (Vassal)
+#1000182235 - Sacrifice Generic 2 (Liege)
+#1000182236 - Sacrifice Generic 3 (Liege)
+#1000182237 - Sacrifice Generic 4 (Liege)
+
+#Gaelic Flavour Events
+#1000182238 - 
+#1000182239 - 
+
+#The Fianna
+#1000182240 - The Fianna Founded (Gaelic King)
+#1000182241 - The Fianna Founded (Gaelic)
+#1000182242 - Fianna Chief gets Fian trait
+#1000182243 - Son has served a few years
+#1000182244 - Son wants to join the Fianna (Son)
+#1000182245 - Son wants to join the fianna (Father)
+#1000182246 - Son returns scarred but seasoned (Son)
+#1000182247 - Son returns scarred but seasoned
+#1000182248 - Son returns maimed (Son)
+#1000182249 - Son returns maimed
+#1000182250 - Son returns as excellent strategist (Son)
+#1000182251 - Son returns as excellent strategist
+#1000182252 - Son returns with PTSD (Son)
+#1000182253 - Son returns with PTSD
+#1000182254 - Son returns home with wife (Son)
+#1000182255 - Son returns home with wife
+#1000182256 - Son returns home as a zealot (Son)
+#1000182257 - Son returns home as a zealot
+#1000182258 - Son returns home as a seasoned warrior (Son)
+#1000182259 - Son returns home as a seasoned warrior
+#1000182260 - Son dies in battle (Son)
+#1000182261 - Son dies in battle
+#1000182262 - Son returns with loot (Son)
+#1000182263 - Son returns with loot
+#1000182264 - Father dies, Player Son is heir
+#1000182265 - Father dies, Son gets Fian trait
+
+#The Sons of Gwydion
+#1000182266 - The Sons of Gwydion Founded (Brythonic King)
+#1000182267 - The sons of Gwydion Founded (Druidic)
+#1000182268 - Sons of Gwydion Chief gets Wolf trait
+#1000182269 - Son has served a few years
+#1000182270 - Son wants to join the Sons of Gwydion (Son)
+#1000182271 - Son wants to join the sons of Gwydion (Father)
+#1000182272 - Son returns scarred but seasoned (Son)
+#1000182273 - Son returns scarred but seasoned
+#1000182274 - Son returns maimed (Son)
+#1000182275 - Son returns maimed
+#1000182276 - Son returns as excellent strategist (Son)
+#1000182277 - Son returns as excellent strategist
+#1000182278 - Son returns with PTSD (Son)
+#1000182279 - Son returns with PTSD
+#1000182280 - Son returns home with wife (Son)
+#1000182281 - Son returns home with wife
+#1000182282 - Son returns home as a zealot (Son)
+#1000182283 - Son returns home as a zealot
+#1000182284 - Son returns home as a seasoned warrior (Son)
+#1000182285 - Son returns home as a seasoned warrior
+#1000182286 - Son dies in battle (Son)
+#1000182287 - Son dies in battle
+#1000182288 - Son returns with loot (Son)
+#1000182289 - Son returns with loot
+#1000182290 - Father dies, Player Son is heir
+#1000182291 - Father dies, Son gets Wolf Warrior trait
+
+#Hellenic Flavour Events
+#1000182292 - Augur hit by lightning
+#1000182293 - Drunken Actors
+
+#Flamines Maiores
+#1000182294 - The Flamen Dialis must resign
+#1000182295 - The Flamen Martialis must resign
+#1000182296 - The Flamen Quirinalis must resign
+#1000182297 - Cleanup when a Flamines lost his title some other way
+
+#Vestales
+#1000182298 - The Vestalis Maxima should be the guardian of all underage Vestalis
+#1000182299 - A vestalis must retire after 30 years
+#1000182300 - Cleanup when a Vestalis lost her title by some way other than retiring
+#1000182301 - Cleanup when a Vestalis dies
+#1000182302 - A vassal has nominated a vestalis
+
+#Revival of the Hellenic religion
+#1000182303 - Studied the classics
+#1000182304 -
+#1000182305 - Make Hellenic Paganism the state religion?
+#1000182306 - Adopt the new Hellenic state religion?
+#1000182307 - "Demand religious conversion" workaround
+
+#Roman Events
+### Lost Roman Provinces
+#1000182308 - Provincia Cyrenaica et Creta
+#1000182309 - Provincia Sicilia
+#1000182310 - Provincia Corsica et Sardinia
+#1000182311 - Provincia Viennensis
+#1000182312 - The Restoration of Rome (HRE)
+#1000182313 - Informed about Restoration of Rome (HRE)
+#1000182314 - The Creation of a new Rome
+#1000182315 - Informed about Creation of a new Rome
+
+#DS Ransom all
+#1000182316 - Demand Pay Decision
+#1000182317 - Pay?
+#1000182318 - Denied Pay
+
+#Kemetic Restore Luxor Temple
+#1000182319 - Work Begins
+#1000182320 - What Perk?
+#1000182321 - It is done!
+#1000182322 - The world knows
+
+#AR Conversion event
+#1000182323 - Choose your fate
+
+#Pogrom event
+#1000182324 - Do it?
+
+#Kemetic Pyramid Building
+#1000182325 - Build me a pyramid!
+#1000182326 - Work done
+
+#FTT Kingdom Upgrade
+#1000182327 - Tuscany Upgrade
+#1000182328 - Austria Upgrade
+#1000182329 - Luxembourg Upgrade
+
+#Kemetic Priesthood
+#1000182330 - Narrative event
+
+#Kemetic Holy Orders
+#1000182331 - Anubis Guard
+#1000182332 - Horusian Guard
+
+#HRE Rename Event
+#1000182333
+
+#Friend Events
+#1000182334 - Check Friends
+#1000182335 - 1000182350 - friendship ambition events
+
+#Regent Events
+#1000182351 - Events for Become Regent Ambition
+
+#Events for nickname ambition - BY JGCrusader
+#1000182352 - names for good and skilled characters
+#1000182353 - names for good but less skilled characters
+#1000182354 - names for evil and skilled characters
+#1000182355 - names for evil and less skilled characters
+#1000182356 - bastard nickname
+#1000182357 - old nickname
+#1000182358 - silent nickname
+#1000182359 - fat/drunkard nicknames
+#1000182360 - effeminate nickname
+#1000182361 - attractive nicknames
+#1000182362 - proud nickname
+#1000182363 - names for soldier characters
+#1000182364 - names for pious characters
+#1000182365 - names for maimed characters
+#1000182366 - noble nickname
+#1000182367 - kind nickname
+#1000182368 - hunter/folwer nickname
+#1000182369 - mad nickname
+#1000182370 - heathen nickname
+#1000182371 - monk nickname
+#1000182372 - religious soldier nicknames
+
+# Events for friends of liege asking for help - by JGCrusader
+#1000182373 - friend asks for help with getting married (AI only)
+#1000182374 - liege responds to request for help with getting married
+#1000182375 - friend asks for help with being priest (AI only)
+#1000182376 - liege responds to help request for being priest
+#1000182377 - friend asks to mentor liege's child
+#1000182378 - liege responds to mentor liege's child request
+#1000182379 - liege says OK to wardship request
+#1000182380 - liege says no to wardship request
+#1000182381 - friend asks for help with amassing wealth
+#1000182382 - liege responds to help request for amassing wealth
+#1000182383 - he gave me nothing
+#1000182384 - He gave some money
+#1000182385 - He talked me out of my ambition
+#1000182386 - friend asks liege to stop war against him
+#1000182387 - liege responds to request to stop inter-realm war
+#1000182388 - friend gets response - peace
+#1000182389 - aggressor is forced to make peace and isn't happy
+#1000182390 - friend gets response - no help
+
+#Dishonorable Events
+#1000182391 - Assassin is excommunicated
+#1000182392 - Assassin goes nuts
+#1000182393 - Murder a Courtier?
+
+#Civil War Events
+#1000182394-1000182424
+
+#Claims Events
+#1000182425-1000182426
+
+#Coronation Events
+#1000182427-1000182436
+
+#Character Decision Events
+#1000182437-1000182440
+
+#Trait Events
+#1000182441 - 1000182461
+
+#Faction court events
+#1000182462 - court faction - give prestige to liege
+#1000182463 - court faction - financial contribution to liege
+#1000182464 - demand lifetime appointments
+#1000182561 - Court faction - demand reduction in levies
+#1000182562 - Court faction - demand change in tax privileges
+
+
+#Faction events
+#1000182465 - Faction leader convenes a meeting
+#1000182466
+#1000182467
+#1000182468 - Regular meeting - setting the agenda
+#1000182469 - Angry meeting - setting the agenda
+#1000182470 Faction leader is ousted after losing a regular vote
+#1000182471
+#1000182472
+#1000182473
+#1000182474
+#1000182475
+#1000182476
+#1000182477
+#1000182478
+#1000182479
+#1000182480
+#1000182481 - Faction leader is ousted after wasting a meeting
+#1000182482 - Faction leader is ousted after showing cowardice
+#1000182483
+#1000182484
+#1000182485
+#1000182486
+#1000182487 - Agenda - strengthen self
+#1000182488 - Agenda - strengthen liege
+#1000182489 - Agenda - weaken liege
+#1000182490 - Agenda - make demand of liege
+#1000182491 - Great Speech
+#1000182492
+#1000182493 - Good speech
+#1000182494
+#1000182495 - Fair speech
+#1000182496
+#1000182497 - Bad speech
+#1000182498
+#1000182499 - Awful speech
+#1000182500
+#1000182501 - Faction leader wants money - result of the vote
+#1000182502 - Yes vote - notify
+#1000182503 - No vote - notify
+#1000182504 - Increased faction opinion of liege
+#1000182505
+#1000182506
+#1000182507- Slightly increased opinion of liege
+#1000182508
+#1000182509
+#1000182510 - Decreased faction opinion of liege
+#1000182511
+#1000182512
+#1000182513 - Faction leader wants money for liege - result of the vote
+#1000182514 - Yes vote - notify
+#1000182515 - No vote - notify
+#1000182516 - Faction leader wants show of support for liege - result of the vote
+#1000182517 - Yes vote - notify
+#1000182518 - No vote - notify
+#1000182519 - Decreased faction opinion of liege
+#1000182520
+#1000182521
+#1000182522 - Slightly decreased faction opinion of liege
+#1000182523
+#1000182524
+#1000182525 - Increased faction opinion of liege
+#1000182526
+#1000182527
+#1000182528 - Faction leader wants to declare war - results of the vote
+#1000182529 - Yes vote - notify
+#1000182530 - No vote - notify
+#1000182531 - Faction leader wants to demand lower CA - results of the vote
+#1000182532 - Yes vote - notify
+#1000182533 - No vote - notify
+#1000182534 - Faction leader wants to demand reduction of taxes - results of the vote
+#1000182535 - Yes vote - notify
+#1000182536 - No vote - notify
+#1000182537 - Faction leader wants to demand a change in tax privilege - results of the vote
+#1000182538 - Yes vote - notify
+#1000182539 - No vote - notify
+#1000182540 - Faction leader wants to demand a change in levy privilege - results of the vote
+#1000182541 - Yes vote - notify
+#1000182542 - No vote - notify
+#1000182543 - Faction leader wants to demand a change in council law - results of the vote
+#1000182544 - Yes vote - notify
+#1000182545 - No vote - notify
+#1000182546 - Oust faction leader
+#1000182547 - Results of the vote
+#1000182548 - Faction leader stepped down - notify members
+#1000182549 - Faction leader stepped down after vote - notify members
+#1000182550 - Faction leader defeated vote of no confidence - notify members
+#1000182551 - Faction member votes on whether to oust leader
+#1000182552 - Faction member votes on whether to give money to leader
+#1000182553 - Faction member votes on whether to give money to liege
+#1000182554 - Faction member votes on whether to show support for liege
+#1000182555 - Faction member votes on whether to declare war
+#1000182556 - Faction member votes on whether to demand reduced CA
+#1000182557 - Faction member votes on whether to demand reduced taxes
+#1000182558 - Faction member votes on whether to demand a change in tax privilege
+#1000182559 - Faction member votes on whether to demand change in levy privileges
+#1000182560 - Faction member votes on whether to demand change in council law
+
+#Neustria Rename (Normandy)
+#1000182563 - Renamed!
+
+#English Anarchy Special Events
+#1000182564 Claim distribution
+
+#Hellenic Holy Order Events
+#1000182565 Herculeans Founded
+#1000182566 Herculeans Notification
+#1000182567 Sacred Band Founded
+#1000182568 Sacred Band Notification
+#1000182573 Herculeans ask for land 
+#1000182574 Olympus Mons built
+
+#Norse Holy Order Events
+#1000182569 Bræðralag Founded
+#1000182570 Bræðralag Notification
+#1000182571 Úlfheðnar Founded
+#1000182572 Úlfheðnar Notification
+
+#Female Heir Events
+#1000182575 The Heir is Female
+#1000182576 Cleanup after 1000182575
+#1000182577 No sons, should we change our laws?
+#1000182578 Weirdness-proofing and notification for 1000182577
+#1000182579 make my vassals pledge allegiance to my daughter
+#1000182580 vassal is asked for his oath to the heiress
+#1000182581 Notify Acceptance
+#1000182582	Notify Refusal
+
+#Female Tournament Events
+#1000182583 Lady invited
+#1000182584 Champion ordered to represent his lady
+#1000182585 Champion killed
+#1000182586 Champion maimed
+#1000182587 Champion wounded
+#1000182588 Champion victorious
+#1000182589 Champion runner-up
+#1000182590 Champion third place
+#1000182591 Lady becomes proud
+#1000182592 Lady becomes humble
+#1000182593 Lady becomes gregarious
+#1000182594 Lady becomes shy
+#1000182595 Lady becomes honest
+#1000182596 Lady becomes deceitful
+#1000182597 Lady becomes lustful
+#1000182598 Lady becomes chaste
+#1000182599 Lady participant hears disparaging comments
+#1000182600 Lady is beauty queen
+#1000182601 Lady second place
+#1000182602 Lady third place
+#1000182603 Lady is jealous of one of the winners
+#1000182604 Notify winner
+#1000182605 Notify second place
+#1000182606 Notify third place
+#1000182607 Hidden event — male catches a lady's eye
+#1000182608 A knight catches your eye
+#1000182609 A lady shows you interest
+#1000182610 Cleanup event
+#1000182611 Start the Romance
+#1000182612 Rejected!
+#1000182613 Jousting with the lady's favour
+#1000182614 Dancing 
+#1000182615 Archery
+#1000182616 Knight humiliated
+#1000182617 Successful "date"
+#1000182618 Failed "date"
+#1000182619 Lady breaks things off
+#1000182620 A trip to her bedroom?
+#1000182621 Keep it up
+#1000182622 Knight breaks things off
+#1000182623 Nocturnal Gymnastics
+#1000182624 Romance continues
+#1000182625 Just friends
+#1000182626 Tournament ends
+
+#jordarkelf micromods
+#1000182627 Norman Conquest Cleanup
+#1000182628 Norman Conquest Cleanup 2
+#1000182629 War of Two Eriks Cleanup
+#1000182630 War of Two Eriks Cleanup 2
+
+#Female Tournament Events
+#1000182631 Tournament cancelled (for any reason)

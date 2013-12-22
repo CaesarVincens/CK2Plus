@@ -8,8 +8,8 @@
 province_event = {
 	id = 55000
 	desc = "EVTDESC55000"
-	picture = GFX_evt_throne_room
-
+	picture = GFX_evt_stone_church
+	hide_window = yes
 	trigger = {
 		owner = {
 			NOT = {
@@ -27,9 +27,18 @@ province_event = {
 				AND = {
 					ROOT = {
 						culture = saxon
-						kingdom = {
-							title = k_england
-						}
+            
+						OR = {
+							kingdom = {
+								title = k_england
+							} 
+							kingdom = {
+								title = k_englandnorman
+							}
+							kingdom = {
+								title = k_englandnorwegian
+							}
+						}  
 					}
 					OR = {
 						culture_group = north_germanic
@@ -79,7 +88,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 550
 
 		modifier = {
 			factor = 10
@@ -122,6 +131,10 @@ province_event = {
 				}
 			}
 			owner = { independent = yes }
+		}
+		modifier = {
+			factor = 0.80
+			owner = { has_ambition = obj_civilize_province }
 		}
 		modifier = {
 			factor = 1.05
@@ -180,43 +193,43 @@ province_event = {
 			owner = { learning = 15 }
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.9
 			owner = { learning = 16 }
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.9
 			owner = { learning = 17 }
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.9
 			owner = { learning = 18 }
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.9
 			owner = { learning = 19 }
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.85
 			owner = { learning = 20 }
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.85
 			owner = { learning = 21 }
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.85
 			owner = { learning = 22 }
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.85
 			owner = { learning = 23 }
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.85
 			owner = { learning = 24 }
 		}
 		modifier = {
-			factor = 0.95
+			factor = 0.85
 			owner = { learning = 25 }
 		}
 		modifier = {
@@ -272,7 +285,7 @@ province_event = {
 		}
 		#catholics
 		modifier = {
-			factor = 100
+			factor = 5
 			OR = {
 				culture_group = north_germanic
 				culture_group = central_germanic
@@ -298,7 +311,7 @@ province_event = {
 		}
 		#orthodox
 		modifier = {
-			factor = 100
+			factor = 5
 			OR = {
 				culture_group = byzantine
 				culture_group = east_slavic
@@ -315,7 +328,7 @@ province_event = {
 		}
 		#baltic pagans
 		modifier = {
-			factor = 100
+			factor = 5
 			OR = {
 				culture_group = finno_ugric
 				culture_group = baltic
@@ -329,7 +342,7 @@ province_event = {
 		}
 		#turks
 		modifier = {
-			factor = 100
+			factor = 5
 			culture_group = altaic
 			owner = {
 				NOT = {
@@ -339,7 +352,7 @@ province_event = {
 		}
 		#arabs
 		modifier = {
-			factor = 100
+			factor = 5
 			culture_group = arabic
 			owner = {
 				NOT = {
@@ -349,7 +362,7 @@ province_event = {
 		}
 		#persians
 		modifier = {
-			factor = 100
+			factor = 5
 			culture_group = iranian
 			owner = {
 				NOT = {
@@ -359,7 +372,7 @@ province_event = {
 		}
 		#africa
 		modifier = {
-			factor = 100
+			factor = 5
 			culture_group = west_african
 			owner = {
 				NOT = {
@@ -368,7 +381,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 100
+			factor = 5
 			culture_group = east_african
 			owner = {
 				NOT = {
@@ -378,12 +391,30 @@ province_event = {
 		}
 	}
 
-	option = {
-		name = "EVTOPTA55000"
+	immediate = {
 		owner = {
 			reverse_culture = ROOT
+			if = {
+				limit = { has_ambition = obj_civilize_province }
+				character_event = { id = 1000182009 }
+			}
+			if = {
+				limit = {
+					top_liege = {
+						NOT = { character = PREV }
+						culture = PREV
+						has_ambition = obj_civilize_province
+					}
+				}
+				top_liege = { character_event = { id = 1000182009 } }
+			}
 		}
 	}
+
+	option = {
+		name = "EVTOPTA55000"
+	}
+
 }
 
 # Ruler goes native
@@ -461,7 +492,7 @@ character_event = {
 	mean_time_to_happen = {
 		months = 400
 		modifier = {
-			factor = 0.9
+			factor = 0.8
 			NOT = { age = 20 }
 		}
 		modifier = {
@@ -592,7 +623,7 @@ character_event = {
 			}
 			#germanic + latin
 			modifier = {
-				factor = 100
+				factor = 5
 				OR = {
 					culture_group = north_germanic
 					culture_group = central_germanic
@@ -612,7 +643,7 @@ character_event = {
 			}
 			#west slavs
 			modifier = {
-				factor = 100
+				factor = 5
 				OR = {
 					culture_group = west_slavic
 					culture_group = magyar
@@ -626,7 +657,7 @@ character_event = {
 			}
 			#celts
 			modifier = {
-				factor = 100
+				factor = 5
 				culture_group = celtic
 				capital_scope = {
 					NOT = {
@@ -636,7 +667,7 @@ character_event = {
 			}
 			#orthodox
 			modifier = {
-				factor = 100
+				factor = 5
 				OR = {
 					culture_group = byzantine
 					culture_group = east_slavic
@@ -652,7 +683,7 @@ character_event = {
 			}
 			#baltic pagans
 			modifier = {
-				factor = 100
+				factor = 5
 				OR = {
 					culture_group = finno_ugric
 					culture_group = baltic
@@ -666,7 +697,7 @@ character_event = {
 			}
 			#turks
 			modifier = {
-				factor = 100
+				factor = 5
 				culture_group = altaic
 				capital_scope = {
 					NOT = {
@@ -676,7 +707,7 @@ character_event = {
 			}
 			#arabs
 			modifier = {
-				factor = 100
+				factor = 5
 				culture_group = arabic
 				capital_scope = {
 					NOT = {
@@ -686,7 +717,7 @@ character_event = {
 			}
 			#persians
 			modifier = {
-				factor = 100
+				factor = 5
 				culture_group = iranian
 				capital_scope = {
 					NOT = {
@@ -696,7 +727,7 @@ character_event = {
 			}
 			#africa
 			modifier = {
-				factor = 100
+				factor = 5
 				culture_group = west_african
 				capital_scope = {
 					NOT = {
@@ -705,7 +736,7 @@ character_event = {
 				}
 			}
 			modifier = {
-				factor = 100
+				factor = 5
 				culture_group = east_african
 				capital_scope = {
 					NOT = {

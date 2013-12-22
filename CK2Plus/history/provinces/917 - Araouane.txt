@@ -1,20 +1,24 @@
-# 1 - Vestisland
+# 917 - Araouane
 
 # County Title
-title = c_niani
+title = c_araouane
 
 # Settlements
-max_settlements = 4
-b_bure = castle
-b_dinguiraye = temple
-b_jangaba = city
+max_settlements = 1
+b_araouane = castle
+
+#b_tessalit = city
+#b_aguelhok = temple
+#b_abalessa = castle
+#b_tinzaouten = castle
+#b_guezzam = castle
+#b_tamanrasset = castle
+#b_tazrouk = castle
 
 # Misc
-culture = manden
+culture = maghreb_arabic
 religion = west_african_pagan
 
-
 # History
-1121.1.1 = {
-    religion = sunni
-}
+
+900.1.1 = { religion = sunni }

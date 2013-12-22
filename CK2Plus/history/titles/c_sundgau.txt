@@ -1,5 +1,5 @@
 820.1.1={
-	liege = "k_lotharingia"
+	liege=e_hre
 }
 820.1.1={
 	holder = 161483
@@ -19,6 +19,7 @@ liege="d_swabia"
 }
 1057.1.1=
 {
+	liege="d_upper_lorraine"
 	holder=11000 #Ludwig
 }
 1073.1.1=

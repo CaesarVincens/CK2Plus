@@ -12,6 +12,10 @@
 1066.1.5={
 	holder=122 # Harold Godwinson
 }
+1066.10.14=
+{
+liege="k_englandnorman"
+}
 #1066.10.14={
 #	liege="d_gloucester"
 #}
@@ -29,7 +33,11 @@
 }
 1143.7.1={
 	holder=204533 #Patrick of Salisbury
+	liege = d_normandy
 }
+1153.8.1 = {
+	liege = k_englandnorman
+	}
 1168.1.20={
 	holder=204530 #William of Salisbury
 }

@@ -3,14 +3,13 @@
 # Roman Events
 #
 # Event ID LoR.1 - LoR.199 reserved
-# Event ID ancrel.2220 - ancrel.2239 reserved
+# Event ID 1000182312 - 1000182315 reserved
 #
 #######################################
 
 # Written by Henrik Eklund
 
 namespace = LoR
-namespace = ancrel
 
 ### Lost Roman Provinces
 
@@ -47,6 +46,10 @@ narrative_event = {
 		completely_controls = d_oultrejourdain
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+	}	
+	
 	option = {
 		name = EVTOPTALoR.1
 		set_global_flag = syria_palaestina
@@ -78,10 +81,13 @@ narrative_event = {
 		completely_controls = d_alexandria
 		completely_controls = d_damietta
 		completely_controls = d_cairo
-		completely_controls = d_aswan
 		completely_controls = d_sinai
 		completely_controls = d_nubia
 	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}	
 	
 	option = {
 		name = EVTOPTALoR.1
@@ -92,9 +98,9 @@ narrative_event = {
 
 # Provincia Cyrenaica et Creta
 narrative_event = {
-	id = ancrel.2230
-	title = EVTNAMEancrel.2230
-	desc = EVTDESCancrel.2230
+	id = 1000182308
+	title = EVTNAME1000182308
+	desc = EVTDESC1000182308
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -114,6 +120,10 @@ narrative_event = {
 		completely_controls = d_cyrenaica
 		completely_controls = d_krete
 	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}	
 	
 	option = {
 		name = EVTOPTALoR.1
@@ -147,6 +157,10 @@ narrative_event = {
 		completely_controls = d_tunis
 		completely_controls = d_kabylia
 	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}	
 	
 	option = {
 		name = EVTOPTALoR.1
@@ -185,6 +199,10 @@ narrative_event = {
 		completely_controls = d_dalmatia
 		completely_controls = d_carinthia
 	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}	
 	
 	option = {
 		name = EVTOPTALoR.1
@@ -233,6 +251,10 @@ narrative_event = {
 		completely_controls = d_calabria
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+	}	
+	
 	option = {
 		name = EVTOPTALoR.1
 		set_global_flag = italia
@@ -242,9 +264,9 @@ narrative_event = {
 
 # Provincia Sicilia
 narrative_event = {
-	id = ancrel.2231
-	title = EVTNAMEancrel.2231
-	desc = EVTDESCancrel.2231
+	id = 1000182309
+	title = EVTNAME1000182309
+	desc = EVTDESC1000182309
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -264,6 +286,10 @@ narrative_event = {
 		completely_controls = d_sicily
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+	}	
+	
 	option = {
 		name = EVTOPTALoR.1
 		set_global_flag = sicilia
@@ -273,9 +299,9 @@ narrative_event = {
 
 # Provincia Corsica et Sardinia
 narrative_event = {
-	id = ancrel.2232
-	title = EVTNAMEancrel.2232
-	desc = EVTDESCancrel.2232
+	id = 1000182310
+	title = EVTNAME1000182310
+	desc = EVTDESC1000182310
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -295,6 +321,10 @@ narrative_event = {
 		completely_controls = d_sardinia
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+	}	
+	
 	option = {
 		name = EVTOPTALoR.1
 		set_global_flag = sardinia
@@ -304,9 +334,9 @@ narrative_event = {
 
 # Provincia Viennensis
 narrative_event = {
-	id = ancrel.2233
-	title = EVTNAMEancrel.2233
-	desc = EVTDESCancrel.2233
+	id = 1000182311
+	title = EVTNAME1000182311
+	desc = EVTDESC1000182311
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -332,6 +362,10 @@ narrative_event = {
 		completely_controls = d_dauphine
 		completely_controls = d_provence
 	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}	
 	
 	option = {
 		name = EVTOPTALoR.1
@@ -465,7 +499,12 @@ narrative_event = {
 		completely_controls = d_gwynedd
 		completely_controls = d_deheubarth
 		completely_controls = d_cornwall
+		completely_controls = d_huntingdon
 	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}	
 	
 	option = {
 		name = EVTOPTALoR.1
@@ -515,6 +554,10 @@ narrative_event = {
 		completely_controls = d_toledo
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+	}	
+	
 	option = {
 		name = EVTOPTALoR.1
 		set_global_flag = hispania
@@ -550,6 +593,10 @@ narrative_event = {
 		completely_controls = d_tlemcen
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+	}	
+	
 	option = {
 		name = EVTOPTALoR.1
 		set_global_flag = mauretania
@@ -584,6 +631,10 @@ narrative_event = {
 		completely_controls = d_jazira
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+	}	
+	
 	option = {
 		name = EVTOPTALoR.1
 		set_global_flag = mesopotamia
@@ -617,7 +668,12 @@ narrative_event = {
 		completely_controls = d_lothian
 		completely_controls = d_albany
 		completely_controls = d_moray
+		completely_controls = d_highlands
 	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}	
 	
 	option = {
 		name = EVTOPTALoR.1
@@ -653,6 +709,10 @@ narrative_event = {
 		completely_controls = d_leinster
 		completely_controls = d_munster
 	}
+
+	mean_time_to_happen = {
+		days = 1
+	}		
 	
 	option = {
 		name = EVTOPTALoR.1
@@ -672,6 +732,10 @@ narrative_event = {
 	picture = GFX_evt_rome_restored_byzantine
 	
 	is_triggered_only = yes
+	
+	immediate = {
+		set_character_flag = achievement_legacy_of_rome
+	}	
 	
 	option = {
 		name = EVTOPTALoR.20
@@ -781,9 +845,9 @@ narrative_event = {
 
 # The Restoration of Rome (HRE)
 narrative_event = {
-	id = ancrel.2220
+	id = 1000182312
 	title = EVTNAMELoR.20
-	desc = EVTDESCancrel.2220
+	desc = EVTDESC1000182312
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -823,7 +887,7 @@ narrative_event = {
 					NOT = { character = ROOT }
 					ai = no
 				}
-				narrative_event = { id = ancrel.2221 }
+				narrative_event = { id = 1000182313 }
 			}
 		}
 	}
@@ -831,9 +895,9 @@ narrative_event = {
 
 # Informed about Restoration of Rome (HRE)
 narrative_event = {
-	id = ancrel.2221
+	id = 1000182313
 	title = EVTNAMELoR.21
-	desc = EVTDESCancrel.2221
+	desc = EVTDESC1000182313
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -860,9 +924,9 @@ narrative_event = {
 
 # The Creation of a new Rome
 narrative_event = {
-	id = ancrel.2222
+	id = 1000182314
 	title = EVTNAMELoR.20
-	desc = EVTDESCancrel.2222
+	desc = EVTDESC1000182314
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -930,7 +994,7 @@ narrative_event = {
 					NOT = { character = ROOT }
 					ai = no
 				}
-				narrative_event = { id = ancrel.2223 }
+				narrative_event = { id = 1000182315 }
 			}
 		}
 	}
@@ -938,9 +1002,9 @@ narrative_event = {
 
 # Informed about Creation of a new Rome
 narrative_event = {
-	id = ancrel.2223
+	id = 1000182315
 	title = EVTNAMELoR.21
-	desc = EVTDESCancrel.2223
+	desc = EVTDESC1000182315
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -1056,6 +1120,10 @@ narrative_event = {
 	
 	ai = no
 	
+	immediate = {
+		set_character_flag = achievement_spqr
+	}	
+	
 	trigger = {
 		has_dlc = "Legacy of Rome"
 		OR = {
@@ -1081,6 +1149,7 @@ narrative_event = {
 		completely_controls = d_gwynedd
 		completely_controls = d_deheubarth
 		completely_controls = d_cornwall
+		completely_controls = d_huntingdon
 		
 		# Provincia Italia
 		completely_controls = d_venice
@@ -1121,7 +1190,6 @@ narrative_event = {
 		completely_controls = d_alexandria
 		completely_controls = d_damietta
 		completely_controls = d_cairo
-		completely_controls = d_aswan
 		completely_controls = d_sinai
 		completely_controls = d_nubia
 		
@@ -1235,6 +1303,10 @@ narrative_event = {
 		completely_controls = d_mesopotamia
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
 	option = {
 		name = EVTOPTALoR.40
 		set_global_flag = roman_borders
@@ -1253,8 +1325,13 @@ character_event = {
 	trigger = {
 		has_dlc = "Legacy of Rome"
 		has_landed_title = e_roman_empire
+		has_global_flag = rome_restored
 		NOT = { trait = augustus }
 	}
+
+	mean_time_to_happen = {
+		days = 1
+	}	
 	
 	option = {
 		name = EVTOPTALoR.45
@@ -1270,10 +1347,15 @@ character_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		has_global_flag = rome_restored
 		trait = augustus
 		NOT = { has_landed_title = e_roman_empire }
 		is_alive = yes
 	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}	
 	
 	option = {
 		name = EVTOPTALoR.46

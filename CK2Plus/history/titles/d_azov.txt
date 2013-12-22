@@ -1,4 +1,8 @@
-740.1.1= {
+700.1.1={
+de_jure_liege=k_khazaria
+}
+
+740.1.1={
 	liege=k_khazaria
 	holder=74011
 }
@@ -33,6 +37,9 @@
 
 888.1.1={
 	holder=74026
+}
+940.1.1 = {
+de_jure_liege = k_cuman
 }
 990.1.2=
 {

@@ -12,8 +12,9 @@ succession_laws = {
 				NOT = { religion = tengri_pagan }
 				NOT = { religion = baltic_pagan }
 				NOT = { religion = finnish_pagan }
-				NOT = { religion = aztec }
+				NOT = { religion = aztec_pagan }
 				NOT = { religion = slavic_pagan }
+				NOT = { religion = celtic_pagan }
 			}
 			holder_scope = {
 				OR = {
@@ -222,7 +223,7 @@ succession_laws = {
 				NOT = { religion = tengri_pagan }
 				NOT = { religion = baltic_pagan }
 				NOT = { religion = finnish_pagan }
-				NOT = { religion = aztec }
+				NOT = { religion = aztec_pagan }
 				NOT = { religion = slavic_pagan }
 			}
 			holder_scope = {
@@ -231,6 +232,7 @@ succession_laws = {
 				OR = {
 					culture_group = celtic
 					culture = scottish
+					religion = celtic_pagan
 				}
 			}
 			OR = {
@@ -473,8 +475,9 @@ succession_laws = {
 				NOT = { religion = tengri_pagan }
 				NOT = { religion = baltic_pagan }
 				NOT = { religion = finnish_pagan }
-				NOT = { religion = aztec }
+				NOT = { religion = aztec_pagan }
 				NOT = { religion = slavic_pagan }
+				NOT = { religion = celtic_pagan }
 			}
 			holder_scope = {
 				NOT = { religion_group = muslim }
@@ -715,6 +718,7 @@ succession_laws = {
 		vassal_opinion = 5
 
 		potential = {
+			NOT = { religion = celtic_pagan }
 			is_primary_holder_title = yes
 			holder_scope = {
 				NOT = { religion_group = muslim }
@@ -921,8 +925,9 @@ succession_laws = {
 				NOT = { religion = tengri_pagan }
 				NOT = { religion = baltic_pagan }
 				NOT = { religion = finnish_pagan }
-				NOT = { religion = aztec }
+				NOT = { religion = aztec_pagan }
 				NOT = { religion = slavic_pagan }
+				NOT = { religion = celtic_pagan }
 			}
 			holder_scope = {
 				NOT = { religion_group = muslim }
@@ -1132,8 +1137,9 @@ succession_laws = {
 				NOT = { religion = tengri_pagan }
 				NOT = { religion = baltic_pagan }
 				NOT = { religion = finnish_pagan }
-				NOT = { religion = aztec }
+				NOT = { religion = aztec_pagan }
 				NOT = { religion = slavic_pagan }
+				NOT = { religion = celtic_pagan }
 			}
 			holder_scope = {
 				NOT = { religion_group = muslim }

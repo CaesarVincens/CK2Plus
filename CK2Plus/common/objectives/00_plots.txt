@@ -1202,6 +1202,7 @@ plot_instigate_revolt = {
 			higher_tier_than = baron
 			is_patrician = yes
 		}
+		NOT = { liege = { has_character_modifier = holy_truce_timer } }
 	}
 
 	# Target allow trigger for when players target a specific character in the GUI
@@ -2301,7 +2302,7 @@ plot_gain_fellow_vassal_title = {
 
 	vassal_intrigue_plot = yes
 
-	# Plotter scope
+	# Plotter scope	
 	potential = {
 		is_playable = yes
 		prisoner = no
@@ -2322,6 +2323,8 @@ plot_gain_fellow_vassal_title = {
 		holder_scope = { NOT = { has_opinion_modifier = { who = FROM modifier = opinion_recent_plot } }	}
 		FROM = { ai = no }
 		NOT = { claimed_by = FROM }
+		is_recent_grant = no
+		
 		# Not the current heir
 		NOT = {
 			holder_scope = {

@@ -1,0 +1,87 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_pogrom"
+		texturefile = "gfx\\event_pictures\pogrom.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_pyramid"
+		texturefile = "gfx\\event_pictures\pyramid.tga"
+		allwaystransparent = yes
+	}	
+	spriteType = {
+		name = "GFX_evt_anubis"
+		texturefile = "gfx\\event_pictures\anubis.tga"
+		allwaystransparent = yes
+	}	
+	spriteType = {
+		name = "GFX_evt_horus"
+		texturefile = "gfx\\event_pictures\horus.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_persepolis_ruin"
+		texturefile = "gfx\\event_pictures\\persepolis_ruin.tga"
+		clicksound = generic_click_04
+	}
+	spriteType = {
+		name = "GFX_persepolis_built"
+		texturefile = "gfx\\event_pictures\\persepolis_built.tga"
+		clicksound = generic_click_04
+	}
+	spriteType = {
+		name = "GFX_evt_zhayedan"
+		texturefile = "gfx\\event_pictures\zhayedan.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_sacrifice"
+		texturefile = "gfx\\event_pictures\sacrifice.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_roman_temple"
+		texturefile = "gfx\\event_pictures\roman_great_temple.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_lightning_strike"
+		texturefile = "gfx\\event_pictures\lightning_strike.tga"
+		allwaystransparent = yes
+	}	
+	spriteType = {
+		name = "GFX_evt_blood_eagle"
+		texturefile = "gfx\\event_pictures\blood_eagle.tga"
+		allwaystransparent = yes
+	}	
+	spriteType = {
+		name = "GFX_evt_girl_with_sword"
+		texturefile = "gfx\\event_pictures\girl_with_sword.tga"
+		allwaystransparent = yes
+	}	
+	spriteType = {
+		name = "GFX_evt_tournament_gallery"
+		texturefile = "gfx\\event_pictures\jousting_gallery.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_injured"
+		texturefile = "gfx\\event_pictures\knight_injured.tga"
+		allwaystransparent = yes
+	}	
+	spriteType = {
+		name = "GFX_evt_grazia"
+		texturefile = "gfx\\event_pictures\ladies.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_courtly_love"
+		texturefile = "gfx\\event_pictures\courtly_love.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_woman_fighter"
+		texturefile = "gfx\\event_pictures\woman_with_sword.tga"
+		allwaystransparent = yes
+	}
+}

@@ -18,6 +18,7 @@ succession_laws = {
 				is_landless_type_title = no
 				is_tribal_type_title = yes
 			}
+			rebel = no
 			OR = {
 				AND = {
 					tier = baron
@@ -59,7 +60,7 @@ succession_laws = {
 				NOT = { religion = tengri_pagan }
 				NOT = { religion = baltic_pagan }
 				NOT = { religion = finnish_pagan }
-				NOT = { religion = aztec }
+				NOT = { religion = aztec_pagan }
 				NOT = { religion = slavic_pagan }
 			}
 			holder_scope = {
@@ -117,7 +118,7 @@ succession_laws = {
 				NOT = { religion = tengri_pagan }
 				NOT = { religion = baltic_pagan }
 				NOT = { religion = finnish_pagan }
-				NOT = { religion = aztec }
+				NOT = { religion = aztec_pagan }
 				NOT = { religion = slavic_pagan }
 			}
 			holder_scope = {
@@ -165,7 +166,7 @@ succession_laws = {
 				NOT = { religion = tengri_pagan }
 				NOT = { religion = baltic_pagan }
 				NOT = { religion = finnish_pagan }
-				NOT = { religion = aztec }
+				NOT = { religion = aztec_pagan }
 				NOT = { religion = slavic_pagan }
 			}
 			holder_scope = {
@@ -238,8 +239,42 @@ succession_laws = {
 			factor = 0
 		}
 	}
+	succ_papal_succession = {
+		potential = {
+			title = k_papal_state
+		}
+		
+		effect = {
+			succession = papal_succession
+		}
+		revoke_allowed = {
+			always = no
+		}		
+	}
+	
+	# Titles revert back to the liege on death
+	succ_appointment = {
+		potential = {
+			holder_scope = {
+				is_feudal = yes
+				independent = no
+				any_liege = {
+					holy_order = yes
+				}
+				is_merchant_republic = no
+			}
+		}
+		effect = {
+			succession = appointment
+		}
+		revoke_allowed = {
+			always = no
+		}		
+	}
+	
 	succ_open_elective = {
 		potential = {
+			NOT = { title = k_papal_state }
 			OR = {
 				is_primary_type_title = yes
 				AND = {
@@ -274,6 +309,7 @@ succession_laws = {
 				holder_scope = { is_theocracy = no }
 				holder_scope = {
 					NOT = { religion = catholic }
+					NOT = { religion = fraticelli }
 				}
 			}
 			holder_scope = {
@@ -301,7 +337,10 @@ succession_laws = {
 			}
 
 			holder_scope = {
-				religion = catholic
+				OR = {
+					religion = catholic
+					religion = fraticelli
+				}
 				is_merchant_republic = no
 				is_patrician = no
 			}
@@ -339,7 +378,7 @@ succession_laws = {
 				NOT = { religion = tengri_pagan }
 				NOT = { religion = baltic_pagan }
 				NOT = { religion = finnish_pagan }
-				NOT = { religion = aztec }
+				NOT = { religion = aztec_pagan }
 				NOT = { religion = slavic_pagan }
 			}
 			holder_scope = {
@@ -349,6 +388,7 @@ succession_laws = {
 				OR = {
 						culture_group = celtic
 						culture = scottish
+						religion = celtic_pagan
 				}
 			}
 			OR = {
@@ -388,8 +428,10 @@ succession_laws = {
 				NOT = { religion = tengri_pagan }
 				NOT = { religion = baltic_pagan }
 				NOT = { religion = finnish_pagan }
-				NOT = { religion = aztec }
+				NOT = { religion = aztec_pagan }
 				NOT = { religion = slavic_pagan }
+				NOT = { religion = west_african_pagan }
+				NOT = { religion = pagan }
 			}
 			holder_scope = {
 				OR = {

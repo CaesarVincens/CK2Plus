@@ -35,6 +35,10 @@
 }
 1066.1.1={
 	holder=5644 #Eadwin
+}  
+1066.10.14={
+	liege="k_englandnorman"
+	de_jure_liege=k_englandnorman
 }
 1072.1.1={
 	holder=140 # William the Conqueror
@@ -48,8 +52,15 @@
 1135.12.2={
 	holder=205851 #Stephen
 }
+1140.1.1 = {
+	holder = 204687 #Ranulf of Chester
+	}
+1144.1.1 = {
+	liege = 0
+	}
 1154.10.25={
 	holder=204500 #Henry II
+	liege="k_englandnorman"
 }
 1189.7.6={
 	holder=204510 #Richard I Lionheart

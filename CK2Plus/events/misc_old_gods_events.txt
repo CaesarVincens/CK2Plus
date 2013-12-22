@@ -106,7 +106,7 @@ character_event = {
 	is_triggered_only = yes
 
 	# On_action, so BIG is MORE OFTEN!
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 0.6
@@ -171,7 +171,7 @@ character_event = {
 			NOT = {
 				relative_power = {
 					who = FROM
-					power = 0.50 
+					power = 0.75 
 				}
 			}
 		}
@@ -256,7 +256,7 @@ character_event = {
 					province = closest
 					owner = ROOT
 					match_character = ROOT
-					match_mult = 0.04
+					match_mult = 0.05
 					earmark = prepared_invasion
 				}
 			}
@@ -279,7 +279,7 @@ character_event = {
 	is_triggered_only = yes
 
 	# On_action, so BIG is MORE OFTEN
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 0.6
@@ -356,7 +356,7 @@ character_event = {
 			NOT = {
 				relative_power = {
 					who = FROM
-					power = 0.50 
+					power = 0.75 
 				}
 			}
 		}
@@ -459,7 +459,7 @@ character_event = {
 			province = closest
 			owner = ROOT
 			match_character = ROOT
-			match_mult = 0.06
+			match_mult = 0.07
 			earmark = prepared_invasion
 		}
 	}
@@ -478,7 +478,7 @@ character_event = {
 	is_triggered_only = yes
 
 	# On_action, so BIG is MORE OFTEN
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 0.6
@@ -543,7 +543,7 @@ character_event = {
 			NOT = {
 				relative_power = {
 					who = FROM
-					power = 0.50 
+					power = 0.75
 				}
 			}
 		}
@@ -628,7 +628,7 @@ character_event = {
 					province = closest
 					owner = ROOT
 					match_character = ROOT
-					match_mult = 0.025
+					match_mult = 0.030
 					earmark = prepared_invasion
 				}
 			}
@@ -1313,6 +1313,69 @@ character_event = {
 		name = EVTOPTA62931
 		set_global_flag = east_francia_renamed
 		k_germany = {
+			set_name=""
+			adjective=""
+		}
+	}
+}
+# Special event for Carolingian Empire to be renamed to HRE
+character_event = {
+	id = 1000182333
+	title = EVTNAME1000182333
+	desc = EVTDESC1000182333
+
+	picture = GFX_evt_council
+	border = GFX_event_normal_frame_diplomacy
+
+	only_playable = yes
+
+	trigger = {
+		has_landed_title = e_hre
+		NOT = { dynasty = 25061 } # Karling dynasty
+		NOT = { has_global_flag = hre_renamed }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = EVTOPTA1000182333
+		set_global_flag = hre_renamed
+		e_hre = {
+			set_name=""
+			adjective=""
+		}
+	}
+}
+# Special event for Neustria to be renamed to Normandy
+character_event = {
+	id = 1000182563
+	title = EVTNAME1000182563
+	desc = EVTDESC1000182563
+
+	picture = GFX_evt_council
+	border = GFX_event_normal_frame_diplomacy
+
+	only_playable = yes
+
+	trigger = {
+		has_landed_title = d_normandy
+		OR = {
+			culture = norse
+			culture = norman
+		}
+		NOT = { has_global_flag = neustria_renamed }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = EVTOPTA1000182563
+		set_global_flag = neustria_renamed
+		d_normandy = {
 			set_name=""
 			adjective=""
 		}
